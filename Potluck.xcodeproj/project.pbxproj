@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		087C132A235AE65F003422E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 087C1329235AE65F003422E2 /* GoogleService-Info.plist */; };
+		31E9B118B081FCE19ACDE41F /* Pods_PotluckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE91B7512785F1ADB107482F /* Pods_PotluckTests.framework */; };
+		3C05E1A0BB8DEFC4DF990409 /* Pods_Potluck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21195E840A2DCF88948DF148 /* Pods_Potluck.framework */; };
+		4560ABF9235AE3AB0034219F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4560ABF8235AE3AB0034219F /* AppDelegate.swift */; };
+		4560ABFB235AE3AB0034219F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4560ABFA235AE3AB0034219F /* ViewController.swift */; };
+		4560ABFE235AE3AB0034219F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4560ABFC235AE3AB0034219F /* Main.storyboard */; };
+		4560AC00235AE3AC0034219F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4560ABFF235AE3AC0034219F /* Assets.xcassets */; };
+		4560AC03235AE3AC0034219F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4560AC01235AE3AC0034219F /* LaunchScreen.storyboard */; };
+		4560AC0E235AE3AD0034219F /* PotluckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4560AC0D235AE3AD0034219F /* PotluckTests.swift */; };
+		4560AC19235AE3AD0034219F /* PotluckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4560AC18235AE3AD0034219F /* PotluckUITests.swift */; };
+		E950AA0AF5E1FB7420E605D4 /* Pods_Potluck_PotluckUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B712D5657FECEEF94022C1 /* Pods_Potluck_PotluckUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4560AC0A235AE3AD0034219F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4560ABED235AE3AB0034219F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4560ABF4235AE3AB0034219F;
+			remoteInfo = Potluck;
+		};
+		4560AC15235AE3AD0034219F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4560ABED235AE3AB0034219F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4560ABF4235AE3AB0034219F;
+			remoteInfo = Potluck;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		087C1329235AE65F003422E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		21195E840A2DCF88948DF148 /* Pods_Potluck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Potluck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4560ABF5235AE3AB0034219F /* Potluck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Potluck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4560ABF8235AE3AB0034219F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4560ABFA235AE3AB0034219F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4560ABFD235AE3AB0034219F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4560ABFF235AE3AC0034219F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4560AC02235AE3AC0034219F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4560AC04235AE3AC0034219F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4560AC09235AE3AD0034219F /* PotluckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PotluckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4560AC0D235AE3AD0034219F /* PotluckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotluckTests.swift; sourceTree = "<group>"; };
+		4560AC0F235AE3AD0034219F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4560AC14235AE3AD0034219F /* PotluckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PotluckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4560AC18235AE3AD0034219F /* PotluckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotluckUITests.swift; sourceTree = "<group>"; };
+		4560AC1A235AE3AD0034219F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48B712D5657FECEEF94022C1 /* Pods_Potluck_PotluckUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Potluck_PotluckUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4969B4A6A13C8C6C89778534 /* Pods-Potluck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Potluck.debug.xcconfig"; path = "Target Support Files/Pods-Potluck/Pods-Potluck.debug.xcconfig"; sourceTree = "<group>"; };
+		5355BFE86E5469A9F1635FFA /* Pods-PotluckTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotluckTests.debug.xcconfig"; path = "Target Support Files/Pods-PotluckTests/Pods-PotluckTests.debug.xcconfig"; sourceTree = "<group>"; };
+		85C39E56EE9D9C4C061AEE72 /* Pods-Potluck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Potluck.release.xcconfig"; path = "Target Support Files/Pods-Potluck/Pods-Potluck.release.xcconfig"; sourceTree = "<group>"; };
+		9EBF08AAD2A7EF9EA4354D6A /* Pods-Potluck-PotluckUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Potluck-PotluckUITests.release.xcconfig"; path = "Target Support Files/Pods-Potluck-PotluckUITests/Pods-Potluck-PotluckUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AE91B7512785F1ADB107482F /* Pods_PotluckTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PotluckTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7C563F476871B962C93D804 /* Pods-Potluck-PotluckUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Potluck-PotluckUITests.debug.xcconfig"; path = "Target Support Files/Pods-Potluck-PotluckUITests/Pods-Potluck-PotluckUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F17B393FFC03ED2AD9331A61 /* Pods-PotluckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotluckTests.release.xcconfig"; path = "Target Support Files/Pods-PotluckTests/Pods-PotluckTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4560ABF2235AE3AB0034219F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C05E1A0BB8DEFC4DF990409 /* Pods_Potluck.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4560AC06235AE3AD0034219F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31E9B118B081FCE19ACDE41F /* Pods_PotluckTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4560AC11235AE3AD0034219F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E950AA0AF5E1FB7420E605D4 /* Pods_Potluck_PotluckUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		087C132B235AEB7E003422E2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		087C132C235AEB88003422E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		087C132D235AEB8A003422E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		087C132E235AEB8D003422E2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0DF2AD4D0412BB2B48E2AA27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4969B4A6A13C8C6C89778534 /* Pods-Potluck.debug.xcconfig */,
+				85C39E56EE9D9C4C061AEE72 /* Pods-Potluck.release.xcconfig */,
+				C7C563F476871B962C93D804 /* Pods-Potluck-PotluckUITests.debug.xcconfig */,
+				9EBF08AAD2A7EF9EA4354D6A /* Pods-Potluck-PotluckUITests.release.xcconfig */,
+				5355BFE86E5469A9F1635FFA /* Pods-PotluckTests.debug.xcconfig */,
+				F17B393FFC03ED2AD9331A61 /* Pods-PotluckTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4560ABEC235AE3AB0034219F = {
+			isa = PBXGroup;
+			children = (
+				4560ABF7235AE3AB0034219F /* Potluck */,
+				4560AC0C235AE3AD0034219F /* PotluckTests */,
+				4560AC17235AE3AD0034219F /* PotluckUITests */,
+				4560ABF6235AE3AB0034219F /* Products */,
+				0DF2AD4D0412BB2B48E2AA27 /* Pods */,
+				81305D47835C3E921D76CC89 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4560ABF6235AE3AB0034219F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4560ABF5235AE3AB0034219F /* Potluck.app */,
+				4560AC09235AE3AD0034219F /* PotluckTests.xctest */,
+				4560AC14235AE3AD0034219F /* PotluckUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4560ABF7235AE3AB0034219F /* Potluck */ = {
+			isa = PBXGroup;
+			children = (
+				087C132E235AEB8D003422E2 /* Utils */,
+				087C132D235AEB8A003422E2 /* Model */,
+				087C132C235AEB88003422E2 /* View */,
+				087C132B235AEB7E003422E2 /* Controller */,
+				4560ABF8235AE3AB0034219F /* AppDelegate.swift */,
+				4560ABFA235AE3AB0034219F /* ViewController.swift */,
+				4560ABFC235AE3AB0034219F /* Main.storyboard */,
+				4560ABFF235AE3AC0034219F /* Assets.xcassets */,
+				4560AC01235AE3AC0034219F /* LaunchScreen.storyboard */,
+				087C1329235AE65F003422E2 /* GoogleService-Info.plist */,
+				4560AC04235AE3AC0034219F /* Info.plist */,
+			);
+			path = Potluck;
+			sourceTree = "<group>";
+		};
+		4560AC0C235AE3AD0034219F /* PotluckTests */ = {
+			isa = PBXGroup;
+			children = (
+				4560AC0D235AE3AD0034219F /* PotluckTests.swift */,
+				4560AC0F235AE3AD0034219F /* Info.plist */,
+			);
+			path = PotluckTests;
+			sourceTree = "<group>";
+		};
+		4560AC17235AE3AD0034219F /* PotluckUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4560AC18235AE3AD0034219F /* PotluckUITests.swift */,
+				4560AC1A235AE3AD0034219F /* Info.plist */,
+			);
+			path = PotluckUITests;
+			sourceTree = "<group>";
+		};
+		81305D47835C3E921D76CC89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21195E840A2DCF88948DF148 /* Pods_Potluck.framework */,
+				48B712D5657FECEEF94022C1 /* Pods_Potluck_PotluckUITests.framework */,
+				AE91B7512785F1ADB107482F /* Pods_PotluckTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4560ABF4235AE3AB0034219F /* Potluck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4560AC1D235AE3AD0034219F /* Build configuration list for PBXNativeTarget "Potluck" */;
+			buildPhases = (
+				2F5706943E7F8B91B6954091 /* [CP] Check Pods Manifest.lock */,
+				4560ABF1235AE3AB0034219F /* Sources */,
+				4560ABF2235AE3AB0034219F /* Frameworks */,
+				4560ABF3235AE3AB0034219F /* Resources */,
+				355707EF7CF99DED07DE3AE8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Potluck;
+			productName = Potluck;
+			productReference = 4560ABF5235AE3AB0034219F /* Potluck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4560AC08235AE3AD0034219F /* PotluckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4560AC20235AE3AD0034219F /* Build configuration list for PBXNativeTarget "PotluckTests" */;
+			buildPhases = (
+				8D022C6097965F5798B2F981 /* [CP] Check Pods Manifest.lock */,
+				4560AC05235AE3AD0034219F /* Sources */,
+				4560AC06235AE3AD0034219F /* Frameworks */,
+				4560AC07235AE3AD0034219F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4560AC0B235AE3AD0034219F /* PBXTargetDependency */,
+			);
+			name = PotluckTests;
+			productName = PotluckTests;
+			productReference = 4560AC09235AE3AD0034219F /* PotluckTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4560AC13235AE3AD0034219F /* PotluckUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4560AC23235AE3AD0034219F /* Build configuration list for PBXNativeTarget "PotluckUITests" */;
+			buildPhases = (
+				BAA66E340FE2C557EBF949E7 /* [CP] Check Pods Manifest.lock */,
+				4560AC10235AE3AD0034219F /* Sources */,
+				4560AC11235AE3AD0034219F /* Frameworks */,
+				4560AC12235AE3AD0034219F /* Resources */,
+				0545B067A0261403C6F89CD6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4560AC16235AE3AD0034219F /* PBXTargetDependency */,
+			);
+			name = PotluckUITests;
+			productName = PotluckUITests;
+			productReference = 4560AC14235AE3AD0034219F /* PotluckUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4560ABED235AE3AB0034219F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Jessica Rios";
+				TargetAttributes = {
+					4560ABF4235AE3AB0034219F = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					4560AC08235AE3AD0034219F = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 4560ABF4235AE3AB0034219F;
+					};
+					4560AC13235AE3AD0034219F = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 4560ABF4235AE3AB0034219F;
+					};
+				};
+			};
+			buildConfigurationList = 4560ABF0235AE3AB0034219F /* Build configuration list for PBXProject "Potluck" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4560ABEC235AE3AB0034219F;
+			productRefGroup = 4560ABF6235AE3AB0034219F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4560ABF4235AE3AB0034219F /* Potluck */,
+				4560AC08235AE3AD0034219F /* PotluckTests */,
+				4560AC13235AE3AD0034219F /* PotluckUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4560ABF3235AE3AB0034219F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4560AC03235AE3AC0034219F /* LaunchScreen.storyboard in Resources */,
+				087C132A235AE65F003422E2 /* GoogleService-Info.plist in Resources */,
+				4560AC00235AE3AC0034219F /* Assets.xcassets in Resources */,
+				4560ABFE235AE3AB0034219F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4560AC07235AE3AD0034219F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4560AC12235AE3AD0034219F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0545B067A0261403C6F89CD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Potluck-PotluckUITests/Pods-Potluck-PotluckUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Potluck-PotluckUITests/Pods-Potluck-PotluckUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Potluck-PotluckUITests/Pods-Potluck-PotluckUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F5706943E7F8B91B6954091 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Potluck-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		355707EF7CF99DED07DE3AE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Potluck/Pods-Potluck-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Potluck/Pods-Potluck-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Potluck/Pods-Potluck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D022C6097965F5798B2F981 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PotluckTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAA66E340FE2C557EBF949E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Potluck-PotluckUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4560ABF1235AE3AB0034219F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4560ABFB235AE3AB0034219F /* ViewController.swift in Sources */,
+				4560ABF9235AE3AB0034219F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4560AC05235AE3AD0034219F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4560AC0E235AE3AD0034219F /* PotluckTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4560AC10235AE3AD0034219F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4560AC19235AE3AD0034219F /* PotluckUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4560AC0B235AE3AD0034219F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4560ABF4235AE3AB0034219F /* Potluck */;
+			targetProxy = 4560AC0A235AE3AD0034219F /* PBXContainerItemProxy */;
+		};
+		4560AC16235AE3AD0034219F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4560ABF4235AE3AB0034219F /* Potluck */;
+			targetProxy = 4560AC15235AE3AD0034219F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4560ABFC235AE3AB0034219F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4560ABFD235AE3AB0034219F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4560AC01235AE3AC0034219F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4560AC02235AE3AC0034219F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4560AC1B235AE3AD0034219F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4560AC1C235AE3AD0034219F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4560AC1E235AE3AD0034219F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4969B4A6A13C8C6C89778534 /* Pods-Potluck.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Potluck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JessicaRios.Potluck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4560AC1F235AE3AD0034219F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85C39E56EE9D9C4C061AEE72 /* Pods-Potluck.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Potluck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JessicaRios.Potluck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4560AC21235AE3AD0034219F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5355BFE86E5469A9F1635FFA /* Pods-PotluckTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PotluckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JessicaRios.PotluckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Potluck.app/Potluck";
+			};
+			name = Debug;
+		};
+		4560AC22235AE3AD0034219F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F17B393FFC03ED2AD9331A61 /* Pods-PotluckTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PotluckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JessicaRios.PotluckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Potluck.app/Potluck";
+			};
+			name = Release;
+		};
+		4560AC24235AE3AD0034219F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7C563F476871B962C93D804 /* Pods-Potluck-PotluckUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PotluckUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JessicaRios.PotluckUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Potluck;
+			};
+			name = Debug;
+		};
+		4560AC25235AE3AD0034219F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EBF08AAD2A7EF9EA4354D6A /* Pods-Potluck-PotluckUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PotluckUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JessicaRios.PotluckUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Potluck;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4560ABF0235AE3AB0034219F /* Build configuration list for PBXProject "Potluck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4560AC1B235AE3AD0034219F /* Debug */,
+				4560AC1C235AE3AD0034219F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4560AC1D235AE3AD0034219F /* Build configuration list for PBXNativeTarget "Potluck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4560AC1E235AE3AD0034219F /* Debug */,
+				4560AC1F235AE3AD0034219F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4560AC20235AE3AD0034219F /* Build configuration list for PBXNativeTarget "PotluckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4560AC21235AE3AD0034219F /* Debug */,
+				4560AC22235AE3AD0034219F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4560AC23235AE3AD0034219F /* Build configuration list for PBXNativeTarget "PotluckUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4560AC24235AE3AD0034219F /* Debug */,
+				4560AC25235AE3AD0034219F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4560ABED235AE3AB0034219F /* Project object */;
+}

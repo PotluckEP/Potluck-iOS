@@ -1,0 +1,31 @@
+dependencies: \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseDatabase/Firebase/Database/Persistence/FTrackedQueryManager.m \
+  /Users/danielmorales/CSUMB/Potluck/build/Pods.build/Debug-iphonesimulator/FirebaseDatabase.build/module.modulemap \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseDatabase/Firebase/Database/Persistence/FTrackedQueryManager.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseDatabase/Firebase/Database/Persistence/FCachePolicy.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseDatabase/Firebase/Database/FClock.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseDatabase/Firebase/Database/Core/Utilities/FImmutableTree.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseDatabase/Firebase/Database/third_party/FImmutableSortedDictionary/FImmutableSortedDictionary/FImmutableSortedDictionary.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseDatabase/Firebase/Database/Core/Utilities/FPath.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseDatabase/Firebase/Database/Utilities/Tuples/FTuplePathValue.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseDatabase/Firebase/Database/Persistence/FLevelDBStorageEngine.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseDatabase/Firebase/Database/Snapshot/FCompoundWrite.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseDatabase/Firebase/Database/Snapshot/FNode.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseDatabase/Firebase/Database/Api/Private/FTypedefs_Private.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseDatabase/Firebase/Database/Core/FQuerySpec.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseDatabase/Firebase/Database/FIndex.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseDatabase/Firebase/Database/Core/FQueryParams.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseDatabase/Firebase/Database/Persistence/FStorageEngine.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseDatabase/Firebase/Database/Persistence/FPruneForest.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseDatabase/Firebase/Database/Persistence/FTrackedQuery.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseDatabase/Firebase/Database/Utilities/FUtilities.h \
+  /Users/danielmorales/CSUMB/Potluck/build/Pods.build/Debug-iphonesimulator/FirebaseCore.build/module.modulemap \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseCore/Firebase/Core/Private/FIRLogger.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseCore/Firebase/Core/Public/FIROptions.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseCore/Firebase/Core/Public/FirebaseCore.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseCore/Firebase/Core/Public/FIRLoggerLevel.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseCore/Firebase/Core/Public/FIRConfiguration.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseCore/Firebase/Core/Public/FIRApp.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseDatabase/Firebase/Database/Utilities/FParsedUrl.h \
+  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseDatabase/Firebase/Database/Core/FRepoInfo.h
