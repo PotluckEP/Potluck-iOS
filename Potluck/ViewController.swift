@@ -11,22 +11,30 @@ import FirebaseDatabase
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let list = ["Milk", "Honey", "Bread", "Tacos", "Tomatos"]
+    var ref: DatabaseReference?
+    
+    let events = [String]()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        ref = Database.database().reference()
+        
+        //https://www.youtube.com/watch?v=RMudKhNY0sI
+        //ref?.child("userId1").
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return(list.count)
+        return(events.count)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellEvent = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cellEvent")
-        cellEvent.textLabel?.text = list[indexPath.row]
+        cellEvent.textLabel?.text = events[indexPath.row]
         return cellEvent
     }
     
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+    
 
 }
 
