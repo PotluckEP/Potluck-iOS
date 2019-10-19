@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		087C132A235AE65F003422E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 087C1329235AE65F003422E2 /* GoogleService-Info.plist */; };
+		087C1338235AFA43003422E2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C1337235AFA43003422E2 /* MenuViewController.swift */; };
 		31E9B118B081FCE19ACDE41F /* Pods_PotluckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE91B7512785F1ADB107482F /* Pods_PotluckTests.framework */; };
 		3C05E1A0BB8DEFC4DF990409 /* Pods_Potluck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21195E840A2DCF88948DF148 /* Pods_Potluck.framework */; };
 		4560ABF9235AE3AB0034219F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4560ABF8235AE3AB0034219F /* AppDelegate.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		087C1329235AE65F003422E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		087C1337235AFA43003422E2 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		21195E840A2DCF88948DF148 /* Pods_Potluck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Potluck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4560ABF5235AE3AB0034219F /* Potluck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Potluck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4560ABF8235AE3AB0034219F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,34 +93,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		087C132B235AEB7E003422E2 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		087C132C235AEB88003422E2 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		087C132D235AEB8A003422E2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		087C132E235AEB8D003422E2 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		0DF2AD4D0412BB2B48E2AA27 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,10 +131,6 @@
 		4560ABF7235AE3AB0034219F /* Potluck */ = {
 			isa = PBXGroup;
 			children = (
-				087C132E235AEB8D003422E2 /* Utils */,
-				087C132D235AEB8A003422E2 /* Model */,
-				087C132C235AEB88003422E2 /* View */,
-				087C132B235AEB7E003422E2 /* Controller */,
 				4560ABF8235AE3AB0034219F /* AppDelegate.swift */,
 				4560ABFA235AE3AB0034219F /* ViewController.swift */,
 				4560ABFC235AE3AB0034219F /* Main.storyboard */,
@@ -168,6 +138,7 @@
 				4560AC01235AE3AC0034219F /* LaunchScreen.storyboard */,
 				087C1329235AE65F003422E2 /* GoogleService-Info.plist */,
 				4560AC04235AE3AC0034219F /* Info.plist */,
+				087C1337235AFA43003422E2 /* MenuViewController.swift */,
 			);
 			path = Potluck;
 			sourceTree = "<group>";
@@ -441,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4560ABFB235AE3AB0034219F /* ViewController.swift in Sources */,
+				087C1338235AFA43003422E2 /* MenuViewController.swift in Sources */,
 				4560ABF9235AE3AB0034219F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

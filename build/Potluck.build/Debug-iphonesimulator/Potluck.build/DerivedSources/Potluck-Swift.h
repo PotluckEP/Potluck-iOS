@@ -215,10 +215,19 @@ SWIFT_CLASS("_TtC7Potluck11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITableView;
-@class UITableViewCell;
 @class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC7Potluck18MenuViewController")
+@interface MenuViewController : UITableViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITableView;
+@class UITableViewCell;
 
 SWIFT_CLASS("_TtC7Potluck14ViewController")
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
