@@ -35,8 +35,11 @@ class AddEventViewController: UIViewController, UITextFieldDelegate {
         let dateTxt = dateFormatter.string(from: dateTimePicker.date);
         self.view.endEditing(true)
         
-        //ref?.child("events").childByAutoId().setValue(["eventName": eventNameTextView.text, dateTxt,: dateTxt, "location": locationTextView.text])
-        let values = ["eventName": eventNameTextView.text, "date": dateTxt, "location": locationTextView.text]
+        let values = ["eventName": eventNameTextView.text,
+                      "location": locationTextView.text,
+                      "date": dateTxt,
+                      "title" : descriptionTextView.text] as [String : Any]
+        
         ref?.child("events").childByAutoId().setValue(values)
     }
 

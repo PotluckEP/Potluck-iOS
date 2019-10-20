@@ -19,10 +19,12 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
+- "CastingPrecedence"
 - !private "Database"
 - "DatabaseReference"
 - !private "DateFormatter"
 - "Set"
+- !private "String"
 - !private "StringLiteralType"
 - "UIDatePicker"
 - "UIEvent"
@@ -37,6 +39,7 @@ depends-member:
 - !private ["7Potluck22AddEventViewControllerC", "DateFormatter"]
 - ["7Potluck22AddEventViewControllerC", "Set"]
 - ["7Potluck22AddEventViewControllerC", "StartPlanningButtonClicked"]
+- !private ["7Potluck22AddEventViewControllerC", "String"]
 - ["7Potluck22AddEventViewControllerC", "UIDatePicker"]
 - ["7Potluck22AddEventViewControllerC", "UIEvent"]
 - ["7Potluck22AddEventViewControllerC", "UITextField"]
@@ -307,6 +310,7 @@ depends-member:
 - !private ["So8NSObjectC", "DateFormatter"]
 - ["So8NSObjectC", "Set"]
 - ["So8NSObjectC", "StartPlanningButtonClicked"]
+- !private ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "UIDatePicker"]
 - ["So8NSObjectC", "UIEvent"]
 - ["So8NSObjectC", "UITextField"]
@@ -519,6 +523,7 @@ depends-member:
 - !private ["So11UIResponderC", "DateFormatter"]
 - ["So11UIResponderC", "Set"]
 - ["So11UIResponderC", "StartPlanningButtonClicked"]
+- !private ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "UIDatePicker"]
 - ["So11UIResponderC", "UIEvent"]
 - ["So11UIResponderC", "UITextField"]
@@ -682,6 +687,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "DateFormatter"]
 - ["So16UIViewControllerC", "Set"]
 - ["So16UIViewControllerC", "StartPlanningButtonClicked"]
+- !private ["So16UIViewControllerC", "String"]
 - ["So16UIViewControllerC", "UIDatePicker"]
 - ["So16UIViewControllerC", "UIEvent"]
 - ["So16UIViewControllerC", "UITextField"]

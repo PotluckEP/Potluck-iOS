@@ -9,27 +9,59 @@
 import UIKit
 import FirebaseDatabase
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var ref: DatabaseReference?
+    var ref: DatabaseReference!
     
-    let events = [String]()
+    @IBOutlet weak var tableview: UITableView!
+    
+    let user = "f0dsfjdf0sd"
+    var events = [Event]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ref = Database.database().reference()
         
-        //https://www.youtube.com/watch?v=RMudKhNY0sI
-        //ref?.child("userId1").
+        ref = Database.database().reference()
+        fetchEvent()
+        
+        print(self.events)
+    }
+    
+    func fetchEvent(){
+        ref.child("users/f0dsfjdf0sd/events").observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            let eventsId = snapshot.value as! [String: String]
+            
+            for (id, rank) in eventsId {
+                
+                self.ref.child("events").child(id).observeSingleEvent(of: .value, with: { (info) in
+                    
+                    let event = info.value as! [String: String]
+                    
+                    self.events.append( Event(name: event["eventName"], location: event["location"], date: event["date"], descriptio: event["description"], rank: rank));
+                    
+                    
+                    self.tableview.reloadData();
+                    
+                    print(self.events)
+                }) { (error) in
+                    print(error)
+                }
+            }
+            
+        }) { (error) in
+            print(error)
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return(events.count)
+        return(self.events.count)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cellEvent = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cellEvent")
-        cellEvent.textLabel?.text = events[indexPath.row]
+        //cellEvent.textLabel?.text = self.events[indexPath.row].name
         return cellEvent
     }
     
