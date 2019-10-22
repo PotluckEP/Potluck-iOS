@@ -12,14 +12,16 @@ class Event: NSObject{
     var name: String?
     var location: String?
     var date: String?
-    var descriptio: String?
+    var info: String?
+    var owner: String?
     var rank: String?
     
-    init(name: String?, location: String?, date: String?, descriptio: String?, rank: String?){
+    init(name: String?, location: String?, date: String?, info: String?, owner: String?, rank: String?){
         self.name = name;
         self.location = location;
         self.date = date;
-        self.descriptio = descriptio;
+        self.info = info;
+        self.owner = owner;
         self.rank = rank;
     }
     

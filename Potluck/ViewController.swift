@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseDatabase
 
-class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var ref: DatabaseReference!
     
@@ -22,28 +22,34 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewDidLoad()
         
         ref = Database.database().reference()
-        fetchEvent()
         
-        print(self.events)
+        // adding event to table
+        
+        ref.child("users/f0dsfjdf0sd/events").observe(.childAdded) { (snapshot) in
+            self.fetchEvent()
+        }
     }
     
     func fetchEvent(){
+        
+        // Getting the events from the user
         ref.child("users/f0dsfjdf0sd/events").observeSingleEvent(of: .value, with: { (snapshot) in
             
             let eventsId = snapshot.value as! [String: String]
             
-            for (id, rank) in eventsId {
+            for (id, rank) in eventsId { // Getting the events information
                 
+                print(id)
                 self.ref.child("events").child(id).observeSingleEvent(of: .value, with: { (info) in
                     
                     let event = info.value as! [String: String]
                     
-                    self.events.append( Event(name: event["eventName"], location: event["location"], date: event["date"], descriptio: event["description"], rank: rank));
-                    
+                    self.events.append( Event(name: event["name"], location: event["location"], date: event["date"], info: event["info"], owner: event["owner"], rank: rank));
                     
                     self.tableview.reloadData();
                     
                     print(self.events)
+                    
                 }) { (error) in
                     print(error)
                 }
@@ -52,6 +58,7 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }) { (error) in
             print(error)
         }
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -61,12 +68,7 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cellEvent = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cellEvent")
-        //cellEvent.textLabel?.text = self.events[indexPath.row].name
+        cellEvent.textLabel?.text = self.events[indexPath.row].name
         return cellEvent
     }
-    
-
-    
-
 }
-

@@ -12,7 +12,7 @@ import FirebaseDatabase
 
 class AddEventViewController: UIViewController, UITextFieldDelegate {
     
-    var ref: DatabaseReference?
+    var ref: DatabaseReference!
 
     @IBOutlet weak var eventNameTextView: UITextField!
     @IBOutlet weak var locationTextView: UITextField!
@@ -27,7 +27,6 @@ class AddEventViewController: UIViewController, UITextFieldDelegate {
         ref = Database.database().reference()
     }
     
-    
     @IBAction func StartPlanningButtonClicked(_ sender: Any) {
         
         let dateFormatter = DateFormatter()
@@ -35,12 +34,26 @@ class AddEventViewController: UIViewController, UITextFieldDelegate {
         let dateTxt = dateFormatter.string(from: dateTimePicker.date);
         self.view.endEditing(true)
         
-        let values = ["eventName": eventNameTextView.text,
+        
+        let values = ["name": eventNameTextView.text,
                       "location": locationTextView.text,
                       "date": dateTxt,
-                      "title" : descriptionTextView.text] as [String : Any]
+                      "info" : descriptionTextView.text,
+                      "owner" : "f0dsfjdf0sd"] as [String : Any]
         
-        ref?.child("events").childByAutoId().setValue(values)
+        let reference = ref.child("events").childByAutoId()
+        let eventId = reference.key
+        reference.setValue(values)
+        
+        self.ref.child("users/f0dsfjdf0sd/events").observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            var fixThisLater = snapshot.value as! [String: String]
+            fixThisLater[eventId!] = "owner"
+            self.ref.child("users/f0dsfjdf0sd/events").updateChildValues(fixThisLater)
+            
+        }, withCancel: nil)
+        
+        
     }
 
     // Hide the keyboard if users touches out side the keyboard
