@@ -244,6 +244,34 @@ SWIFT_CLASS("_TtC7Potluck5Event")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class UICollectionView;
+@class UICollectionViewCell;
+@class UICollectionViewLayout;
+
+SWIFT_CLASS("_TtC7Potluck51EventPlanningViewControllerCollectionViewController")
+@interface EventPlanningViewControllerCollectionViewController : UICollectionViewController
+- (void)viewDidLoad;
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithCollectionViewLayout:(UICollectionViewLayout * _Nonnull)layout OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UILabel;
+
+SWIFT_CLASS("_TtC7Potluck18EventTableViewCell")
+@interface EventTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameTextView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dateTextView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified locationTextView;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC7Potluck18MenuViewController")
 @interface MenuViewController : UITableViewController
@@ -254,7 +282,6 @@ SWIFT_CLASS("_TtC7Potluck18MenuViewController")
 @end
 
 @class UITableView;
-@class UITableViewCell;
 
 SWIFT_CLASS("_TtC7Potluck14ViewController")
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>

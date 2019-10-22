@@ -24,10 +24,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         ref = Database.database().reference()
         
         // adding event to table
-        
-        ref.child("users/f0dsfjdf0sd/events").observe(.childAdded) { (snapshot) in
+        //ref.child("users/f0dsfjdf0sd/events").observe(.childAdded) { (snapshot) in
             self.fetchEvent()
-        }
+        //}
     }
     
     func fetchEvent(){
@@ -67,8 +66,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cellEvent = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cellEvent")
-        cellEvent.textLabel?.text = self.events[indexPath.row].name
-        return cellEvent
+        let cell = tableview.dequeueReusableCell(withIdentifier: "eventCell") as! EventTableViewCell
+        
+        cell.nameTextView.text = self.events[indexPath.row].name
+        //cell.dateTextView.text = self.events[indexPath.row].date
+       // cell.locationTextView.text = self.events[indexPath.row].location
+        
+        return cell
     }
 }

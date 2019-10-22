@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		08015B4A235C7824000EFEB0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08015B49235C7824000EFEB0 /* Event.swift */; };
+		08094D73235EE38D006A6B28 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08094D72235EE38C006A6B28 /* EventTableViewCell.swift */; };
+		08094D77235EF06E006A6B28 /* EventPlanningViewControllerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08094D76235EF06E006A6B28 /* EventPlanningViewControllerCollectionViewController.swift */; };
 		087C1338235AFA43003422E2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C1337235AFA43003422E2 /* MenuViewController.swift */; };
 		087C133A235B075A003422E2 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C1339235B075A003422E2 /* AddEventViewController.swift */; };
 		08D999D9235E9F4F0010B6E5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08D999D8235E9F4F0010B6E5 /* GoogleService-Info.plist */; };
@@ -42,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		08015B49235C7824000EFEB0 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		08094D72235EE38C006A6B28 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventTableViewCell.swift; path = /Users/danielmorales/CSUMB/Potluck/Potluck/EventTableViewCell.swift; sourceTree = "<absolute>"; };
+		08094D76235EF06E006A6B28 /* EventPlanningViewControllerCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPlanningViewControllerCollectionViewController.swift; sourceTree = "<group>"; };
 		087C1337235AFA43003422E2 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		087C1339235B075A003422E2 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		08D999D8235E9F4F0010B6E5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -137,14 +141,16 @@
 			children = (
 				4560ABF8235AE3AB0034219F /* AppDelegate.swift */,
 				4560ABFA235AE3AB0034219F /* ViewController.swift */,
-				4560ABFC235AE3AB0034219F /* Main.storyboard */,
 				4560ABFF235AE3AC0034219F /* Assets.xcassets */,
 				4560AC01235AE3AC0034219F /* LaunchScreen.storyboard */,
 				08D999D8235E9F4F0010B6E5 /* GoogleService-Info.plist */,
+				4560ABFC235AE3AB0034219F /* Main.storyboard */,
 				4560AC04235AE3AC0034219F /* Info.plist */,
 				087C1337235AFA43003422E2 /* MenuViewController.swift */,
 				087C1339235B075A003422E2 /* AddEventViewController.swift */,
 				08015B49235C7824000EFEB0 /* Event.swift */,
+				08094D72235EE38C006A6B28 /* EventTableViewCell.swift */,
+				08094D76235EF06E006A6B28 /* EventPlanningViewControllerCollectionViewController.swift */,
 			);
 			path = Potluck;
 			sourceTree = "<group>";
@@ -417,10 +423,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08094D73235EE38D006A6B28 /* EventTableViewCell.swift in Sources */,
 				4560ABFB235AE3AB0034219F /* ViewController.swift in Sources */,
 				087C133A235B075A003422E2 /* AddEventViewController.swift in Sources */,
 				087C1338235AFA43003422E2 /* MenuViewController.swift in Sources */,
 				4560ABF9235AE3AB0034219F /* AppDelegate.swift in Sources */,
+				08094D77235EF06E006A6B28 /* EventPlanningViewControllerCollectionViewController.swift in Sources */,
 				08015B4A235C7824000EFEB0 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

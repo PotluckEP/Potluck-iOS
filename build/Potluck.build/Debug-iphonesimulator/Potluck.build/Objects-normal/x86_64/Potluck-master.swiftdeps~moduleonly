@@ -1,9 +1,11 @@
 version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
 options: "2b4dd2dfad8aa2981714750e3a5c72ff"
-build_time: [1571727997, 280397000]
+build_time: [1571731697, 110785000]
 inputs:
-  "/Users/danielmorales/CSUMB/Potluck/Potluck/ViewController.swift": [1571727619, 917537783]
+  "/Users/danielmorales/CSUMB/Potluck/Potluck/EventTableViewCell.swift": [1571728478, 528761046]
+  "/Users/danielmorales/CSUMB/Potluck/Potluck/ViewController.swift": [1571731489, 802613767]
   "/Users/danielmorales/CSUMB/Potluck/Potluck/AddEventViewController.swift": [1571725997, 28342328]
   "/Users/danielmorales/CSUMB/Potluck/Potluck/MenuViewController.swift": [1571472262, 319126120]
   "/Users/danielmorales/CSUMB/Potluck/Potluck/AppDelegate.swift": [1571723734, 310862564]
+  "/Users/danielmorales/CSUMB/Potluck/Potluck/EventPlanningViewControllerCollectionViewController.swift": [9223372036, 854775807]
   "/Users/danielmorales/CSUMB/Potluck/Potluck/Event.swift": [1571723131, 361208990]
