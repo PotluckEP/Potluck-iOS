@@ -38,7 +38,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             for (id, rank) in eventsId { // Getting the events information
                 
-                print(id)
                 self.ref.child("events").child(id).observeSingleEvent(of: .value, with: { (info) in
                     
                     let event = info.value as! [String: String]
@@ -46,8 +45,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     self.events.append( Event(name: event["name"], location: event["location"], date: event["date"], info: event["info"], owner: event["owner"], rank: rank));
                     
                     self.tableview.reloadData();
-                    
-                    print(self.events)
+
                     
                 }) { (error) in
                     print(error)
@@ -66,12 +64,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableview.dequeueReusableCell(withIdentifier: "eventCell") as! EventTableViewCell
+        let cell = tableview.dequeueReusableCell(withIdentifier: "EventTableViewCell") as! EventTableViewCell
         
         cell.nameTextView.text = self.events[indexPath.row].name
         //cell.dateTextView.text = self.events[indexPath.row].date
        // cell.locationTextView.text = self.events[indexPath.row].location
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let cell = sender as! UITableViewCell
+        let indexPath = tableview.indexPath(for: cell)!
+        let event = events[indexPath.row]
+        
+        let planningViewController = segue.destination as! PlanningViewController
+        
+        planningViewController.event = event
+        
+        tableview.deselectRow(at: indexPath, animated: true)
     }
 }
