@@ -1,0 +1,71 @@
+//
+//  AddEventViewController.swift
+//  Potluck
+//
+//  Created by Daniel Morales on 10/19/19.
+//  Copyright © 2019 Jessica Rios. All rights reserved.
+//
+
+
+import UIKit
+import FirebaseDatabase
+
+class AddEventViewController: UIViewController, UITextFieldDelegate {
+    
+    var ref: DatabaseReference!
+
+    @IBOutlet weak var eventNameTextView: UITextField!
+    @IBOutlet weak var locationTextView: UITextField!
+    @IBOutlet weak var descriptionTextView: UITextField!
+    @IBOutlet weak var dateTimePicker: UIDatePicker!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.eventNameTextView.delegate = self
+        self.locationTextView.delegate = self
+        self.descriptionTextView.delegate = self
+        ref = Database.database().reference()
+    }
+    
+    @IBAction func StartPlanningButtonClicked(_ sender: Any) {
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE, MMM d, yyyy h:mm a"
+        let dateTxt = dateFormatter.string(from: dateTimePicker.date);
+        self.view.endEditing(true)
+        
+        
+        let values = ["name": eventNameTextView.text,
+                      "location": locationTextView.text,
+                      "date": dateTxt,
+                      "info" : descriptionTextView.text,
+                      "owner" : "f0dsfjdf0sd"] as [String : Any]
+        
+        let reference = ref.child("events").childByAutoId()
+        let eventId = reference.key
+        reference.setValue(values)
+        
+        self.ref.child("users/f0dsfjdf0sd/events").observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            var fixThisLater = snapshot.value as! [String: String]
+            fixThisLater[eventId!] = "owner"
+            self.ref.child("users/f0dsfjdf0sd/events").updateChildValues(fixThisLater)
+            
+        }, withCancel: nil)
+        
+        
+    }
+
+    // Hide the keyboard if users touches out side the keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true);
+    }
+    
+    // Hide the keyboard if users press return
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        eventNameTextView.resignFirstResponder()
+        locationTextView.resignFirstResponder()
+        descriptionTextView.resignFirstResponder()
+        return true;
+    }
+}

@@ -182,6 +182,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Foundation;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -200,6 +201,27 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class UITextField;
+@class UIDatePicker;
+@class UITouch;
+@class UIEvent;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC7Potluck22AddEventViewController")
+@interface AddEventViewController : UIViewController <UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified eventNameTextView;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified locationTextView;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified descriptionTextView;
+@property (nonatomic, weak) IBOutlet UIDatePicker * _Null_unspecified dateTimePicker;
+- (void)viewDidLoad;
+- (IBAction)StartPlanningButtonClicked:(id _Nonnull)sender;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIWindow;
 @class UIApplication;
 
@@ -215,8 +237,41 @@ SWIFT_CLASS("_TtC7Potluck11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSBundle;
-@class NSCoder;
+
+SWIFT_CLASS("_TtC7Potluck5Event")
+@interface Event : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class UICollectionView;
+@class UICollectionViewCell;
+@class UICollectionViewLayout;
+
+SWIFT_CLASS("_TtC7Potluck51EventPlanningViewControllerCollectionViewController")
+@interface EventPlanningViewControllerCollectionViewController : UICollectionViewController
+- (void)viewDidLoad;
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithCollectionViewLayout:(UICollectionViewLayout * _Nonnull)layout OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UILabel;
+
+SWIFT_CLASS("_TtC7Potluck18EventTableViewCell")
+@interface EventTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameTextView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dateTextView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified locationTextView;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC7Potluck18MenuViewController")
 @interface MenuViewController : UITableViewController
@@ -227,13 +282,13 @@ SWIFT_CLASS("_TtC7Potluck18MenuViewController")
 @end
 
 @class UITableView;
-@class UITableViewCell;
 
 SWIFT_CLASS("_TtC7Potluck14ViewController")
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableview;
+- (void)viewDidLoad;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end

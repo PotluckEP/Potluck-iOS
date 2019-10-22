@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>F54KZW8NZ2.JessicaRios.Potluck</string>
+	<string>F54KZW8NZ2.lol.Potluck</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>F54KZW8NZ2.JessicaRios.Potluck</string>
+		<string>F54KZW8NZ2.lol.Potluck</string>
 	</array>
 </dict>
 </plist>

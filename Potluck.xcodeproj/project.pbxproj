@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		087C132A235AE65F003422E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 087C1329235AE65F003422E2 /* GoogleService-Info.plist */; };
+		08015B4A235C7824000EFEB0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08015B49235C7824000EFEB0 /* Event.swift */; };
+		08094D73235EE38D006A6B28 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08094D72235EE38C006A6B28 /* EventTableViewCell.swift */; };
+		08094D77235EF06E006A6B28 /* EventPlanningViewControllerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08094D76235EF06E006A6B28 /* EventPlanningViewControllerCollectionViewController.swift */; };
+		08094D79235EF44C006A6B28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08094D78235EF44C006A6B28 /* GoogleService-Info.plist */; };
 		087C1338235AFA43003422E2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C1337235AFA43003422E2 /* MenuViewController.swift */; };
+		087C133A235B075A003422E2 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C1339235B075A003422E2 /* AddEventViewController.swift */; };
 		31E9B118B081FCE19ACDE41F /* Pods_PotluckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE91B7512785F1ADB107482F /* Pods_PotluckTests.framework */; };
 		3C05E1A0BB8DEFC4DF990409 /* Pods_Potluck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21195E840A2DCF88948DF148 /* Pods_Potluck.framework */; };
 		4560ABF9235AE3AB0034219F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4560ABF8235AE3AB0034219F /* AppDelegate.swift */; };
@@ -39,8 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		087C1329235AE65F003422E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		08015B49235C7824000EFEB0 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		08094D72235EE38C006A6B28 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventTableViewCell.swift; path = /Users/danielmorales/CSUMB/Potluck/Potluck/EventTableViewCell.swift; sourceTree = "<absolute>"; };
+		08094D76235EF06E006A6B28 /* EventPlanningViewControllerCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPlanningViewControllerCollectionViewController.swift; sourceTree = "<group>"; };
+		08094D78235EF44C006A6B28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		087C1337235AFA43003422E2 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		087C1339235B075A003422E2 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		21195E840A2DCF88948DF148 /* Pods_Potluck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Potluck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4560ABF5235AE3AB0034219F /* Potluck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Potluck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4560ABF8235AE3AB0034219F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,12 +141,16 @@
 			children = (
 				4560ABF8235AE3AB0034219F /* AppDelegate.swift */,
 				4560ABFA235AE3AB0034219F /* ViewController.swift */,
-				4560ABFC235AE3AB0034219F /* Main.storyboard */,
 				4560ABFF235AE3AC0034219F /* Assets.xcassets */,
 				4560AC01235AE3AC0034219F /* LaunchScreen.storyboard */,
-				087C1329235AE65F003422E2 /* GoogleService-Info.plist */,
+				4560ABFC235AE3AB0034219F /* Main.storyboard */,
 				4560AC04235AE3AC0034219F /* Info.plist */,
 				087C1337235AFA43003422E2 /* MenuViewController.swift */,
+				087C1339235B075A003422E2 /* AddEventViewController.swift */,
+				08015B49235C7824000EFEB0 /* Event.swift */,
+				08094D72235EE38C006A6B28 /* EventTableViewCell.swift */,
+				08094D76235EF06E006A6B28 /* EventPlanningViewControllerCollectionViewController.swift */,
+				08094D78235EF44C006A6B28 /* GoogleService-Info.plist */,
 			);
 			path = Potluck;
 			sourceTree = "<group>";
@@ -281,7 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4560AC03235AE3AC0034219F /* LaunchScreen.storyboard in Resources */,
-				087C132A235AE65F003422E2 /* GoogleService-Info.plist in Resources */,
+				08094D79235EF44C006A6B28 /* GoogleService-Info.plist in Resources */,
 				4560AC00235AE3AC0034219F /* Assets.xcassets in Resources */,
 				4560ABFE235AE3AB0034219F /* Main.storyboard in Resources */,
 			);
@@ -411,9 +423,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08094D73235EE38D006A6B28 /* EventTableViewCell.swift in Sources */,
 				4560ABFB235AE3AB0034219F /* ViewController.swift in Sources */,
+				087C133A235B075A003422E2 /* AddEventViewController.swift in Sources */,
 				087C1338235AFA43003422E2 /* MenuViewController.swift in Sources */,
 				4560ABF9235AE3AB0034219F /* AppDelegate.swift in Sources */,
+				08094D77235EF06E006A6B28 /* EventPlanningViewControllerCollectionViewController.swift in Sources */,
+				08015B4A235C7824000EFEB0 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,12 +606,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F54KZW8NZ2;
 				INFOPLIST_FILE = Potluck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = JessicaRios.Potluck;
+				PRODUCT_BUNDLE_IDENTIFIER = lol.Potluck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -608,12 +625,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F54KZW8NZ2;
 				INFOPLIST_FILE = Potluck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = JessicaRios.Potluck;
+				PRODUCT_BUNDLE_IDENTIFIER = lol.Potluck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
