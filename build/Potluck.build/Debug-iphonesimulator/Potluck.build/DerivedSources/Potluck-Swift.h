@@ -181,6 +181,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreGraphics;
 @import Foundation;
 @import ObjectiveC;
 @import UIKit;
@@ -244,21 +245,6 @@ SWIFT_CLASS("_TtC7Potluck5Event")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class UICollectionView;
-@class UICollectionViewCell;
-@class UICollectionViewLayout;
-
-SWIFT_CLASS("_TtC7Potluck51EventPlanningViewControllerCollectionViewController")
-@interface EventPlanningViewControllerCollectionViewController : UICollectionViewController
-- (void)viewDidLoad;
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithCollectionViewLayout:(UICollectionViewLayout * _Nonnull)layout OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class UILabel;
 
 SWIFT_CLASS("_TtC7Potluck18EventTableViewCell")
@@ -273,6 +259,13 @@ SWIFT_CLASS("_TtC7Potluck18EventTableViewCell")
 @end
 
 
+SWIFT_CLASS("_TtC7Potluck22ItemCollectionViewCell")
+@interface ItemCollectionViewCell : UICollectionViewCell
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC7Potluck18MenuViewController")
 @interface MenuViewController : UITableViewController
 - (void)viewDidLoad;
@@ -281,7 +274,20 @@ SWIFT_CLASS("_TtC7Potluck18MenuViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImageView;
+
+SWIFT_CLASS("_TtC7Potluck22PlanningViewController")
+@interface PlanningViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified itemTextView;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified personInChangeImg;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified personInChargeTextView;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UITableView;
+@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC7Potluck14ViewController")
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
@@ -289,6 +295,7 @@ SWIFT_CLASS("_TtC7Potluck14ViewController")
 - (void)viewDidLoad;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end

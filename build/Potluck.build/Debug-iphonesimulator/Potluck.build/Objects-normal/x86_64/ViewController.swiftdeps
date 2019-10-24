@@ -6,10 +6,12 @@ provides-nominal:
 provides-member:
 - ["7Potluck14ViewControllerC", ""]
 provides-dynamic-lookup:
+- "prepare"
 - "tableView"
 - "tableview"
 - "viewDidLoad"
 depends-top-level:
+- !private "+"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
 - !private "Database"
@@ -20,6 +22,7 @@ depends-top-level:
 - "Int"
 - !private "String"
 - "StringLiteralType"
+- "UIStoryboardSegue"
 - "UITableView"
 - "UITableViewCell"
 - "UITableViewDataSource"
@@ -433,6 +436,7 @@ depends-member:
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
 - !private ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UIStoryboardSegue"]
 - ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "UITableViewCell"]
 - !private ["So8NSObjectC", "child"]
@@ -448,6 +452,7 @@ depends-member:
 - ["So8NSObjectC", "numberOfSections"]
 - ["So8NSObjectC", "numberOfSectionsInTableView"]
 - !private ["So8NSObjectC", "observeSingleEvent"]
+- ["So8NSObjectC", "prepare"]
 - !private ["So8NSObjectC", "print"]
 - ["So8NSObjectC", "ref"]
 - !private ["So8NSObjectC", "reference"]
@@ -728,6 +733,7 @@ depends-member:
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
 - !private ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "UIStoryboardSegue"]
 - ["So11UIResponderC", "UITableView"]
 - ["So11UIResponderC", "UITableViewCell"]
 - !private ["So11UIResponderC", "dequeueReusableCell"]
@@ -739,6 +745,7 @@ depends-member:
 - !private ["So11UIResponderC", "nameTextView"]
 - ["So11UIResponderC", "numberOfSections"]
 - ["So11UIResponderC", "numberOfSectionsInTableView"]
+- ["So11UIResponderC", "prepare"]
 - !private ["So11UIResponderC", "print"]
 - ["So11UIResponderC", "ref"]
 - !private ["So11UIResponderC", "reloadData"]
@@ -1020,6 +1027,7 @@ depends-member:
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
 - !private ["So16UIViewControllerC", "String"]
+- ["So16UIViewControllerC", "UIStoryboardSegue"]
 - ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", "UITableViewCell"]
 - ["So16UIViewControllerC", ""]
@@ -1030,6 +1038,7 @@ depends-member:
 - ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "numberOfSections"]
 - ["So16UIViewControllerC", "numberOfSectionsInTableView"]
+- ["So16UIViewControllerC", "prepare"]
 - !private ["So16UIViewControllerC", "print"]
 - ["So16UIViewControllerC", "ref"]
 - ["So16UIViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
@@ -1061,6 +1070,7 @@ depends-member:
 - ["7Potluck14ViewControllerC", "IndexPath"]
 - ["7Potluck14ViewControllerC", "Int"]
 - !private ["7Potluck14ViewControllerC", "String"]
+- ["7Potluck14ViewControllerC", "UIStoryboardSegue"]
 - ["7Potluck14ViewControllerC", "UITableView"]
 - ["7Potluck14ViewControllerC", "UITableViewCell"]
 - ["7Potluck14ViewControllerC", "deinit"]
@@ -1071,6 +1081,7 @@ depends-member:
 - ["7Potluck14ViewControllerC", "init"]
 - ["7Potluck14ViewControllerC", "numberOfSections"]
 - ["7Potluck14ViewControllerC", "numberOfSectionsInTableView"]
+- ["7Potluck14ViewControllerC", "prepare"]
 - !private ["7Potluck14ViewControllerC", "print"]
 - ["7Potluck14ViewControllerC", "ref"]
 - ["7Potluck14ViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
@@ -2535,4 +2546,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "ccfa6a4f6106d0a20e2794003d9ce9f2"
+interface-hash: "d2484913b735bcec0ab9f8b5c98303b0"

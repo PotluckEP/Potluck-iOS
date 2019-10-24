@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		08015B4A235C7824000EFEB0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08015B49235C7824000EFEB0 /* Event.swift */; };
 		08094D73235EE38D006A6B28 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08094D72235EE38C006A6B28 /* EventTableViewCell.swift */; };
-		08094D77235EF06E006A6B28 /* EventPlanningViewControllerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08094D76235EF06E006A6B28 /* EventPlanningViewControllerCollectionViewController.swift */; };
 		08094D79235EF44C006A6B28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08094D78235EF44C006A6B28 /* GoogleService-Info.plist */; };
+		081A577D23600F290037877C /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081A577C23600F290037877C /* ItemCollectionViewCell.swift */; };
+		085462C4235F1FCB00AA0E4D /* PlanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085462C3235F1FCB00AA0E4D /* PlanningViewController.swift */; };
 		087C1338235AFA43003422E2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C1337235AFA43003422E2 /* MenuViewController.swift */; };
 		087C133A235B075A003422E2 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C1339235B075A003422E2 /* AddEventViewController.swift */; };
 		31E9B118B081FCE19ACDE41F /* Pods_PotluckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE91B7512785F1ADB107482F /* Pods_PotluckTests.framework */; };
@@ -45,8 +46,9 @@
 /* Begin PBXFileReference section */
 		08015B49235C7824000EFEB0 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		08094D72235EE38C006A6B28 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventTableViewCell.swift; path = /Users/danielmorales/CSUMB/Potluck/Potluck/EventTableViewCell.swift; sourceTree = "<absolute>"; };
-		08094D76235EF06E006A6B28 /* EventPlanningViewControllerCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPlanningViewControllerCollectionViewController.swift; sourceTree = "<group>"; };
 		08094D78235EF44C006A6B28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		081A577C23600F290037877C /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		085462C3235F1FCB00AA0E4D /* PlanningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningViewController.swift; sourceTree = "<group>"; };
 		087C1337235AFA43003422E2 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		087C1339235B075A003422E2 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		21195E840A2DCF88948DF148 /* Pods_Potluck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Potluck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,8 +151,9 @@
 				087C1339235B075A003422E2 /* AddEventViewController.swift */,
 				08015B49235C7824000EFEB0 /* Event.swift */,
 				08094D72235EE38C006A6B28 /* EventTableViewCell.swift */,
-				08094D76235EF06E006A6B28 /* EventPlanningViewControllerCollectionViewController.swift */,
 				08094D78235EF44C006A6B28 /* GoogleService-Info.plist */,
+				085462C3235F1FCB00AA0E4D /* PlanningViewController.swift */,
+				081A577C23600F290037877C /* ItemCollectionViewCell.swift */,
 			);
 			path = Potluck;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				4560ABF2235AE3AB0034219F /* Frameworks */,
 				4560ABF3235AE3AB0034219F /* Resources */,
 				355707EF7CF99DED07DE3AE8 /* [CP] Embed Pods Frameworks */,
+				5D0EE1F4E5F34ABDC7CA3462 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +237,7 @@
 				4560AC11235AE3AD0034219F /* Frameworks */,
 				4560AC12235AE3AD0034219F /* Resources */,
 				0545B067A0261403C6F89CD6 /* [CP] Embed Pods Frameworks */,
+				4E052486A32459369763D155 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -372,6 +377,40 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Potluck/Pods-Potluck-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4E052486A32459369763D155 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Potluck-PotluckUITests/Pods-Potluck-PotluckUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Potluck-PotluckUITests/Pods-Potluck-PotluckUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Potluck-PotluckUITests/Pods-Potluck-PotluckUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D0EE1F4E5F34ABDC7CA3462 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Potluck/Pods-Potluck-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Potluck/Pods-Potluck-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Potluck/Pods-Potluck-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8D022C6097965F5798B2F981 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -426,9 +465,10 @@
 				08094D73235EE38D006A6B28 /* EventTableViewCell.swift in Sources */,
 				4560ABFB235AE3AB0034219F /* ViewController.swift in Sources */,
 				087C133A235B075A003422E2 /* AddEventViewController.swift in Sources */,
+				085462C4235F1FCB00AA0E4D /* PlanningViewController.swift in Sources */,
 				087C1338235AFA43003422E2 /* MenuViewController.swift in Sources */,
+				081A577D23600F290037877C /* ItemCollectionViewCell.swift in Sources */,
 				4560ABF9235AE3AB0034219F /* AppDelegate.swift in Sources */,
-				08094D77235EF06E006A6B28 /* EventPlanningViewControllerCollectionViewController.swift in Sources */,
 				08015B4A235C7824000EFEB0 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

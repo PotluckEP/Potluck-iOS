@@ -9,20 +9,24 @@
 import UIKit
 
 class Event: NSObject{
-    var name: String?
-    var location: String?
-    var date: String?
-    var info: String?
-    var owner: String?
-    var rank: String?
+    var id: String!
+    var name: String!
+    var location: String!
+    var date: String!
+    var info: String!
+    var owner: String!
+    var rank: String!
+    var path: String!
     
-    init(name: String?, location: String?, date: String?, info: String?, owner: String?, rank: String?){
-        self.name = name;
-        self.location = location;
-        self.date = date;
-        self.info = info;
-        self.owner = owner;
-        self.rank = rank;
+    init(id: String!, name: String!, location: String!, date: String!, info: String!, owner: String!, rank: String!, path: String!){
+        self.id = id
+        self.name = name
+        self.location = location
+        self.date = date
+        self.info = info
+        self.owner = owner
+        self.rank = rank
+        self.path = path
     }
     
 }

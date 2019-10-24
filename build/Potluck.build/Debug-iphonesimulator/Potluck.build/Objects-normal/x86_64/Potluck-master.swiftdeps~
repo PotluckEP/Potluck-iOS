@@ -1,19 +1,12 @@
 version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
-options: "2b4dd2dfad8aa2981714750e3a5c72ff"
-<<<<<<< HEAD
-build_time: [1571732403, 18950000]
+options: "1de6c01fc4e2d2d5e779c14b6b9b1294"
+build_time: [1571877982, 869544000]
 inputs:
-  "/Users/danielmorales/CSUMB/Potluck/Potluck/ViewController.swift": [1571732396, 525514166]
-  "/Users/danielmorales/CSUMB/Potluck/Potluck/MenuViewController.swift": [1571472262, 319126120]
-  "/Users/danielmorales/CSUMB/Potluck/Potluck/AppDelegate.swift": [1571732396, 523827806]
-=======
-build_time: [1571731697, 110785000]
-inputs:
-  "/Users/danielmorales/CSUMB/Potluck/Potluck/EventTableViewCell.swift": [1571728478, 528761046]
-  "/Users/danielmorales/CSUMB/Potluck/Potluck/ViewController.swift": [1571731489, 802613767]
-  "/Users/danielmorales/CSUMB/Potluck/Potluck/AddEventViewController.swift": [1571725997, 28342328]
-  "/Users/danielmorales/CSUMB/Potluck/Potluck/MenuViewController.swift": [1571472262, 319126120]
-  "/Users/danielmorales/CSUMB/Potluck/Potluck/AppDelegate.swift": [1571723734, 310862564]
-  "/Users/danielmorales/CSUMB/Potluck/Potluck/EventPlanningViewControllerCollectionViewController.swift": [9223372036, 854775807]
-  "/Users/danielmorales/CSUMB/Potluck/Potluck/Event.swift": [1571723131, 361208990]
->>>>>>> addEventBranch
+  "/Users/danielmorales/CSUMB/Potluck/Potluck/EventTableViewCell.swift": [1571741936, 712428780]
+  "/Users/danielmorales/CSUMB/Potluck/Potluck/ViewController.swift": [1571877973, 455244707]
+  "/Users/danielmorales/CSUMB/Potluck/Potluck/AddEventViewController.swift": [1571745403, 217887904]
+  "/Users/danielmorales/CSUMB/Potluck/Potluck/PlanningViewController.swift": [1571808633, 725861209]
+  "/Users/danielmorales/CSUMB/Potluck/Potluck/MenuViewController.swift": [1571741936, 712884588]
+  "/Users/danielmorales/CSUMB/Potluck/Potluck/ItemCollectionViewCell.swift": [1571805097, 7491138]
+  "/Users/danielmorales/CSUMB/Potluck/Potluck/AppDelegate.swift": [1571787281, 905933134]
+  "/Users/danielmorales/CSUMB/Potluck/Potluck/Event.swift": [1571790002, 689250882]
