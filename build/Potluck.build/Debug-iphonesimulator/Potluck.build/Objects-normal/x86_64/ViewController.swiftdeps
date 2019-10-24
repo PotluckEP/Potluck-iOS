@@ -18,7 +18,7 @@ depends-top-level:
 - !private "Database"
 - "DatabaseReference"
 - "Event"
-- !private "EventTableViewCell"
+- !private "EventViewCell"
 - "IndexPath"
 - "Int"
 - !private "PlanningViewController"
@@ -315,7 +315,7 @@ depends-member:
 - ["SQ", "viewForZoomingInScrollView"]
 - !private ["7Potluck5EventC", "init"]
 - !private ["7Potluck5EventC", "name"]
-- !private ["7Potluck18EventTableViewCellC", "nameTextView"]
+- !private ["7Potluck13EventViewCellC", "nameTextView"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
@@ -468,7 +468,7 @@ depends-member:
 - !private ["So8NSObjectC", "Database"]
 - ["So8NSObjectC", "DatabaseReference"]
 - ["So8NSObjectC", "Event"]
-- !private ["So8NSObjectC", "EventTableViewCell"]
+- !private ["So8NSObjectC", "EventViewCell"]
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
 - !private ["So8NSObjectC", "PlanningViewController"]
@@ -805,7 +805,7 @@ depends-member:
 - !private ["So11UIResponderC", "Database"]
 - ["So11UIResponderC", "DatabaseReference"]
 - ["So11UIResponderC", "Event"]
-- !private ["So11UIResponderC", "EventTableViewCell"]
+- !private ["So11UIResponderC", "EventViewCell"]
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
 - !private ["So11UIResponderC", "PlanningViewController"]
@@ -1122,7 +1122,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "Database"]
 - ["So16UIViewControllerC", "DatabaseReference"]
 - ["So16UIViewControllerC", "Event"]
-- !private ["So16UIViewControllerC", "EventTableViewCell"]
+- !private ["So16UIViewControllerC", "EventViewCell"]
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
 - !private ["So16UIViewControllerC", "PlanningViewController"]
@@ -1167,7 +1167,7 @@ depends-member:
 - !private ["7Potluck14ViewControllerC", "Database"]
 - ["7Potluck14ViewControllerC", "DatabaseReference"]
 - ["7Potluck14ViewControllerC", "Event"]
-- !private ["7Potluck14ViewControllerC", "EventTableViewCell"]
+- !private ["7Potluck14ViewControllerC", "EventViewCell"]
 - ["7Potluck14ViewControllerC", "IndexPath"]
 - ["7Potluck14ViewControllerC", "Int"]
 - !private ["7Potluck14ViewControllerC", "PlanningViewController"]
@@ -1360,7 +1360,7 @@ depends-nominal:
 - "SE"
 - "SQ"
 - !private "7Potluck5EventC"
-- !private "7Potluck18EventTableViewCellC"
+- !private "7Potluck13EventViewCellC"
 - "s25ExpressibleByArrayLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s23ExpressibleByNilLiteralP"

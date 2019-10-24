@@ -247,8 +247,8 @@ SWIFT_CLASS("_TtC7Potluck5Event")
 
 @class UILabel;
 
-SWIFT_CLASS("_TtC7Potluck18EventTableViewCell")
-@interface EventTableViewCell : UITableViewCell
+SWIFT_CLASS("_TtC7Potluck13EventViewCell")
+@interface EventViewCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameTextView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dateTextView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified locationTextView;
