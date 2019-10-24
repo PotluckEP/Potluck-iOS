@@ -33,7 +33,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         // Getting the events from the user
         ref.child("users/f0dsfjdf0sd/events").observeSingleEvent(of: .value, with: { (snapshot) in
-            
+            print(snapshot)
             let eventsId = snapshot.value as! [String: String]
             
             for (id, rank) in eventsId { // Getting the events information

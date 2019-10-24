@@ -1,6 +1,6 @@
 //
 //  EventTableViewCell.swift
-//  
+//
 //
 //  Created by Daniel Morales on 10/22/19.
 //

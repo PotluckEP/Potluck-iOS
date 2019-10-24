@@ -94,7 +94,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="tableview" destination="wb9-ba-072" id="PFE-zm-y9c"/>
+                        <outlet property="tableview" destination="wb9-ba-072" id="kDD-X1-cff"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
