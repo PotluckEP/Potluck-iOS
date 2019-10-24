@@ -22,7 +22,7 @@ class PlanningViewController: UIViewController {
         super.viewDidLoad()
         ref = Database.database().reference()
         
-        //fetchPlanning();
+        fetchPlanning();
     }
     
     func fetchPlanning(){

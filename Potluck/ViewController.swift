@@ -73,14 +73,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-//        let cell = sender as! UITableViewCell
-//        let indexPath = tableview.indexPath(for: cell)!
-//        let event = events[indexPath.row]
-//
-//        let planningViewController = segue.destination as! PlanningViewController
-//
-//        planningViewController.event = event
-//
-//        tableview.deselectRow(at: indexPath, animated: true)
+        if segue.destination is PlanningViewController{
+            let cell = sender as! UITableViewCell
+            let indexPath = tableview.indexPath(for: cell)!
+            let event = events[indexPath.row]
+
+            let planningViewController = segue.destination as! PlanningViewController
+
+            planningViewController.event = event
+
+            tableview.deselectRow(at: indexPath, animated: true)
+        }
+    
     }
 }
