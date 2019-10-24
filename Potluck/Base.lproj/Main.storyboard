@@ -55,6 +55,7 @@
                                             <outlet property="dateTextView" destination="2Wf-0R-qOS" id="YEV-9X-4vY"/>
                                             <outlet property="locationTextView" destination="N4g-Au-nUg" id="9a3-j5-7Tq"/>
                                             <outlet property="nameTextView" destination="4Ts-Nw-iTm" id="21N-y2-2u7"/>
+                                            <segue destination="T5K-ep-BNt" kind="show" id="uyw-a6-WI9"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -453,4 +454,7 @@
         <image name="menu" width="24" height="24"/>
         <image name="profile" width="24" height="24"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="uyw-a6-WI9"/>
+    </inferredMetricsTieBreakers>
 </document>
