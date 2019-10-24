@@ -9,6 +9,9 @@ target 'Potluck' do
 
   pod 'Firebase/Core'
   pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
+  pod 'FBSDKLoginKit'
 
   target 'PotluckTests' do
     inherit! :search_paths

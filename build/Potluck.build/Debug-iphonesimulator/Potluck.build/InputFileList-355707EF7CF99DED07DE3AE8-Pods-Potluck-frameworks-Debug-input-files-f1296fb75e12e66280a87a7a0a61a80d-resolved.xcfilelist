@@ -1,4 +1,9 @@
 /Users/danielmorales/CSUMB/Potluck/Pods/Target Support Files/Pods-Potluck/Pods-Potluck-frameworks.sh
+/Users/danielmorales/CSUMB/Potluck/build/Debug-iphonesimulator/AppAuth/AppAuth.framework
+/Users/danielmorales/CSUMB/Potluck/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework
+/Users/danielmorales/CSUMB/Potluck/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework
+/Users/danielmorales/CSUMB/Potluck/build/Debug-iphonesimulator/GTMAppAuth/GTMAppAuth.framework
+/Users/danielmorales/CSUMB/Potluck/build/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework
 /Users/danielmorales/CSUMB/Potluck/build/Debug-iphonesimulator/GoogleUtilities/GoogleUtilities.framework
 /Users/danielmorales/CSUMB/Potluck/build/Debug-iphonesimulator/leveldb-library/leveldb.framework
 /Users/danielmorales/CSUMB/Potluck/build/Debug-iphonesimulator/nanopb/nanopb.framework

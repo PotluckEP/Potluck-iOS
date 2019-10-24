@@ -181,6 +181,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreGraphics;
 @import Foundation;
 @import ObjectiveC;
 @import UIKit;
@@ -258,6 +259,13 @@ SWIFT_CLASS("_TtC7Potluck18EventTableViewCell")
 @end
 
 
+SWIFT_CLASS("_TtC7Potluck22ItemCollectionViewCell")
+@interface ItemCollectionViewCell : UICollectionViewCell
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC7Potluck18MenuViewController")
 @interface MenuViewController : UITableViewController
 - (void)viewDidLoad;
@@ -266,10 +274,13 @@ SWIFT_CLASS("_TtC7Potluck18MenuViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImageView;
 
 SWIFT_CLASS("_TtC7Potluck22PlanningViewController")
 @interface PlanningViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified viewTitle;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified itemTextView;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified personInChangeImg;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified personInChargeTextView;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;

@@ -6,4 +6,8 @@
 //  Copyright © 2019 Jessica Rios. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class EventCategory: NSObject{
+    var owner: String!
+}
