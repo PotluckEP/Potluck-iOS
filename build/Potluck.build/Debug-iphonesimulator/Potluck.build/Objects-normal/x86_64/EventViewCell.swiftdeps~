@@ -7,10 +7,14 @@ provides-member:
 - ["7Potluck13EventViewCellC", ""]
 provides-dynamic-lookup:
 - "awakeFromNib"
+- "dateTextView"
+- "locationTextView"
+- "nameTextView"
 - "setSelected"
 depends-top-level:
 - "Bool"
 - "EventViewCell"
+- "UILabel"
 - "UITableViewCell"
 depends-member:
 - ["So15CALayerDelegateP", ""]
@@ -34,9 +38,13 @@ depends-member:
 - !private ["SQ", "init"]
 - !private ["SQ", "setSelected"]
 - ["7Potluck13EventViewCellC", "Bool"]
+- ["7Potluck13EventViewCellC", "UILabel"]
 - ["7Potluck13EventViewCellC", "awakeFromNib"]
+- ["7Potluck13EventViewCellC", "dateTextView"]
 - ["7Potluck13EventViewCellC", "deinit"]
 - ["7Potluck13EventViewCellC", "init"]
+- ["7Potluck13EventViewCellC", "locationTextView"]
+- ["7Potluck13EventViewCellC", "nameTextView"]
 - ["7Potluck13EventViewCellC", "setSelected"]
 - ["SH", ""]
 - !private ["SH", "awakeFromNib"]
@@ -47,8 +55,12 @@ depends-member:
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "setSelected"]
 - ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "awakeFromNib"]
+- ["So8NSObjectC", "dateTextView"]
 - ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "locationTextView"]
+- ["So8NSObjectC", "nameTextView"]
 - ["So8NSObjectC", "setSelected"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "awakeFromNib"]
@@ -99,17 +111,25 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "setSelected"]
 - ["So11UIResponderC", "Bool"]
+- ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "awakeFromNib"]
+- ["So11UIResponderC", "dateTextView"]
 - ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "locationTextView"]
+- ["So11UIResponderC", "nameTextView"]
 - ["So11UIResponderC", "setSelected"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "awakeFromNib"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "setSelected"]
 - ["So15UITableViewCellC", "Bool"]
+- ["So15UITableViewCellC", "UILabel"]
 - ["So15UITableViewCellC", ""]
 - ["So15UITableViewCellC", "awakeFromNib"]
+- ["So15UITableViewCellC", "dateTextView"]
 - ["So15UITableViewCellC", "init"]
+- ["So15UITableViewCellC", "locationTextView"]
+- ["So15UITableViewCellC", "nameTextView"]
 - ["So15UITableViewCellC", "setSelected"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "awakeFromNib"]
@@ -120,8 +140,12 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "setSelected"]
 - ["So6UIViewC", "Bool"]
+- ["So6UIViewC", "UILabel"]
 - ["So6UIViewC", "awakeFromNib"]
+- ["So6UIViewC", "dateTextView"]
 - ["So6UIViewC", "init"]
+- ["So6UIViewC", "locationTextView"]
+- ["So6UIViewC", "nameTextView"]
 - ["So6UIViewC", "setSelected"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "awakeFromNib"]
@@ -1437,4 +1461,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "b595b08c2ca4113341c589230ac2cf86"
+interface-hash: "b576047781bc602b48e0c794affad6a0"

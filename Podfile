@@ -12,6 +12,7 @@ target 'Potluck' do
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
   pod 'FBSDKLoginKit'
+  pod 'RYFloatingInput'
 
   target 'PotluckTests' do
     inherit! :search_paths
