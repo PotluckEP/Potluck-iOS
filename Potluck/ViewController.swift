@@ -66,8 +66,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableview.dequeueReusableCell(withIdentifier: "EventViewCell") as! EventViewCell
         
         cell.nameTextView.text = self.events[indexPath.row].name
-        //cell.dateTextView.text = self.events[indexPath.row].date
-       // cell.locationTextView.text = self.events[indexPath.row].location
+        cell.dateTextView.text = self.events[indexPath.row].date
+        cell.locationTextView.text = self.events[indexPath.row].location
         return cell
     }
     

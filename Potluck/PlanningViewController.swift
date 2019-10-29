@@ -37,6 +37,7 @@ class PlanningViewController: UIViewController {
             let user = snapshot.value as! [String: Any]
             self.personInChargeTextView.text = user["name"] as! String
         })
+        
     }
 
     /*
