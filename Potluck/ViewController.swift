@@ -12,6 +12,7 @@ import FirebaseDatabase
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let transition = SlideInTransition()
+    var topView: UIView?
     let user = "f0dsfjdf0sd"
     var events = [Event]()
     var ref: DatabaseReference!
@@ -19,11 +20,40 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tableview: UITableView!
     
     @IBAction func tapMenu(_ sender: UIBarButtonItem) {
-        guard let menuViewController = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") else { return }
+        guard let menuViewController = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as? MenuViewController else { return }
+        menuViewController.tapMenuType = { menuType in
+            self.transitionToNew(menuType) }
         menuViewController.modalPresentationStyle = .overCurrentContext
         menuViewController.transitioningDelegate = self
         present(menuViewController, animated: true)
         
+    }
+    
+    func transitionToNew(_ menuType: MenuType) {
+        let title = String(describing: menuType).capitalized
+        self.title = title;
+        
+        topView?.removeFromSuperview()
+        switch menuType {
+        case .profile:
+            let view = UIView()
+            view.backgroundColor = .white
+            view.frame = self.view.bounds
+            self.view.addSubview(view)
+            self.topView = view
+        case .events:
+            let view = UIView()
+            view.backgroundColor = .white
+            view.frame = self.view.bounds
+            self.view.addSubview(view)
+            self.topView = view
+        case .logOut:
+            let view = UIView()
+            view.backgroundColor = .white
+            view.frame = self.view.bounds
+            self.view.addSubview(view)
+            self.topView = view
+        }
     }
     
     override func viewDidLoad() {
