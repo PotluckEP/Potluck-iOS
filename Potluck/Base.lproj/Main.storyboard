@@ -78,7 +78,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Menu" image="menu" id="HBd-sC-lTj">
                             <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="wXd-IB-8nU" kind="show" id="sPY-ag-Mzd"/>
+                                <action selector="tapMenu:" destination="BYZ-38-t0r" id="noi-nZ-9nN"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Eoe-BW-6YC">
@@ -284,7 +284,7 @@
         <!--Menu View Controller-->
         <scene sceneID="odK-zl-PXF">
             <objects>
-                <tableViewController id="wXd-IB-8nU" customClass="MenuViewController" customModule="Potluck" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MenuViewController" id="wXd-IB-8nU" customClass="MenuViewController" customModule="Potluck" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="YD6-u8-nPZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

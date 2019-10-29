@@ -15,6 +15,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var tableview: UITableView!
     
+    @IBAction func tapMenu(_ sender: UIBarButtonItem) {
+        guard let menuViewController = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") else { return }
+        present(menuViewController, animated: true)
+        
+    }
+    
     let user = "f0dsfjdf0sd"
     var events = [Event]()
     
