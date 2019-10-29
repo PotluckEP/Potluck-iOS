@@ -206,6 +206,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class UIDatePicker;
 @class UITouch;
 @class UIEvent;
+@class UIStoryboardSegue;
 @class NSBundle;
 @class NSCoder;
 
@@ -219,6 +220,7 @@ SWIFT_CLASS("_TtC7Potluck22AddEventViewController")
 - (IBAction)StartPlanningButtonClicked:(id _Nonnull)sender;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -287,7 +289,6 @@ SWIFT_CLASS("_TtC7Potluck22PlanningViewController")
 @end
 
 @class UITableView;
-@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC7Potluck14ViewController")
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>

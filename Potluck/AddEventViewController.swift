@@ -9,6 +9,7 @@
 
 import UIKit
 import FirebaseDatabase
+import RYFloatingInput
 
 class AddEventViewController: UIViewController, UITextFieldDelegate {
     
@@ -19,8 +20,11 @@ class AddEventViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var descriptionTextView: UITextField!
     @IBOutlet weak var dateTimePicker: UIDatePicker!
     
+    var event:Event!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.eventNameTextView.delegate = self
         self.locationTextView.delegate = self
         self.descriptionTextView.delegate = self
@@ -35,11 +39,13 @@ class AddEventViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
         
         
+        let planning = ["charge": "f0dsfjdf0sd", "name": "Creator"]
         let values = ["name": eventNameTextView.text,
                       "location": locationTextView.text,
                       "date": dateTxt,
                       "info" : descriptionTextView.text,
-                      "owner" : "f0dsfjdf0sd"] as [String : Any]
+                      "owner" : "f0dsfjdf0sd",
+                      "planning" : planning ] as [String : Any]
         
         let reference = ref.child("events").childByAutoId()
         let eventId = reference.key
@@ -48,12 +54,15 @@ class AddEventViewController: UIViewController, UITextFieldDelegate {
         self.ref.child("users/f0dsfjdf0sd/events").observeSingleEvent(of: .value, with: { (snapshot) in
             
             var fixThisLater = snapshot.value as! [String: String]
+            print(fixThisLater)
             fixThisLater[eventId!] = "owner"
+            print(fixThisLater)
+            
             self.ref.child("users/f0dsfjdf0sd/events").updateChildValues(fixThisLater)
             
-        }, withCancel: nil)
+        })
         
-        
+        self.event = Event(id: eventId, name: eventNameTextView.text as! String, location: locationTextView.text as! String, date: dateTxt as! String, info: descriptionTextView.text as! String, owner: "f0dsfjdf0sd" as! String, rank: "owener", path: "events/" + eventId! + "/planning");
     }
 
     // Hide the keyboard if users touches out side the keyboard
@@ -67,5 +76,14 @@ class AddEventViewController: UIViewController, UITextFieldDelegate {
         locationTextView.resignFirstResponder()
         descriptionTextView.resignFirstResponder()
         return true;
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.destination is PlanningViewController{
+            let planningViewController = segue.destination as! PlanningViewController
+            planningViewController.event = event
+        }
+        
     }
 }

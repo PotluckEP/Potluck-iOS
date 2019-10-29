@@ -28,13 +28,12 @@ class PlanningViewController: UIViewController {
     func fetchPlanning(){
         
         self.ref.child(event.path).observeSingleEvent(of: .value) { (snapshot) in
-            
             let items = snapshot.value as! [String: Any]
             self.itemTextView.text = items["name"] as! String
         }
         
+        print(event.owner)
         self.ref.child("users").child(event.owner).observeSingleEvent(of: .value, with: { (snapshot) in
-            
             let user = snapshot.value as! [String: Any]
             self.personInChargeTextView.text = user["name"] as! String
         })

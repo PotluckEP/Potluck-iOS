@@ -1,0 +1,11 @@
+framework module RYFloatingInput {
+  umbrella header "RYFloatingInput-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module RYFloatingInput.Swift {
+    header "RYFloatingInput-Swift.h"
+    requires objc
+}
