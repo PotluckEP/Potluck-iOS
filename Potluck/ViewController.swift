@@ -11,18 +11,20 @@ import FirebaseDatabase
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    let transition = SlideInTransition()
+    let user = "f0dsfjdf0sd"
+    var events = [Event]()
     var ref: DatabaseReference!
     
     @IBOutlet weak var tableview: UITableView!
     
     @IBAction func tapMenu(_ sender: UIBarButtonItem) {
         guard let menuViewController = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") else { return }
+        menuViewController.modalPresentationStyle = .overCurrentContext
+        menuViewController.transitioningDelegate = self
         present(menuViewController, animated: true)
         
     }
-    
-    let user = "f0dsfjdf0sd"
-    var events = [Event]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,5 +93,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             tableview.deselectRow(at: indexPath, animated: true)
         }
     
+    }
+}
+
+
+extension ViewController: UIViewControllerTransitioningDelegate{
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.isPresenting = true
+        return transition
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.isPresenting = false
+        return transition
     }
 }
