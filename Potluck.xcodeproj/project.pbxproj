@@ -15,7 +15,6 @@
 		087C133A235B075A003422E2 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C1339235B075A003422E2 /* AddEventViewController.swift */; };
 		31E9B118B081FCE19ACDE41F /* Pods_PotluckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE91B7512785F1ADB107482F /* Pods_PotluckTests.framework */; };
 		3C05E1A0BB8DEFC4DF990409 /* Pods_Potluck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21195E840A2DCF88948DF148 /* Pods_Potluck.framework */; };
-		4539D7872361473C00144FCC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4539D7862361473C00144FCC /* GoogleService-Info.plist */; };
 		4560ABF9235AE3AB0034219F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4560ABF8235AE3AB0034219F /* AppDelegate.swift */; };
 		4560ABFB235AE3AB0034219F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4560ABFA235AE3AB0034219F /* ViewController.swift */; };
 		4560ABFE235AE3AB0034219F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4560ABFC235AE3AB0034219F /* Main.storyboard */; };
@@ -23,6 +22,8 @@
 		4560AC03235AE3AC0034219F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4560AC01235AE3AC0034219F /* LaunchScreen.storyboard */; };
 		4560AC0E235AE3AD0034219F /* PotluckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4560AC0D235AE3AD0034219F /* PotluckTests.swift */; };
 		4560AC19235AE3AD0034219F /* PotluckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4560AC18235AE3AD0034219F /* PotluckUITests.swift */; };
+		AAD86DB92367C92E007BFFBE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD86DB82367C92E007BFFBE /* SignInViewController.swift */; };
+		AAD86DBB2367DB49007BFFBE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAD86DBA2367DB49007BFFBE /* GoogleService-Info.plist */; };
 		E950AA0AF5E1FB7420E605D4 /* Pods_Potluck_PotluckUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B712D5657FECEEF94022C1 /* Pods_Potluck_PotluckUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +52,6 @@
 		087C1337235AFA43003422E2 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		087C1339235B075A003422E2 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		21195E840A2DCF88948DF148 /* Pods_Potluck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Potluck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4539D7862361473C00144FCC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4560ABF5235AE3AB0034219F /* Potluck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Potluck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4560ABF8235AE3AB0034219F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4560ABFA235AE3AB0034219F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +70,8 @@
 		5355BFE86E5469A9F1635FFA /* Pods-PotluckTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotluckTests.debug.xcconfig"; path = "Target Support Files/Pods-PotluckTests/Pods-PotluckTests.debug.xcconfig"; sourceTree = "<group>"; };
 		85C39E56EE9D9C4C061AEE72 /* Pods-Potluck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Potluck.release.xcconfig"; path = "Target Support Files/Pods-Potluck/Pods-Potluck.release.xcconfig"; sourceTree = "<group>"; };
 		9EBF08AAD2A7EF9EA4354D6A /* Pods-Potluck-PotluckUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Potluck-PotluckUITests.release.xcconfig"; path = "Target Support Files/Pods-Potluck-PotluckUITests/Pods-Potluck-PotluckUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AAD86DB82367C92E007BFFBE /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		AAD86DBA2367DB49007BFFBE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AE91B7512785F1ADB107482F /* Pods_PotluckTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PotluckTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7C563F476871B962C93D804 /* Pods-Potluck-PotluckUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Potluck-PotluckUITests.debug.xcconfig"; path = "Target Support Files/Pods-Potluck-PotluckUITests/Pods-Potluck-PotluckUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F17B393FFC03ED2AD9331A61 /* Pods-PotluckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotluckTests.release.xcconfig"; path = "Target Support Files/Pods-PotluckTests/Pods-PotluckTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,9 +153,10 @@
 				087C1339235B075A003422E2 /* AddEventViewController.swift */,
 				08015B49235C7824000EFEB0 /* Event.swift */,
 				085462C3235F1FCB00AA0E4D /* PlanningViewController.swift */,
+				AAD86DBA2367DB49007BFFBE /* GoogleService-Info.plist */,
 				081A577C23600F290037877C /* ItemCollectionViewCell.swift */,
-				4539D7862361473C00144FCC /* GoogleService-Info.plist */,
 				0849539323622AE300128BCB /* EventViewCell.swift */,
+				AAD86DB82367C92E007BFFBE /* SignInViewController.swift */,
 			);
 			path = Potluck;
 			sourceTree = "<group>";
@@ -298,7 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4560AC03235AE3AC0034219F /* LaunchScreen.storyboard in Resources */,
-				4539D7872361473C00144FCC /* GoogleService-Info.plist in Resources */,
+				AAD86DBB2367DB49007BFFBE /* GoogleService-Info.plist in Resources */,
 				4560AC00235AE3AC0034219F /* Assets.xcassets in Resources */,
 				4560ABFE235AE3AB0034219F /* Main.storyboard in Resources */,
 			);
@@ -467,6 +470,7 @@
 				085462C4235F1FCB00AA0E4D /* PlanningViewController.swift in Sources */,
 				0849539423622AE300128BCB /* EventViewCell.swift in Sources */,
 				087C1338235AFA43003422E2 /* MenuViewController.swift in Sources */,
+				AAD86DB92367C92E007BFFBE /* SignInViewController.swift in Sources */,
 				081A577D23600F290037877C /* ItemCollectionViewCell.swift in Sources */,
 				4560ABF9235AE3AB0034219F /* AppDelegate.swift in Sources */,
 				08015B4A235C7824000EFEB0 /* Event.swift in Sources */,
