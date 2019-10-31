@@ -36,31 +36,35 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
     func fetchPlanning(){
         
         self.ref.child(event.path).observeSingleEvent(of: .value) { (snapshot) in
-            let item = snapshot.value as! [String: Any]
-            self.itemTextView.text = item["name"] as? String
+            var item = snapshot.value as! [String: Any]
             
-            for (itemName, plan) in item  {
+            self.itemTextView.text = item["name"] as? String
+            item.removeValue(forKey: "name");
+            
+            self.ref.child("users").child(item["charge"] as! String).observeSingleEvent(of: .value, with: { (snapshot) in
+                let user = snapshot.value as! [String: Any]
+                self.personInChargeTextView.text = user["name"] as! String
+            })
+            item.removeValue(forKey: "charge");
+            
+            for (itemId, plan) in item  {
                 
-                if let p = plan as? String {
+                self.ref.child(self.event.path).child(itemId).observeSingleEvent(of: .value) { (snapshot2) in
                     
-                }else{
                     
+                    let details = snapshot2.value as! [String: Any]
+                    
+                    self.items.append(Item(id: "", name: details["name"] as! String, person: "fix", image: "none", details: "none", owner: "none", path: self.event.path + "/" + itemId))
+                    
+                    self.itemsCollection.reloadData();
                 }
-                
-                self.items.append(Item(id: "", name: itemName, person: "fix", image: "none", details: "none", owner: "none", path: self.event.path + "/" + itemName))
             }
             
-            self.itemsCollection.reloadData();
         }
         
-        self.ref.child("users").child(event.owner).observeSingleEvent(of: .value, with: { (snapshot) in
-            let user = snapshot.value as! [String: Any]
-            self.personInChargeTextView.text = user["name"] as! String
-        })
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(items.count)
         return items.count
     }
     
@@ -68,9 +72,9 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
         let cell = itemsCollection.dequeueReusableCell(withReuseIdentifier: "ItemCollectionViewCell", for: indexPath) as! ItemCollectionViewCell
         
         cell.ItemName.text = self.items[indexPath.item].name;
+        print(self.items[indexPath.item].person)
         cell.person.text = self.items[indexPath.item].person;
         
-        print(self.items[indexPath.item].name)
         return cell
     }
 

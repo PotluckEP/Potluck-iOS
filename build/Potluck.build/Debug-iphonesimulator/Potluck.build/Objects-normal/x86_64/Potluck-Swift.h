@@ -287,6 +287,12 @@ SWIFT_CLASS("_TtC7Potluck18MenuViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC7Potluck15PlanningService")
+@interface PlanningService : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UICollectionView;
 
 SWIFT_CLASS("_TtC7Potluck22PlanningViewController")

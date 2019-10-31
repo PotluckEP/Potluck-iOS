@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		08015B4A235C7824000EFEB0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08015B49235C7824000EFEB0 /* Event.swift */; };
 		081A577D23600F290037877C /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081A577C23600F290037877C /* ItemCollectionViewCell.swift */; };
+		0820BE83236AE07A00BE9B4C /* PlanningService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0820BE82236AE07A00BE9B4C /* PlanningService.swift */; };
 		0849539423622AE300128BCB /* EventViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0849539323622AE300128BCB /* EventViewCell.swift */; };
 		085462C4235F1FCB00AA0E4D /* PlanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085462C3235F1FCB00AA0E4D /* PlanningViewController.swift */; };
 		087C1338235AFA43003422E2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C1337235AFA43003422E2 /* MenuViewController.swift */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		08015B49235C7824000EFEB0 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		081A577C23600F290037877C /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		0820BE82236AE07A00BE9B4C /* PlanningService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningService.swift; sourceTree = "<group>"; };
 		0849539323622AE300128BCB /* EventViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewCell.swift; sourceTree = "<group>"; };
 		085462C3235F1FCB00AA0E4D /* PlanningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningViewController.swift; sourceTree = "<group>"; };
 		087C1337235AFA43003422E2 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				4539D7862361473C00144FCC /* GoogleService-Info.plist */,
 				0849539323622AE300128BCB /* EventViewCell.swift */,
 				08DB2CFB23682B8E00754DBD /* item.swift */,
+				0820BE82236AE07A00BE9B4C /* PlanningService.swift */,
 			);
 			path = Potluck;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				087C1338235AFA43003422E2 /* MenuViewController.swift in Sources */,
 				081A577D23600F290037877C /* ItemCollectionViewCell.swift in Sources */,
 				4560ABF9235AE3AB0034219F /* AppDelegate.swift in Sources */,
+				0820BE83236AE07A00BE9B4C /* PlanningService.swift in Sources */,
 				08015B4A235C7824000EFEB0 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

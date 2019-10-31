@@ -1,14 +1,14 @@
 version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
 options: "55e460570d223e1b8db7665dc8b9a8e5"
-build_time: [1572505934, 854386000]
+build_time: [1572516529, 208069000]
 inputs:
-  "/Users/danielmorales/CSUMB/Potluck/Potluck/ViewController.swift": [1572504395, 927934849]
-  "/Users/danielmorales/CSUMB/Potluck/Potluck/item.swift": [1572504395, 928153888]
-  "/Users/danielmorales/CSUMB/Potluck/Potluck/AddEventViewController.swift": [1572504395, 922494142]
-  "/Users/danielmorales/CSUMB/Potluck/Potluck/PlanningViewController.swift": [1572504395, 927802253]
+  "/Users/danielmorales/CSUMB/Potluck/Potluck/ViewController.swift": [1572512498, 846880825]
+  "/Users/danielmorales/CSUMB/Potluck/Potluck/item.swift": [1572512498, 847132461]
+  "/Users/danielmorales/CSUMB/Potluck/Potluck/AddEventViewController.swift": [1572512498, 844069038]
+  "/Users/danielmorales/CSUMB/Potluck/Potluck/PlanningViewController.swift": [1572516528, 889614759]
   "/Users/danielmorales/CSUMB/Potluck/Potluck/EventViewCell.swift": [1572504395, 927078556]
   "/Users/danielmorales/CSUMB/Potluck/Potluck/MenuViewController.swift": [1572504395, 927682550]
-  "/Users/danielmorales/CSUMB/Potluck/Potluck/SignInViewController.swift": [1572505588, 562066613]
-  "/Users/danielmorales/CSUMB/Potluck/Potluck/ItemCollectionViewCell.swift": [1572504395, 927545948]
-  "/Users/danielmorales/CSUMB/Potluck/Potluck/AppDelegate.swift": [1572505588, 560717397]
+  "/Users/danielmorales/CSUMB/Potluck/Potluck/ItemCollectionViewCell.swift": [1572512498, 846381484]
+  "/Users/danielmorales/CSUMB/Potluck/Potluck/AppDelegate.swift": [1572507017, 958916553]
+  "/Users/danielmorales/CSUMB/Potluck/Potluck/PlanningService.swift": [1572515286, 635275116]
   "/Users/danielmorales/CSUMB/Potluck/Potluck/Event.swift": [1572504395, 926575531]
