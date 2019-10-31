@@ -28,6 +28,7 @@ class AddEventViewController: UIViewController, UITextFieldDelegate {
         self.eventNameTextView.delegate = self
         self.locationTextView.delegate = self
         self.descriptionTextView.delegate = self
+        
         ref = Database.database().reference()
     }
     
@@ -37,7 +38,6 @@ class AddEventViewController: UIViewController, UITextFieldDelegate {
         dateFormatter.dateFormat = "EEEE, MMM d, yyyy h:mm a"
         let dateTxt = dateFormatter.string(from: dateTimePicker.date);
         self.view.endEditing(true)
-        
         
         let planning = ["charge": "f0dsfjdf0sd", "name": "Creator"]
         let values = ["name": eventNameTextView.text,
@@ -53,12 +53,10 @@ class AddEventViewController: UIViewController, UITextFieldDelegate {
         
         self.ref.child("users/f0dsfjdf0sd/events").observeSingleEvent(of: .value, with: { (snapshot) in
             
-            var fixThisLater = snapshot.value as! [String: String]
-            print(fixThisLater)
-            fixThisLater[eventId!] = "owner"
-            print(fixThisLater)
+            var eventsList = snapshot.value as! [String: String]
+            eventsList[eventId!] = "owner"
             
-            self.ref.child("users/f0dsfjdf0sd/events").updateChildValues(fixThisLater)
+            self.ref.child("users/f0dsfjdf0sd/events").updateChildValues(eventsList)
             
         })
         

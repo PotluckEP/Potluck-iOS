@@ -6,9 +6,14 @@ provides-nominal:
 provides-member:
 - ["7Potluck22ItemCollectionViewCellC", ""]
 provides-dynamic-lookup:
+- "ItemName"
+- "itemImage"
+- "person"
 depends-top-level:
 - "ItemCollectionViewCell"
 - "UICollectionViewCell"
+- "UIImageView"
+- "UILabel"
 depends-member:
 - ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "init"]
@@ -22,11 +27,21 @@ depends-member:
 - !private ["SQ", "init"]
 - ["SH", ""]
 - !private ["SH", "init"]
+- ["7Potluck22ItemCollectionViewCellC", "ItemName"]
+- ["7Potluck22ItemCollectionViewCellC", "UIImageView"]
+- ["7Potluck22ItemCollectionViewCellC", "UILabel"]
 - ["7Potluck22ItemCollectionViewCellC", "deinit"]
 - ["7Potluck22ItemCollectionViewCellC", "init"]
+- ["7Potluck22ItemCollectionViewCellC", "itemImage"]
+- ["7Potluck22ItemCollectionViewCellC", "person"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "init"]
+- ["So8NSObjectC", "ItemName"]
+- ["So8NSObjectC", "UIImageView"]
+- ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "itemImage"]
+- ["So8NSObjectC", "person"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "init"]
 - ["7RxSwift18ReactiveCompatibleP", ""]
@@ -37,9 +52,19 @@ depends-member:
 - !private ["So12UIAppearanceP", "init"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "init"]
+- ["So24UICollectionReusableViewC", "ItemName"]
+- ["So24UICollectionReusableViewC", "UIImageView"]
+- ["So24UICollectionReusableViewC", "UILabel"]
 - ["So24UICollectionReusableViewC", "init"]
+- ["So24UICollectionReusableViewC", "itemImage"]
+- ["So24UICollectionReusableViewC", "person"]
+- ["So20UICollectionViewCellC", "ItemName"]
+- ["So20UICollectionViewCellC", "UIImageView"]
+- ["So20UICollectionViewCellC", "UILabel"]
 - ["So20UICollectionViewCellC", ""]
 - ["So20UICollectionViewCellC", "init"]
+- ["So20UICollectionViewCellC", "itemImage"]
+- ["So20UICollectionViewCellC", "person"]
 - ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "init"]
 - ["So13UIDynamicItemP", ""]
@@ -54,14 +79,24 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "init"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- ["So11UIResponderC", "ItemName"]
+- ["So11UIResponderC", "UIImageView"]
+- ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "itemImage"]
+- ["So11UIResponderC", "person"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "init"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "init"]
+- ["So6UIViewC", "ItemName"]
+- ["So6UIViewC", "UIImageView"]
+- ["So6UIViewC", "UILabel"]
 - ["So6UIViewC", "init"]
+- ["So6UIViewC", "itemImage"]
+- ["So6UIViewC", "person"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
@@ -1389,4 +1424,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "7f026e2f8563a6a91294f9c69ecd9609"
+interface-hash: "1a17edb69db9dbf7eaa8919971ec8445"
