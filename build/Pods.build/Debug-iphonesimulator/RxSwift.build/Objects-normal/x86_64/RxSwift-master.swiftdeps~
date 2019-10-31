@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
 options: "691c46f244b203f93fc7fd76b2bc229f"
-build_time: [1572335696, 331235000]
+build_time: [1572336658, 37609000]
 inputs:
   "/Users/danielmorales/CSUMB/Potluck/Pods/RxSwift/RxSwift/Observables/AddRef.swift": [1572333974, 739997158]
   "/Users/danielmorales/CSUMB/Potluck/Pods/RxSwift/RxSwift/Observables/Amb.swift": [1572333974, 740145982]
