@@ -41,17 +41,12 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
             
             for (itemName, plan) in item  {
                 
-                let name: String;
+                if let p = plan as? String {
+                    
+                }else{
+                    
+                }
                 
-                //fix get id of person in charge
-                //let id = plan["charge"] as! String
-                
-                // repeated code
-//                self.ref.child("users").child(id).observeSingleEvent(of: .value, with: { (snapshot2) in
-//                    let user = snapshot.value as! [String: Any]
-//                    name = user["name"] as! String
-//                })
-//
                 self.items.append(Item(id: "", name: itemName, person: "fix", image: "none", details: "none", owner: "none", path: self.event.path + "/" + itemName))
             }
             

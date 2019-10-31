@@ -74,7 +74,7 @@
                                             <outlet property="dateTextView" destination="N4g-Au-nUg" id="RF9-BK-km7"/>
                                             <outlet property="locationTextView" destination="2Wf-0R-qOS" id="QRu-8Q-kbt"/>
                                             <outlet property="nameTextView" destination="4Ts-Nw-iTm" id="21N-y2-2u7"/>
-                                            <segue destination="T5K-ep-BNt" kind="show" id="uyw-a6-WI9"/>
+                                            <segue destination="T5K-ep-BNt" kind="show" id="C42-Ug-89k"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -115,7 +115,7 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="127.90178571428571"/>
         </scene>
-        <!--Planning View Controller-->
+        <!--Item-->
         <scene sceneID="PGB-r1-53v">
             <objects>
                 <viewController id="T5K-ep-BNt" customClass="PlanningViewController" customModule="Potluck" customModuleProvider="target" sceneMemberID="viewController">
@@ -219,6 +219,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="I0E-DX-6wY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="HIk-Y1-Pz6"/>
                     <navigationItem key="navigationItem" id="IP9-A7-Cho"/>
                     <connections>
                         <outlet property="itemTextView" destination="UAH-yO-05W" id="iZl-uT-OEc"/>
@@ -229,7 +230,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dhr-MG-cvA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1469.5652173913045" y="854.46428571428567"/>
+            <point key="canvasLocation" x="1630" y="854"/>
         </scene>
         <!--Add Event View Controller-->
         <scene sceneID="YAd-y4-GYQ">
@@ -497,6 +498,6 @@
         <image name="profile" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uyw-a6-WI9"/>
+        <segue reference="C42-Ug-89k"/>
     </inferredMetricsTieBreakers>
 </document>

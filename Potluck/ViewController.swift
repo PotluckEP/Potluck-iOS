@@ -84,6 +84,5 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
             tableview.deselectRow(at: indexPath, animated: true)
         }
-    
     }
 }
