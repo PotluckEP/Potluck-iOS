@@ -22,18 +22,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         ref = Database.database().reference()
-        
-        // adding event to table
-        //ref.child("users/f0dsfjdf0sd/events").observe(.childAdded) { (snapshot) in
-            self.fetchEvent()
-        //}
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.fetchEvent()
+    }
     func fetchEvent(){
         
         // Getting the events from the user
         ref.child("users/f0dsfjdf0sd/events").observeSingleEvent(of: .value, with: { (snapshot) in
-            print(snapshot)
+            
+            self.events = []
             let eventsId = snapshot.value as! [String: String]
             
             for (id, rank) in eventsId { // Getting the events information
@@ -66,8 +66,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableview.dequeueReusableCell(withIdentifier: "EventViewCell") as! EventViewCell
         
         cell.nameTextView.text = self.events[indexPath.row].name
-        //cell.dateTextView.text = self.events[indexPath.row].date
-       // cell.locationTextView.text = self.events[indexPath.row].location
+        cell.dateTextView.text = self.events[indexPath.row].date
+        cell.locationTextView.text = self.events[indexPath.row].location
         return cell
     }
     
@@ -84,6 +84,5 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
             tableview.deselectRow(at: indexPath, animated: true)
         }
-    
     }
 }
