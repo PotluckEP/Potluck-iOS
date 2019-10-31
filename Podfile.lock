@@ -126,7 +126,7 @@ DEPENDENCIES:
   - RYFloatingInput
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - AppAuth
     - FBSDKCoreKit
     - FBSDKLoginKit
@@ -178,7 +178,6 @@ SPEC CHECKSUMS:
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   RYFloatingInput: 4034e3c12a8235a7d7e0a97d69ae05e906397b22
 
-PODFILE CHECKSUM: ece14dd0a20b4809d0b0c850130343e68bc3bcc1
+PODFILE CHECKSUM: fdf7ab2aab56a0b701c4821362e727c7764aa8bc
 
-
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.4
