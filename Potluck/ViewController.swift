@@ -5,7 +5,7 @@
 //  Created by Jessica Rios on 10/18/19.
 //  Copyright © 2019 Jessica Rios. All rights reserved.
 //
-//test
+
 import UIKit
 import FirebaseDatabase
 
@@ -22,18 +22,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         ref = Database.database().reference()
-        
-        // adding event to table
-        //ref.child("users/f0dsfjdf0sd/events").observe(.childAdded) { (snapshot) in
-            self.fetchEvent()
-        //}
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.fetchEvent()
+    }
     func fetchEvent(){
         
         // Getting the events from the user
         ref.child("users/f0dsfjdf0sd/events").observeSingleEvent(of: .value, with: { (snapshot) in
-            print(snapshot)
+            
+            self.events = []
             let eventsId = snapshot.value as! [String: String]
             
             for (id, rank) in eventsId { // Getting the events information

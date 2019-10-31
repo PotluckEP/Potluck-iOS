@@ -10,9 +10,11 @@ provides-dynamic-lookup:
 - "tableView"
 - "tableview"
 - "viewDidLoad"
+- "viewWillAppear"
 depends-top-level:
 - !private "+"
 - "AssignmentPrecedence"
+- "Bool"
 - !private "BooleanLiteralType"
 - "CastingPrecedence"
 - !private "Database"
@@ -110,6 +112,7 @@ depends-member:
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["s7CVarArgP", "viewForZooming"]
 - ["s7CVarArgP", "viewForZoomingInScrollView"]
+- !private ["s7CVarArgP", "viewWillAppear"]
 - !private ["Sl", "append"]
 - !private ["Sl", "count"]
 - !private ["Sl", "date"]
@@ -181,6 +184,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", "viewForZooming"]
 - ["s28CustomDebugStringConvertibleP", "viewForZoomingInScrollView"]
+- !private ["s28CustomDebugStringConvertibleP", "viewWillAppear"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "child"]
 - !private ["s17CustomReflectableP", "count"]
@@ -250,6 +254,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", "viewForZooming"]
 - ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
+- !private ["s23CustomStringConvertibleP", "viewWillAppear"]
 - !private ["So16FIRDataEventTypeV", "value"]
 - !private ["10Foundation12DataProtocolP", "append"]
 - !private ["10Foundation12DataProtocolP", "count"]
@@ -343,6 +348,7 @@ depends-member:
 - !private ["SQ", "viewDidLoad"]
 - ["SQ", "viewForZooming"]
 - ["SQ", "viewForZoomingInScrollView"]
+- !private ["SQ", "viewWillAppear"]
 - !private ["7Potluck5EventC", "date"]
 - !private ["7Potluck5EventC", "init"]
 - !private ["7Potluck5EventC", "location"]
@@ -432,6 +438,7 @@ depends-member:
 - !private ["SH", "viewDidLoad"]
 - ["SH", "viewForZooming"]
 - ["SH", "viewForZoomingInScrollView"]
+- !private ["SH", "viewWillAppear"]
 - !private ["10Foundation9IndexPathV", "row"]
 - !private ["SM", "append"]
 - !private ["SM", "count"]
@@ -487,6 +494,7 @@ depends-member:
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So8NSCodingP", "viewForZooming"]
 - ["So8NSCodingP", "viewForZoomingInScrollView"]
+- !private ["So8NSCodingP", "viewWillAppear"]
 - !private ["So26NSExtensionRequestHandlingP", "Database"]
 - ["So26NSExtensionRequestHandlingP", "Event"]
 - ["So26NSExtensionRequestHandlingP", ""]
@@ -521,6 +529,8 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", "viewForZooming"]
 - ["So26NSExtensionRequestHandlingP", "viewForZoomingInScrollView"]
+- !private ["So26NSExtensionRequestHandlingP", "viewWillAppear"]
+- ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "Database"]
 - ["So8NSObjectC", "DatabaseReference"]
 - ["So8NSObjectC", "Event"]
@@ -582,6 +592,7 @@ depends-member:
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
+- ["So8NSObjectC", "viewWillAppear"]
 - !private ["So8NSObjectP", "Database"]
 - ["So8NSObjectP", "Event"]
 - ["So8NSObjectP", ""]
@@ -633,6 +644,7 @@ depends-member:
 - !private ["So8NSObjectP", "viewDidLoad"]
 - ["So8NSObjectP", "viewForZooming"]
 - ["So8NSObjectP", "viewForZoomingInScrollView"]
+- !private ["So8NSObjectP", "viewWillAppear"]
 - !private ["Sq", "child"]
 - !private ["Sq", "dequeueReusableCell"]
 - !private ["Sq", "deselectRow"]
@@ -707,6 +719,7 @@ depends-member:
 - !private ["7RxSwift18ReactiveCompatibleP", "viewDidLoad"]
 - ["7RxSwift18ReactiveCompatibleP", "viewForZooming"]
 - ["7RxSwift18ReactiveCompatibleP", "viewForZoomingInScrollView"]
+- !private ["7RxSwift18ReactiveCompatibleP", "viewWillAppear"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
 - !private ["ST", "append"]
 - !private ["ST", "count"]
@@ -774,6 +787,9 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So21UIAppearanceContainerP", "viewForZooming"]
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
+- !private ["So21UIAppearanceContainerP", "viewWillAppear"]
+- !private ["So26UICollectionViewDataSourceP", "event"]
+- !private ["So24UICollectionViewDelegateP", "event"]
 - !private ["So18UIContentContainerP", "Database"]
 - ["So18UIContentContainerP", "Event"]
 - ["So18UIContentContainerP", ""]
@@ -808,6 +824,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - ["So18UIContentContainerP", "viewForZooming"]
 - ["So18UIContentContainerP", "viewForZoomingInScrollView"]
+- !private ["So18UIContentContainerP", "viewWillAppear"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - !private ["So17UICoordinateSpaceP", "dateTextView"]
 - !private ["So17UICoordinateSpaceP", "dequeueReusableCell"]
@@ -871,6 +888,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - ["So18UIFocusEnvironmentP", "viewForZooming"]
 - ["So18UIFocusEnvironmentP", "viewForZoomingInScrollView"]
+- !private ["So18UIFocusEnvironmentP", "viewWillAppear"]
 - !private ["So11UIFocusItemP", "dateTextView"]
 - !private ["So11UIFocusItemP", "dequeueReusableCell"]
 - !private ["So11UIFocusItemP", "deselectRow"]
@@ -945,6 +963,8 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZooming"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewWillAppear"]
+- ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "Database"]
 - ["So11UIResponderC", "DatabaseReference"]
 - ["So11UIResponderC", "Event"]
@@ -997,6 +1017,7 @@ depends-member:
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewForZooming"]
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
+- ["So11UIResponderC", "viewWillAppear"]
 - !private ["So30UIResponderStandardEditActionsP", "Database"]
 - ["So30UIResponderStandardEditActionsP", "Event"]
 - ["So30UIResponderStandardEditActionsP", ""]
@@ -1039,6 +1060,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - ["So30UIResponderStandardEditActionsP", "viewForZooming"]
 - ["So30UIResponderStandardEditActionsP", "viewForZoomingInScrollView"]
+- !private ["So30UIResponderStandardEditActionsP", "viewWillAppear"]
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
 - !private ["So12UIScrollViewC", "deselectRow"]
 - !private ["So12UIScrollViewC", "indexPath"]
@@ -1046,6 +1068,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "Database"]
 - ["So20UIScrollViewDelegateP", "Event"]
 - ["So20UIScrollViewDelegateP", ""]
+- !private ["So20UIScrollViewDelegateP", "event"]
 - !private ["So20UIScrollViewDelegateP", "events"]
 - !private ["So20UIScrollViewDelegateP", "fetchEvent"]
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedView"]
@@ -1112,6 +1135,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - ["So16UIStateRestoringP", "viewForZooming"]
 - ["So16UIStateRestoringP", "viewForZoomingInScrollView"]
+- !private ["So16UIStateRestoringP", "viewWillAppear"]
 - !private ["So17UIStoryboardSegueC", "destination"]
 - !private ["So11UITableViewC", "dequeueReusableCell"]
 - !private ["So11UITableViewC", "deselectRow"]
@@ -1224,6 +1248,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", "viewForZooming"]
 - ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
+- !private ["So18UITraitEnvironmentP", "viewWillAppear"]
 - !private ["So23UIUserActivityRestoringP", "Database"]
 - ["So23UIUserActivityRestoringP", "Event"]
 - ["So23UIUserActivityRestoringP", ""]
@@ -1266,6 +1291,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
 - ["So23UIUserActivityRestoringP", "viewForZooming"]
 - ["So23UIUserActivityRestoringP", "viewForZoomingInScrollView"]
+- !private ["So23UIUserActivityRestoringP", "viewWillAppear"]
 - !private ["So6UIViewC", "dateTextView"]
 - !private ["So6UIViewC", "dequeueReusableCell"]
 - !private ["So6UIViewC", "deselectRow"]
@@ -1274,6 +1300,7 @@ depends-member:
 - !private ["So6UIViewC", "nameTextView"]
 - !private ["So6UIViewC", "reloadData"]
 - !private ["So6UIViewC", "text"]
+- ["So16UIViewControllerC", "Bool"]
 - !private ["So16UIViewControllerC", "Database"]
 - ["So16UIViewControllerC", "DatabaseReference"]
 - ["So16UIViewControllerC", "Event"]
@@ -1319,6 +1346,8 @@ depends-member:
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewForZooming"]
 - ["So16UIViewControllerC", "viewForZoomingInScrollView"]
+- ["So16UIViewControllerC", "viewWillAppear"]
+- ["7Potluck14ViewControllerC", "Bool"]
 - !private ["7Potluck14ViewControllerC", "Database"]
 - ["7Potluck14ViewControllerC", "DatabaseReference"]
 - ["7Potluck14ViewControllerC", "Event"]
@@ -1363,6 +1392,7 @@ depends-member:
 - ["7Potluck14ViewControllerC", "viewDidLoad"]
 - ["7Potluck14ViewControllerC", "viewForZooming"]
 - ["7Potluck14ViewControllerC", "viewForZoomingInScrollView"]
+- ["7Potluck14ViewControllerC", "viewWillAppear"]
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "date"]
@@ -1436,6 +1466,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZooming"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZoomingInScrollView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillAppear"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Database"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Event"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
@@ -1487,6 +1518,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewForZooming"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewForZoomingInScrollView"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewWillAppear"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "child"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
@@ -1555,6 +1587,8 @@ depends-nominal:
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
+- !private "So26UICollectionViewDataSourceP"
+- !private "So24UICollectionViewDelegateP"
 - "So18UIContentContainerP"
 - !private "So30UIContentSizeCategoryAdjustingP"
 - !private "So17UICoordinateSpaceP"
@@ -2881,4 +2915,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d2484913b735bcec0ab9f8b5c98303b0"
+interface-hash: "42b4303875ff804604bc985f5f4542cd"

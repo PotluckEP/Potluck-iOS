@@ -37,7 +37,6 @@ depends-top-level:
 - "UITextFieldDelegate"
 - "UITouch"
 - "UIViewController"
-- !private "print"
 depends-member:
 - ["7Potluck22AddEventViewControllerC", "Bool"]
 - !private ["7Potluck22AddEventViewControllerC", "Database"]
@@ -61,7 +60,6 @@ depends-member:
 - ["7Potluck22AddEventViewControllerC", "init"]
 - ["7Potluck22AddEventViewControllerC", "locationTextView"]
 - ["7Potluck22AddEventViewControllerC", "prepare"]
-- !private ["7Potluck22AddEventViewControllerC", "print"]
 - ["7Potluck22AddEventViewControllerC", "ref"]
 - ["7Potluck22AddEventViewControllerC", "textField"]
 - ["7Potluck22AddEventViewControllerC", "textFieldDidBeginEditing"]
@@ -99,7 +97,6 @@ depends-member:
 - !private ["s7CVarArgP", "key"]
 - !private ["s7CVarArgP", "locationTextView"]
 - !private ["s7CVarArgP", "observeSingleEvent"]
-- !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "ref"]
 - !private ["s7CVarArgP", "reference"]
 - !private ["s7CVarArgP", "resignFirstResponder"]
@@ -140,7 +137,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "key"]
 - !private ["s28CustomDebugStringConvertibleP", "locationTextView"]
 - !private ["s28CustomDebugStringConvertibleP", "observeSingleEvent"]
-- !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "ref"]
 - !private ["s28CustomDebugStringConvertibleP", "reference"]
 - !private ["s28CustomDebugStringConvertibleP", "resignFirstResponder"]
@@ -187,7 +183,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "key"]
 - !private ["s23CustomStringConvertibleP", "locationTextView"]
 - !private ["s23CustomStringConvertibleP", "observeSingleEvent"]
-- !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "ref"]
 - !private ["s23CustomStringConvertibleP", "reference"]
 - !private ["s23CustomStringConvertibleP", "resignFirstResponder"]
@@ -261,7 +256,6 @@ depends-member:
 - !private ["SQ", "key"]
 - !private ["SQ", "locationTextView"]
 - !private ["SQ", "observeSingleEvent"]
-- !private ["SQ", "print"]
 - !private ["SQ", "ref"]
 - !private ["SQ", "reference"]
 - !private ["SQ", "resignFirstResponder"]
@@ -312,7 +306,6 @@ depends-member:
 - !private ["SH", "key"]
 - !private ["SH", "locationTextView"]
 - !private ["SH", "observeSingleEvent"]
-- !private ["SH", "print"]
 - !private ["SH", "ref"]
 - !private ["SH", "reference"]
 - !private ["SH", "resignFirstResponder"]
@@ -346,7 +339,6 @@ depends-member:
 - !private ["So8NSCodingP", "eventNameTextView"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "locationTextView"]
-- !private ["So8NSCodingP", "print"]
 - !private ["So8NSCodingP", "ref"]
 - !private ["So8NSCodingP", "resignFirstResponder"]
 - !private ["So8NSCodingP", "string"]
@@ -374,7 +366,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "eventNameTextView"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "locationTextView"]
-- !private ["So26NSExtensionRequestHandlingP", "print"]
 - !private ["So26NSExtensionRequestHandlingP", "ref"]
 - ["So26NSExtensionRequestHandlingP", "textField"]
 - ["So26NSExtensionRequestHandlingP", "textFieldDidBeginEditing"]
@@ -417,7 +408,6 @@ depends-member:
 - ["So8NSObjectC", "locationTextView"]
 - !private ["So8NSObjectC", "observeSingleEvent"]
 - ["So8NSObjectC", "prepare"]
-- !private ["So8NSObjectC", "print"]
 - ["So8NSObjectC", "ref"]
 - !private ["So8NSObjectC", "reference"]
 - !private ["So8NSObjectC", "resignFirstResponder"]
@@ -457,7 +447,6 @@ depends-member:
 - !private ["So8NSObjectP", "key"]
 - !private ["So8NSObjectP", "locationTextView"]
 - !private ["So8NSObjectP", "observeSingleEvent"]
-- !private ["So8NSObjectP", "print"]
 - !private ["So8NSObjectP", "ref"]
 - !private ["So8NSObjectP", "reference"]
 - !private ["So8NSObjectP", "resignFirstResponder"]
@@ -504,7 +493,6 @@ depends-member:
 - !private ["7RxSwift18ReactiveCompatibleP", "key"]
 - !private ["7RxSwift18ReactiveCompatibleP", "locationTextView"]
 - !private ["7RxSwift18ReactiveCompatibleP", "observeSingleEvent"]
-- !private ["7RxSwift18ReactiveCompatibleP", "print"]
 - !private ["7RxSwift18ReactiveCompatibleP", "ref"]
 - !private ["7RxSwift18ReactiveCompatibleP", "reference"]
 - !private ["7RxSwift18ReactiveCompatibleP", "resignFirstResponder"]
@@ -547,7 +535,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "eventNameTextView"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "locationTextView"]
-- !private ["So21UIAppearanceContainerP", "print"]
 - !private ["So21UIAppearanceContainerP", "ref"]
 - !private ["So21UIAppearanceContainerP", "resignFirstResponder"]
 - !private ["So21UIAppearanceContainerP", "text"]
@@ -561,6 +548,8 @@ depends-member:
 - ["So21UIAppearanceContainerP", "textFieldShouldReturn"]
 - !private ["So21UIAppearanceContainerP", "view"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So26UICollectionViewDataSourceP", "event"]
+- !private ["So24UICollectionViewDelegateP", "event"]
 - !private ["So18UIContentContainerP", "Database"]
 - !private ["So18UIContentContainerP", "DateFormatter"]
 - !private ["So18UIContentContainerP", "Event"]
@@ -571,7 +560,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "eventNameTextView"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "locationTextView"]
-- !private ["So18UIContentContainerP", "print"]
 - !private ["So18UIContentContainerP", "ref"]
 - ["So18UIContentContainerP", "textField"]
 - ["So18UIContentContainerP", "textFieldDidBeginEditing"]
@@ -614,7 +602,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "eventNameTextView"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "locationTextView"]
-- !private ["So18UIFocusEnvironmentP", "print"]
 - !private ["So18UIFocusEnvironmentP", "ref"]
 - !private ["So18UIFocusEnvironmentP", "resignFirstResponder"]
 - !private ["So18UIFocusEnvironmentP", "text"]
@@ -659,7 +646,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "eventNameTextView"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "locationTextView"]
-- !private ["So30UIPasteConfigurationSupportingP", "print"]
 - !private ["So30UIPasteConfigurationSupportingP", "ref"]
 - !private ["So30UIPasteConfigurationSupportingP", "resignFirstResponder"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
@@ -697,7 +683,6 @@ depends-member:
 - ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "locationTextView"]
 - ["So11UIResponderC", "prepare"]
-- !private ["So11UIResponderC", "print"]
 - ["So11UIResponderC", "ref"]
 - !private ["So11UIResponderC", "resignFirstResponder"]
 - !private ["So11UIResponderC", "text"]
@@ -725,7 +710,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "eventNameTextView"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "locationTextView"]
-- !private ["So30UIResponderStandardEditActionsP", "print"]
 - !private ["So30UIResponderStandardEditActionsP", "ref"]
 - !private ["So30UIResponderStandardEditActionsP", "resignFirstResponder"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
@@ -739,6 +723,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "textFieldShouldReturn"]
 - !private ["So30UIResponderStandardEditActionsP", "view"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So20UIScrollViewDelegateP", "event"]
 - !private ["So16UIStateRestoringP", "Database"]
 - !private ["So16UIStateRestoringP", "DateFormatter"]
 - !private ["So16UIStateRestoringP", "Event"]
@@ -749,7 +734,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "eventNameTextView"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "locationTextView"]
-- !private ["So16UIStateRestoringP", "print"]
 - !private ["So16UIStateRestoringP", "ref"]
 - ["So16UIStateRestoringP", "textField"]
 - ["So16UIStateRestoringP", "textFieldDidBeginEditing"]
@@ -780,7 +764,6 @@ depends-member:
 - !private ["So19UITextFieldDelegateP", "event"]
 - !private ["So19UITextFieldDelegateP", "eventNameTextView"]
 - !private ["So19UITextFieldDelegateP", "locationTextView"]
-- !private ["So19UITextFieldDelegateP", "print"]
 - !private ["So19UITextFieldDelegateP", "ref"]
 - ["So19UITextFieldDelegateP", "textField"]
 - ["So19UITextFieldDelegateP", "textFieldDidBeginEditing"]
@@ -813,7 +796,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "eventNameTextView"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "locationTextView"]
-- !private ["So18UITraitEnvironmentP", "print"]
 - !private ["So18UITraitEnvironmentP", "ref"]
 - !private ["So18UITraitEnvironmentP", "resignFirstResponder"]
 - !private ["So18UITraitEnvironmentP", "text"]
@@ -840,7 +822,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "eventNameTextView"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "locationTextView"]
-- !private ["So23UIUserActivityRestoringP", "print"]
 - !private ["So23UIUserActivityRestoringP", "ref"]
 - !private ["So23UIUserActivityRestoringP", "resignFirstResponder"]
 - !private ["So23UIUserActivityRestoringP", "text"]
@@ -881,7 +862,6 @@ depends-member:
 - ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "locationTextView"]
 - ["So16UIViewControllerC", "prepare"]
-- !private ["So16UIViewControllerC", "print"]
 - ["So16UIViewControllerC", "ref"]
 - ["So16UIViewControllerC", "textField"]
 - ["So16UIViewControllerC", "textFieldDidBeginEditing"]
@@ -915,7 +895,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "key"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "locationTextView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "observeSingleEvent"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ref"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reference"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resignFirstResponder"]
@@ -954,7 +933,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "key"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "locationTextView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "observeSingleEvent"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ref"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "reference"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "resignFirstResponder"]
@@ -1021,6 +999,8 @@ depends-nominal:
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
+- !private "So26UICollectionViewDataSourceP"
+- !private "So24UICollectionViewDelegateP"
 - "So18UIContentContainerP"
 - !private "So30UIContentSizeCategoryAdjustingP"
 - !private "So9UIControlC"
@@ -1035,6 +1015,7 @@ depends-nominal:
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
+- !private "So20UIScrollViewDelegateP"
 - "So16UIStateRestoringP"
 - !private "So17UIStoryboardSegueC"
 - !private "So15UITextDraggableP"
