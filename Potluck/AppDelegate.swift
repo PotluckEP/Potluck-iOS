@@ -14,12 +14,18 @@ import GoogleSignIn
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     var window: UIWindow?
+    var ref: DatabaseReference!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+
+        // Firebase Configuration
         FirebaseApp.configure()
-        GIDSignIn.sharedInstance().clientID = "364056113882-h8q8q35bjdgp80frh025r5eotg5qp5k1.apps.googleusercontent.com"
+//        var ref: DatabaseReference!
+        ref = Database.database().reference()
+
+        // Google Sign In
+        GIDSignIn.sharedInstance()?.clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
         
         return true
@@ -40,14 +46,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         }
         // Perform any operations on signed in user here.
         let userId = user.userID                  // For client-side use only!
-        let idToken = user.authentication.idToken // Safe to send to the server
+        //let idToken = user.authentication.idToken // Safe to send to the server
         let fullName = user.profile.name
-        let givenName = user.profile.givenName
-        let familyName = user.profile.familyName
         let email = user.profile.email
-
-        print(fullName)
-        print(email)
+        let profile = user.profile.imageURL(withDimension: 480)
+        //let profile = user.profile.
+        //let birthday = user.profile.email.
+        
+        // Firebase Sign In
+        guard let authentication = user.authentication else { return }
+        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
+        
+        Auth.auth().signInAndRetrieveData(with: credential) { (authResult, error) in
+            if let error = error {
+                print("Firebase Sign Error")
+                print(error)
+                return
+            }
+            
+            print("User is Signed In with Firebase")
+//            self.ref.child("users").child(userId!).setValue(["name": fullName, "email": email, "profile": profile])
+            self.ref.child("users").child(userId!).setValue(["name": fullName, "email": email])
+        }
+        
+        
     }
     
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
