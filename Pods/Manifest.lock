@@ -14,8 +14,6 @@ PODS:
     - FBSDKLoginKit/Login (= 5.8.0)
   - FBSDKLoginKit/Login (5.8.0):
     - FBSDKCoreKit (~> 5.0)
-  - Firebase/Analytics (6.10.0):
-    - Firebase/Core
   - Firebase/Auth (6.10.0):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 6.3.0)
@@ -118,7 +116,6 @@ PODS:
 
 DEPENDENCIES:
   - FBSDKLoginKit
-  - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -126,7 +123,11 @@ DEPENDENCIES:
   - RYFloatingInput
 
 SPEC REPOS:
+<<<<<<< HEAD
   https://github.com/CocoaPods/Specs.git:
+=======
+  trunk:
+>>>>>>> b62e2295d254ecdc52a8d99d868552b8bd8fa9ff
     - AppAuth
     - FBSDKCoreKit
     - FBSDKLoginKit
@@ -178,6 +179,10 @@ SPEC CHECKSUMS:
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   RYFloatingInput: 4034e3c12a8235a7d7e0a97d69ae05e906397b22
 
+<<<<<<< HEAD
 PODFILE CHECKSUM: fdf7ab2aab56a0b701c4821362e727c7764aa8bc
+=======
+PODFILE CHECKSUM: d5a99ce68d622780d258b65ffff16c1b121027a9
+>>>>>>> b62e2295d254ecdc52a8d99d868552b8bd8fa9ff
 
 COCOAPODS: 1.8.4

@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
 options: "0b8030890f9e67343dc471021a2c660e"
-build_time: [1572505095, 102861000]
+build_time: [1572505931, 169563000]
 inputs:
   "/Users/danielmorales/CSUMB/Potluck/Pods/RxCocoa/Platform/DataStructures/Bag.swift": [1572504395, 811949828]
   "/Users/danielmorales/CSUMB/Potluck/Pods/RxCocoa/RxCocoa/Traits/Driver/BehaviorRelay+Driver.swift": [1572504395, 819376396]
@@ -51,7 +51,7 @@ inputs:
   "/Users/danielmorales/CSUMB/Potluck/Pods/RxCocoa/Platform/DataStructures/Queue.swift": [1572504395, 812375041]
   "/Users/danielmorales/CSUMB/Potluck/Pods/RxCocoa/Platform/RecursiveLock.swift": [1572504395, 813065789]
   "/Users/danielmorales/CSUMB/Potluck/Pods/RxCocoa/RxCocoa/RxCocoa.swift": [1572504395, 818599752]
-  "/Users/danielmorales/CSUMB/Potluck/Pods/RxCocoa/RxCocoa/Common/RxCocoaObjCRuntimeError+Extensions.swift": !private [1572505094, 941810135]
+  "/Users/danielmorales/CSUMB/Potluck/Pods/RxCocoa/RxCocoa/Common/RxCocoaObjCRuntimeError+Extensions.swift": [1572505136, 896978909]
   "/Users/danielmorales/CSUMB/Potluck/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxCollectionViewDataSourcePrefetchingProxy.swift": [1572504395, 823249483]
   "/Users/danielmorales/CSUMB/Potluck/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxCollectionViewDataSourceProxy.swift": [1572504395, 823367779]
   "/Users/danielmorales/CSUMB/Potluck/Pods/RxCocoa/RxCocoa/iOS/Protocols/RxCollectionViewDataSourceType.swift": [1572504395, 822841747]
