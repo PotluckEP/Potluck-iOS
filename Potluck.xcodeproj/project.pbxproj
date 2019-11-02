@@ -107,6 +107,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0820BE84236D0DF500BE9B4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				08015B49235C7824000EFEB0 /* Event.swift */,
+				08DB2CFB23682B8E00754DBD /* item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0820BE85236D0E2600BE9B4C /* Planning Event */ = {
+			isa = PBXGroup;
+			children = (
+				081A577C23600F290037877C /* ItemCollectionViewCell.swift */,
+				0820BE82236AE07A00BE9B4C /* PlanningService.swift */,
+				085462C3235F1FCB00AA0E4D /* PlanningViewController.swift */,
+			);
+			path = "Planning Event";
+			sourceTree = "<group>";
+		};
+		0820BE86236D0E5300BE9B4C /* Events List */ = {
+			isa = PBXGroup;
+			children = (
+				0849539323622AE300128BCB /* EventViewCell.swift */,
+				4560ABFA235AE3AB0034219F /* ViewController.swift */,
+			);
+			path = "Events List";
+			sourceTree = "<group>";
+		};
+		0820BE87236D0EF700BE9B4C /* Adding Event */ = {
+			isa = PBXGroup;
+			children = (
+				087C1339235B075A003422E2 /* AddEventViewController.swift */,
+			);
+			path = "Adding Event";
+			sourceTree = "<group>";
+		};
 		0DF2AD4D0412BB2B48E2AA27 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,21 +181,17 @@
 		4560ABF7235AE3AB0034219F /* Potluck */ = {
 			isa = PBXGroup;
 			children = (
+				0820BE87236D0EF700BE9B4C /* Adding Event */,
+				0820BE86236D0E5300BE9B4C /* Events List */,
+				0820BE85236D0E2600BE9B4C /* Planning Event */,
+				0820BE84236D0DF500BE9B4C /* Model */,
 				4560ABF8235AE3AB0034219F /* AppDelegate.swift */,
-				4560ABFA235AE3AB0034219F /* ViewController.swift */,
 				4560ABFF235AE3AC0034219F /* Assets.xcassets */,
 				4560AC01235AE3AC0034219F /* LaunchScreen.storyboard */,
 				4560ABFC235AE3AB0034219F /* Main.storyboard */,
 				4560AC04235AE3AC0034219F /* Info.plist */,
 				087C1337235AFA43003422E2 /* MenuViewController.swift */,
-				087C1339235B075A003422E2 /* AddEventViewController.swift */,
-				08015B49235C7824000EFEB0 /* Event.swift */,
-				085462C3235F1FCB00AA0E4D /* PlanningViewController.swift */,
-				081A577C23600F290037877C /* ItemCollectionViewCell.swift */,
 				4539D7862361473C00144FCC /* GoogleService-Info.plist */,
-				0849539323622AE300128BCB /* EventViewCell.swift */,
-				08DB2CFB23682B8E00754DBD /* item.swift */,
-				0820BE82236AE07A00BE9B4C /* PlanningService.swift */,
 			);
 			path = Potluck;
 			sourceTree = "<group>";
