@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/RYFloatingInput-Swift.h</key>
 		<data>
-		JKZQG85ZJLo6u0uXfNVMVIKKmWE=
+		8LftXPFFSCqFWGDGwHrmHJY/NJE=
 		</data>
 		<key>Headers/RYFloatingInput-umbrella.h</key>
 		<data>
@@ -14,23 +14,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cwHU1wct7w9GJrfrZYK2h5XZMnM=
+		JUeP4gyrSiSXHmhG8U/RD8Wv9VE=
 		</data>
 		<key>Modules/RYFloatingInput.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		2ZVMEve7yGg2VsLFO4BXg2HmTaI=
+		Yva2PXI424TTYFZTetTiT9RkvBo=
 		</data>
 		<key>Modules/RYFloatingInput.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/i4V+xsf+MU90x4Vzof6WsGC1Jo=
+		Ih77/+EPebj+pdmM4WGW/c8/Atc=
 		</data>
 		<key>Modules/RYFloatingInput.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		2ZVMEve7yGg2VsLFO4BXg2HmTaI=
+		Yva2PXI424TTYFZTetTiT9RkvBo=
 		</data>
 		<key>Modules/RYFloatingInput.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		/i4V+xsf+MU90x4Vzof6WsGC1Jo=
+		Ih77/+EPebj+pdmM4WGW/c8/Atc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>RYFloatingInput.nib/objects-13.0+.nib</key>
 		<data>
-		1Rcf2iKp5SduyT/MljPMpCjFroo=
+		x0Teccvdo6+aoRD4I0SqTJlfiKk=
 		</data>
 		<key>RYFloatingInput.nib/runtime.nib</key>
 		<data>
-		eYHu6dMPKASRF+4cMnFMrZsOYLk=
+		xKBQsGPY6zGKY87/rFLQc2ytoW8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -51,11 +51,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JKZQG85ZJLo6u0uXfNVMVIKKmWE=
+			8LftXPFFSCqFWGDGwHrmHJY/NJE=
 			</data>
 			<key>hash2</key>
 			<data>
-			aCI/YDSTEXpkYAzXi6tTUst4MEWLGGl9WsHgFtFLQNk=
+			CBnGC2xaqOMn8ngdu0OYd2aaa97i5rAlpZua6cwMCYY=
 			</data>
 		</dict>
 		<key>Headers/RYFloatingInput-umbrella.h</key>
@@ -73,44 +73,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2ZVMEve7yGg2VsLFO4BXg2HmTaI=
+			Yva2PXI424TTYFZTetTiT9RkvBo=
 			</data>
 			<key>hash2</key>
 			<data>
-			4Trh5zddyhkL4Btvmf5/YOJ/9xVl4P21CuiNVOZtx64=
+			c+e9mJUr3V6h5MAvKSdZtdHIAm5dc3rEoqvKauXF0lE=
 			</data>
 		</dict>
 		<key>Modules/RYFloatingInput.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/i4V+xsf+MU90x4Vzof6WsGC1Jo=
+			Ih77/+EPebj+pdmM4WGW/c8/Atc=
 			</data>
 			<key>hash2</key>
 			<data>
-			aKL1Pe1oO0zHPqPNYDs0Te6i3TBgoam19VzgD3VDkvc=
+			wsoWUokZ4jmWIcZKVlEf2/3dDXgqIGKJs0vwXDg0xJY=
 			</data>
 		</dict>
 		<key>Modules/RYFloatingInput.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2ZVMEve7yGg2VsLFO4BXg2HmTaI=
+			Yva2PXI424TTYFZTetTiT9RkvBo=
 			</data>
 			<key>hash2</key>
 			<data>
-			4Trh5zddyhkL4Btvmf5/YOJ/9xVl4P21CuiNVOZtx64=
+			c+e9mJUr3V6h5MAvKSdZtdHIAm5dc3rEoqvKauXF0lE=
 			</data>
 		</dict>
 		<key>Modules/RYFloatingInput.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/i4V+xsf+MU90x4Vzof6WsGC1Jo=
+			Ih77/+EPebj+pdmM4WGW/c8/Atc=
 			</data>
 			<key>hash2</key>
 			<data>
-			aKL1Pe1oO0zHPqPNYDs0Te6i3TBgoam19VzgD3VDkvc=
+			wsoWUokZ4jmWIcZKVlEf2/3dDXgqIGKJs0vwXDg0xJY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -128,22 +128,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1Rcf2iKp5SduyT/MljPMpCjFroo=
+			x0Teccvdo6+aoRD4I0SqTJlfiKk=
 			</data>
 			<key>hash2</key>
 			<data>
-			mj2omMipYXU3RI+mp3EDNu0ZYrH0gFVzhotwLJVYRFU=
+			KwwJqJu+FBtYaBV0abAsmX0QE21c49YRAt0bqexNw14=
 			</data>
 		</dict>
 		<key>RYFloatingInput.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eYHu6dMPKASRF+4cMnFMrZsOYLk=
+			xKBQsGPY6zGKY87/rFLQc2ytoW8=
 			</data>
 			<key>hash2</key>
 			<data>
-			foM98GeG5Y0iQWXsaBTZzqDk8nSdTXE7wC0wtMDp0Us=
+			5m/10yKU/IxXFRZo0ej/StI+VkGoKXzV3+SopkNiMqI=
 			</data>
 		</dict>
 	</dict>

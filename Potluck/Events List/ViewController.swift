@@ -80,7 +80,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
             let planningViewController = segue.destination as! PlanningViewController
 
-            planningViewController.event = event
+            let list = List(id: event.id, name: event.name, charge: event.owner, details: event.info, owner: event.owner, path: event.path)
+            planningViewController.list = list
 
             tableview.deselectRow(at: indexPath, animated: true)
         }

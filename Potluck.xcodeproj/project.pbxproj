@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		08015B4A235C7824000EFEB0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08015B49235C7824000EFEB0 /* Event.swift */; };
 		081A577D23600F290037877C /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081A577C23600F290037877C /* ItemCollectionViewCell.swift */; };
-		0820BE83236AE07A00BE9B4C /* PlanningService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0820BE82236AE07A00BE9B4C /* PlanningService.swift */; };
+		0820BE89236D197D00BE9B4C /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0820BE88236D197D00BE9B4C /* List.swift */; };
 		0849539423622AE300128BCB /* EventViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0849539323622AE300128BCB /* EventViewCell.swift */; };
 		085462C4235F1FCB00AA0E4D /* PlanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085462C3235F1FCB00AA0E4D /* PlanningViewController.swift */; };
 		087C1338235AFA43003422E2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C1337235AFA43003422E2 /* MenuViewController.swift */; };
 		087C133A235B075A003422E2 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C1339235B075A003422E2 /* AddEventViewController.swift */; };
-		08DB2CFC23682B8E00754DBD /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DB2CFB23682B8E00754DBD /* item.swift */; };
+		08DB2CFC23682B8E00754DBD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DB2CFB23682B8E00754DBD /* Item.swift */; };
 		31E9B118B081FCE19ACDE41F /* Pods_PotluckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE91B7512785F1ADB107482F /* Pods_PotluckTests.framework */; };
 		3C05E1A0BB8DEFC4DF990409 /* Pods_Potluck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21195E840A2DCF88948DF148 /* Pods_Potluck.framework */; };
 		4539D7872361473C00144FCC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4539D7862361473C00144FCC /* GoogleService-Info.plist */; };
@@ -48,12 +48,12 @@
 /* Begin PBXFileReference section */
 		08015B49235C7824000EFEB0 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		081A577C23600F290037877C /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
-		0820BE82236AE07A00BE9B4C /* PlanningService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningService.swift; sourceTree = "<group>"; };
+		0820BE88236D197D00BE9B4C /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		0849539323622AE300128BCB /* EventViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewCell.swift; sourceTree = "<group>"; };
 		085462C3235F1FCB00AA0E4D /* PlanningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningViewController.swift; sourceTree = "<group>"; };
 		087C1337235AFA43003422E2 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		087C1339235B075A003422E2 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
-		08DB2CFB23682B8E00754DBD /* item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
+		08DB2CFB23682B8E00754DBD /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		21195E840A2DCF88948DF148 /* Pods_Potluck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Potluck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4539D7862361473C00144FCC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4560ABF5235AE3AB0034219F /* Potluck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Potluck.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,7 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				08015B49235C7824000EFEB0 /* Event.swift */,
-				08DB2CFB23682B8E00754DBD /* item.swift */,
+				08DB2CFB23682B8E00754DBD /* Item.swift */,
+				0820BE88236D197D00BE9B4C /* List.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -120,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				081A577C23600F290037877C /* ItemCollectionViewCell.swift */,
-				0820BE82236AE07A00BE9B4C /* PlanningService.swift */,
 				085462C3235F1FCB00AA0E4D /* PlanningViewController.swift */,
 			);
 			path = "Planning Event";
@@ -501,14 +501,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4560ABFB235AE3AB0034219F /* ViewController.swift in Sources */,
-				08DB2CFC23682B8E00754DBD /* item.swift in Sources */,
+				08DB2CFC23682B8E00754DBD /* Item.swift in Sources */,
 				087C133A235B075A003422E2 /* AddEventViewController.swift in Sources */,
 				085462C4235F1FCB00AA0E4D /* PlanningViewController.swift in Sources */,
 				0849539423622AE300128BCB /* EventViewCell.swift in Sources */,
 				087C1338235AFA43003422E2 /* MenuViewController.swift in Sources */,
+				0820BE89236D197D00BE9B4C /* List.swift in Sources */,
 				081A577D23600F290037877C /* ItemCollectionViewCell.swift in Sources */,
 				4560ABF9235AE3AB0034219F /* AppDelegate.swift in Sources */,
-				0820BE83236AE07A00BE9B4C /* PlanningService.swift in Sources */,
 				08015B4A235C7824000EFEB0 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/RxSwift-Swift.h</key>
 		<data>
-		jp4yfazkxRFLo0HHzH2njPsuqC8=
+		LmnTbypG75VP8zKecU9oxfbS/Is=
 		</data>
 		<key>Headers/RxSwift-umbrella.h</key>
 		<data>
@@ -14,23 +14,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UTB/X04jI9ebIS7GiwVmwCSSzQ4=
+		TkBcOsA1MjBymIqA38iwPGzSepU=
 		</data>
 		<key>Modules/RxSwift.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		R1PmF2kWVeOkDfpPMPeEet5jTJ8=
+		jPyEzVdpC3bYaxYOT4lx7QWd1YY=
 		</data>
 		<key>Modules/RxSwift.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		EMvDZOVMNucrEOwwFU/UQjPgsd4=
+		Dd2f6HSYL8bnwArbZqyxOvXKwM0=
 		</data>
 		<key>Modules/RxSwift.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		R1PmF2kWVeOkDfpPMPeEet5jTJ8=
+		jPyEzVdpC3bYaxYOT4lx7QWd1YY=
 		</data>
 		<key>Modules/RxSwift.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		EMvDZOVMNucrEOwwFU/UQjPgsd4=
+		Dd2f6HSYL8bnwArbZqyxOvXKwM0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,11 +43,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jp4yfazkxRFLo0HHzH2njPsuqC8=
+			LmnTbypG75VP8zKecU9oxfbS/Is=
 			</data>
 			<key>hash2</key>
 			<data>
-			aG68HgQh0e0khixysJXF/Ju5slFVsnm6uc0xVwegJAs=
+			YSQmkZ4/XccbuIwJiqjSoUnYra6f3XTqRwQefS5hftw=
 			</data>
 		</dict>
 		<key>Headers/RxSwift-umbrella.h</key>
@@ -65,44 +65,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R1PmF2kWVeOkDfpPMPeEet5jTJ8=
+			jPyEzVdpC3bYaxYOT4lx7QWd1YY=
 			</data>
 			<key>hash2</key>
 			<data>
-			0je5BO5lbEL8vZuJao7cPrtvTumr8mrRTVOvw5LNP7I=
+			fkT7gS6/oLVHZIuwdpBtJBw+3CBYKuDxnMXEQp2GxR4=
 			</data>
 		</dict>
 		<key>Modules/RxSwift.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EMvDZOVMNucrEOwwFU/UQjPgsd4=
+			Dd2f6HSYL8bnwArbZqyxOvXKwM0=
 			</data>
 			<key>hash2</key>
 			<data>
-			VeNSJSspV9E3X4B/rYC1a473hGmo/tHahFj6kOnKrC0=
+			FsUX6mgb3bMi4F8pZqvEBzVtc7zGg5YF58f+9P40scI=
 			</data>
 		</dict>
 		<key>Modules/RxSwift.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			R1PmF2kWVeOkDfpPMPeEet5jTJ8=
+			jPyEzVdpC3bYaxYOT4lx7QWd1YY=
 			</data>
 			<key>hash2</key>
 			<data>
-			0je5BO5lbEL8vZuJao7cPrtvTumr8mrRTVOvw5LNP7I=
+			fkT7gS6/oLVHZIuwdpBtJBw+3CBYKuDxnMXEQp2GxR4=
 			</data>
 		</dict>
 		<key>Modules/RxSwift.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EMvDZOVMNucrEOwwFU/UQjPgsd4=
+			Dd2f6HSYL8bnwArbZqyxOvXKwM0=
 			</data>
 			<key>hash2</key>
 			<data>
-			VeNSJSspV9E3X4B/rYC1a473hGmo/tHahFj6kOnKrC0=
+			FsUX6mgb3bMi4F8pZqvEBzVtc7zGg5YF58f+9P40scI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

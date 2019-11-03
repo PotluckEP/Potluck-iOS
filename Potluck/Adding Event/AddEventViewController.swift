@@ -20,7 +20,7 @@ class AddEventViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var descriptionTextView: UITextField!
     @IBOutlet weak var dateTimePicker: UIDatePicker!
     
-    var event:Event!
+    var list:List!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,7 +60,9 @@ class AddEventViewController: UIViewController, UITextFieldDelegate {
             
         })
         
-        self.event = Event(id: eventId, name: eventNameTextView.text as! String, location: locationTextView.text as! String, date: dateTxt as! String, info: descriptionTextView.text as! String, owner: "f0dsfjdf0sd" as! String, rank: "owener", path: "events/" + eventId! + "/planning");
+        self.list = List(id: eventId, name: eventNameTextView.text as! String, charge: "f0dsfjdf0sd",
+                         details: descriptionTextView.text as! String, owner: "f0dsfjdf0sd",
+            path: "events/" + eventId! + "/planning");
     }
 
     // Hide the keyboard if users touches out side the keyboard
@@ -81,7 +83,7 @@ class AddEventViewController: UIViewController, UITextFieldDelegate {
         if segue.destination is PlanningViewController{
             
             let planningViewController = segue.destination as! PlanningViewController
-            planningViewController.event = event
+            planningViewController.list = list
         }
         
     }

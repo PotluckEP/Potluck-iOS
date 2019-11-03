@@ -14,7 +14,7 @@ import FirebaseDatabase
 
 class PlanningViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
 
-    var event: Event!
+    var list: List!
     var items = [Item]()
     var ref: DatabaseReference!
     
@@ -35,26 +35,35 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
     
     func fetchPlanning(){
         
-        self.ref.child(event.path).observeSingleEvent(of: .value) { (snapshot) in
+        self.ref.child(self.list.path).observeSingleEvent(of: .value) { (snapshot) in
+            
             var item = snapshot.value as! [String: Any]
             
             self.itemTextView.text = item["name"] as? String
             item.removeValue(forKey: "name");
             
-            self.ref.child("users").child(item["charge"] as! String).observeSingleEvent(of: .value, with: { (snapshot) in
-                let user = snapshot.value as! [String: Any]
-                self.personInChargeTextView.text = user["name"] as! String
-            })
+//            print(item["charge"])
+//            self.ref.child("users").child(item["charge"] as! String).observeSingleEvent(of: .value, with: { (snapshot2) in
+//                let user = snapshot2.value as! [String: Any]
+//                self.personInChargeTextView.text = user["name"] as! String
+//            })
+            
             item.removeValue(forKey: "charge");
             
-            for (itemId, plan) in item  {
+            for (itemId, bringing) in item  {
                 
-                self.ref.child(self.event.path).child(itemId).observeSingleEvent(of: .value) { (snapshot2) in
-                    
+                self.ref.child(self.list.path).child(itemId).observeSingleEvent(of: .value) { (snapshot2) in
                     
                     let details = snapshot2.value as! [String: Any]
+                   
+                    let name = details["name"] as! String
                     
-                    self.items.append(Item(id: "", name: details["name"] as! String, person: "fix", image: "none", details: "none", owner: "none", path: self.event.path + "/" + itemId))
+                    self.ref.child(self.list.path).child(itemId).child("bringing").observeSingleEvent(of: .value) { (snapshot3) in
+                        
+                        print(snapshot3)
+                    }
+                    
+                    self.items.append(Item(id: itemId, name: name, person: "fix", image: "none", details: "none", owner: "none", path: self.list.path + "/" + itemId))
                     
                     self.itemsCollection.reloadData();
                 }
@@ -72,20 +81,30 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
         let cell = itemsCollection.dequeueReusableCell(withReuseIdentifier: "ItemCollectionViewCell", for: indexPath) as! ItemCollectionViewCell
         
         cell.ItemName.text = self.items[indexPath.item].name;
-        print(self.items[indexPath.item].person)
+        
         cell.person.text = self.items[indexPath.item].person;
         
         return cell
     }
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-    }
-    */
+        
+       if segue.destination is PlanningViewController{
+            let cell = sender as! UICollectionViewCell
+            let indexPath = itemsCollection.indexPath(for: cell)!
+            let item = items[indexPath.row]
 
+            let planningViewController = segue.destination as! PlanningViewController
+
+        let list = List(id: item.id, name: item.name, charge: item.owner, details: item.details, owner: item.owner, path: item.path + "/bringing")
+        
+        planningViewController.list = list
+    
+        }
+    }
 }

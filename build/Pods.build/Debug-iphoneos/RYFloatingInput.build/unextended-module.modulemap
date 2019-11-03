@@ -1,0 +1,10 @@
+framework module RYFloatingInput {
+  umbrella header "RYFloatingInput-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module RYFloatingInput.__Swift {
+    exclude header "RYFloatingInput-Swift.h"
+}

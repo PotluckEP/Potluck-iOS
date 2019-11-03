@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
+options: "225fe8074b06e632c45b825265e36fee"
+build_time: [1572661560, 195860000]
+inputs:
+  "/Users/danielmorales/CSUMB/Potluck/Pods/RYFloatingInput/RYFloatingInput/Classes/RYFloatingInput+Enum.swift": [1572654125, 301765547]
+  "/Users/danielmorales/CSUMB/Potluck/Pods/RYFloatingInput/RYFloatingInput/Classes/RYFloatingInput.swift": [1572654125, 301968655]
+  "/Users/danielmorales/CSUMB/Potluck/Pods/RYFloatingInput/RYFloatingInput/Classes/RYFloatingInputSetting.swift": [1572654125, 302131407]
+  "/Users/danielmorales/CSUMB/Potluck/Pods/RYFloatingInput/RYFloatingInput/Classes/RYFloatingInputViewModel.swift": [1572654125, 302287103]
