@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
 options: "0d3fb4a978b130820b3f41cf54288ac8"
-build_time: [1572765831, 647789000]
+build_time: [1572771732, 764402000]
 inputs:
   "/Users/danielmorales/CSUMB/Potluck/Pods/RxSwift/RxSwift/Observables/AddRef.swift": [1572752267, 852303444]
   "/Users/danielmorales/CSUMB/Potluck/Pods/RxSwift/RxSwift/Observables/Amb.swift": [1572752267, 852457891]
