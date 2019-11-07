@@ -14,20 +14,15 @@ import RYFloatingInput
 class AddEventViewController: UIViewController, UITextFieldDelegate {
     
     var ref: DatabaseReference!
+    var list:List!
 
     @IBOutlet weak var eventNameTextView: UITextField!
     @IBOutlet weak var locationTextView: UITextField!
     @IBOutlet weak var descriptionTextView: UITextField!
     @IBOutlet weak var dateTimePicker: UIDatePicker!
     
-    var list:List!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.eventNameTextView.delegate = self
-        self.locationTextView.delegate = self
-        self.descriptionTextView.delegate = self
         
         ref = Database.database().reference()
     }

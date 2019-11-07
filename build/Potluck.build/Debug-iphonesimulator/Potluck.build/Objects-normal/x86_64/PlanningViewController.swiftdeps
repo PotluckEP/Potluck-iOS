@@ -15,6 +15,7 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 depends-top-level:
 - !private "+"
+- !private "AddItemViewController"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
 - !private "Database"
@@ -38,6 +39,7 @@ depends-top-level:
 - "UnicodeScalarType"
 - !private "print"
 depends-member:
+- !private ["7Potluck21AddItemViewControllerC", "path"]
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
 - ["Sa", "init"]
@@ -524,6 +526,7 @@ depends-member:
 - !private ["So8NSCodingP", "list"]
 - ["So8NSCodingP", "numberOfSections"]
 - ["So8NSCodingP", "numberOfSectionsInCollectionView"]
+- !private ["So8NSCodingP", "path"]
 - !private ["So8NSCodingP", "person"]
 - !private ["So8NSCodingP", "print"]
 - !private ["So8NSCodingP", "ref"]
@@ -563,6 +566,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "list"]
 - ["So26NSExtensionRequestHandlingP", "numberOfSections"]
 - ["So26NSExtensionRequestHandlingP", "numberOfSectionsInCollectionView"]
+- !private ["So26NSExtensionRequestHandlingP", "path"]
 - !private ["So26NSExtensionRequestHandlingP", "print"]
 - !private ["So26NSExtensionRequestHandlingP", "ref"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidChangeAdjustedContentInset"]
@@ -581,6 +585,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", "viewForZooming"]
 - ["So26NSExtensionRequestHandlingP", "viewForZoomingInScrollView"]
+- !private ["So8NSObjectC", "AddItemViewController"]
 - !private ["So8NSObjectC", "Database"]
 - ["So8NSObjectC", "DatabaseReference"]
 - ["So8NSObjectC", "IndexPath"]
@@ -712,6 +717,7 @@ depends-member:
 - !private ["Sq", "path"]
 - !private ["Sq", "reloadData"]
 - !private ["Sq", "text"]
+- !private ["7Potluck22PlanningViewControllerC", "AddItemViewController"]
 - !private ["7Potluck22PlanningViewControllerC", "Database"]
 - ["7Potluck22PlanningViewControllerC", "DatabaseReference"]
 - ["7Potluck22PlanningViewControllerC", "IndexPath"]
@@ -882,6 +888,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "list"]
 - ["So21UIAppearanceContainerP", "numberOfSections"]
 - ["So21UIAppearanceContainerP", "numberOfSectionsInCollectionView"]
+- !private ["So21UIAppearanceContainerP", "path"]
 - !private ["So21UIAppearanceContainerP", "person"]
 - !private ["So21UIAppearanceContainerP", "print"]
 - !private ["So21UIAppearanceContainerP", "ref"]
@@ -998,6 +1005,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "list"]
 - ["So18UIContentContainerP", "numberOfSections"]
 - ["So18UIContentContainerP", "numberOfSectionsInCollectionView"]
+- !private ["So18UIContentContainerP", "path"]
 - !private ["So18UIContentContainerP", "print"]
 - !private ["So18UIContentContainerP", "ref"]
 - ["So18UIContentContainerP", "scrollViewDidChangeAdjustedContentInset"]
@@ -1061,6 +1069,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "list"]
 - ["So18UIFocusEnvironmentP", "numberOfSections"]
 - ["So18UIFocusEnvironmentP", "numberOfSectionsInCollectionView"]
+- !private ["So18UIFocusEnvironmentP", "path"]
 - !private ["So18UIFocusEnvironmentP", "person"]
 - !private ["So18UIFocusEnvironmentP", "print"]
 - !private ["So18UIFocusEnvironmentP", "ref"]
@@ -1135,6 +1144,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "list"]
 - ["So30UIPasteConfigurationSupportingP", "numberOfSections"]
 - ["So30UIPasteConfigurationSupportingP", "numberOfSectionsInCollectionView"]
+- !private ["So30UIPasteConfigurationSupportingP", "path"]
 - !private ["So30UIPasteConfigurationSupportingP", "person"]
 - !private ["So30UIPasteConfigurationSupportingP", "print"]
 - !private ["So30UIPasteConfigurationSupportingP", "ref"]
@@ -1156,6 +1166,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZooming"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
+- !private ["So11UIResponderC", "AddItemViewController"]
 - !private ["So11UIResponderC", "Database"]
 - ["So11UIResponderC", "DatabaseReference"]
 - ["So11UIResponderC", "IndexPath"]
@@ -1189,6 +1200,7 @@ depends-member:
 - ["So11UIResponderC", "list"]
 - ["So11UIResponderC", "numberOfSections"]
 - ["So11UIResponderC", "numberOfSectionsInCollectionView"]
+- !private ["So11UIResponderC", "path"]
 - !private ["So11UIResponderC", "person"]
 - ["So11UIResponderC", "personInChangeImg"]
 - ["So11UIResponderC", "personInChargeTextView"]
@@ -1236,6 +1248,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "list"]
 - ["So30UIResponderStandardEditActionsP", "numberOfSections"]
 - ["So30UIResponderStandardEditActionsP", "numberOfSectionsInCollectionView"]
+- !private ["So30UIResponderStandardEditActionsP", "path"]
 - !private ["So30UIResponderStandardEditActionsP", "person"]
 - !private ["So30UIResponderStandardEditActionsP", "print"]
 - !private ["So30UIResponderStandardEditActionsP", "ref"]
@@ -1319,6 +1332,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "list"]
 - ["So16UIStateRestoringP", "numberOfSections"]
 - ["So16UIStateRestoringP", "numberOfSectionsInCollectionView"]
+- !private ["So16UIStateRestoringP", "path"]
 - !private ["So16UIStateRestoringP", "print"]
 - !private ["So16UIStateRestoringP", "ref"]
 - ["So16UIStateRestoringP", "scrollViewDidChangeAdjustedContentInset"]
@@ -1361,6 +1375,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "list"]
 - ["So18UITraitEnvironmentP", "numberOfSections"]
 - ["So18UITraitEnvironmentP", "numberOfSectionsInCollectionView"]
+- !private ["So18UITraitEnvironmentP", "path"]
 - !private ["So18UITraitEnvironmentP", "person"]
 - !private ["So18UITraitEnvironmentP", "print"]
 - !private ["So18UITraitEnvironmentP", "ref"]
@@ -1405,6 +1420,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "list"]
 - ["So23UIUserActivityRestoringP", "numberOfSections"]
 - ["So23UIUserActivityRestoringP", "numberOfSectionsInCollectionView"]
+- !private ["So23UIUserActivityRestoringP", "path"]
 - !private ["So23UIUserActivityRestoringP", "person"]
 - !private ["So23UIUserActivityRestoringP", "print"]
 - !private ["So23UIUserActivityRestoringP", "ref"]
@@ -1434,6 +1450,7 @@ depends-member:
 - !private ["So6UIViewC", "person"]
 - !private ["So6UIViewC", "reloadData"]
 - !private ["So6UIViewC", "text"]
+- !private ["So16UIViewControllerC", "AddItemViewController"]
 - !private ["So16UIViewControllerC", "Database"]
 - ["So16UIViewControllerC", "DatabaseReference"]
 - ["So16UIViewControllerC", "IndexPath"]
@@ -1463,6 +1480,7 @@ depends-member:
 - ["So16UIViewControllerC", "list"]
 - ["So16UIViewControllerC", "numberOfSections"]
 - ["So16UIViewControllerC", "numberOfSectionsInCollectionView"]
+- !private ["So16UIViewControllerC", "path"]
 - ["So16UIViewControllerC", "personInChangeImg"]
 - ["So16UIViewControllerC", "personInChargeTextView"]
 - ["So16UIViewControllerC", "prepare"]
@@ -1639,6 +1657,7 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "reloadData"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
 depends-nominal:
+- !private "7Potluck21AddItemViewControllerC"
 - "Sa"
 - !private "s10ArraySliceV"
 - "SK"

@@ -1,6 +1,6 @@
-version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
-options: "4adc6c8c0d8960b20141f1106917f844"
-build_time: [1572661546, 829899000]
+version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+options: "a50740d82862e4c296d1a00ec94d045b"
+build_time: [1572681307, 387638000]
 inputs:
   "/Users/danielmorales/CSUMB/Potluck/Pods/RxCocoa/Platform/DataStructures/Bag.swift": [1572654125, 302716422]
   "/Users/danielmorales/CSUMB/Potluck/Pods/RxCocoa/RxCocoa/Traits/Driver/BehaviorRelay+Driver.swift": [1572654125, 310661615]

@@ -9,9 +9,6 @@
 import UIKit
 import FirebaseDatabase
 
-//https://www.youtube.com/watch?v=9sp_u18fPlM&list=PLrT2tZ9JRrf4FG0wKkZGUTFqkkS3TiHKv&index=6
-//8:13
-
 class PlanningViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
 
     var list: List!
@@ -60,7 +57,7 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
                     
                     self.ref.child(self.list.path).child(itemId).child("bringing").observeSingleEvent(of: .value) { (snapshot3) in
                         
-                        print(snapshot3)
+                       // print(snapshot3)
                     }
                     
                     self.items.append(Item(id: itemId, name: name, person: "fix", image: "none", details: "none", owner: "none", path: self.list.path + "/" + itemId))
@@ -106,5 +103,17 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
         planningViewController.list = list
     
         }
+    
+       if segue.destination is AddItemViewController{
+        
+            let addItemViewController = segue.destination as! AddItemViewController
+            
+      
+            addItemViewController.path = list.path
+            print("segue")
+        }
+
+        
+        
     }
 }
