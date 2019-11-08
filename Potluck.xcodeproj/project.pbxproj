@@ -156,6 +156,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		4539D796236D10A400144FCC /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		4560ABEC235AE3AB0034219F = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +188,7 @@
 		4560ABF7235AE3AB0034219F /* Potluck */ = {
 			isa = PBXGroup;
 			children = (
+				4539D796236D10A400144FCC /* Navigation */,
 				0820BE87236D0EF700BE9B4C /* Adding Event */,
 				0820BE86236D0E5300BE9B4C /* Events List */,
 				0820BE85236D0E2600BE9B4C /* Planning Event */,
