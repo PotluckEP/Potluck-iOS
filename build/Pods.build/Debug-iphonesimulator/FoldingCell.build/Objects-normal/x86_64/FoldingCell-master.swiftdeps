@@ -1,5 +1,5 @@
 version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
 options: "f0ffdd003ca08a41bfd8ee20f28080cf"
-build_time: [1573181305, 623073000]
+build_time: [1573201620, 174614000]
 inputs:
-  "/Users/danielmorales/CSUMB/Potluck/Pods/FoldingCell/FoldingCell/FoldingCell/FoldingCell.swift": [1573181296, 75614506]
+  "/Users/danielmorales/CSUMB/Potluck/Pods/FoldingCell/FoldingCell/FoldingCell/FoldingCell.swift": [1573201579, 357687855]
