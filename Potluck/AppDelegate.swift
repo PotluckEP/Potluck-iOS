@@ -43,6 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             }
             return
         }
+        
         // Perform any operations on signed in user here.
         let userId = user.userID                  // For client-side use only!
         //let idToken = user.authentication.idToken // Safe to send to the server
@@ -52,6 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         //let profile = user.profile.
         //let birthday = user.profile.email.
         // Firebase Sign In
+        
         guard let authentication = user.authentication else { return }
         let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
         Auth.auth().signInAndRetrieveData(with: credential) { (authResult, error) in

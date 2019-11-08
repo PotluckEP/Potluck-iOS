@@ -134,6 +134,7 @@
 		0820BE85236D0E2600BE9B4C /* Planning Event */ = {
 			isa = PBXGroup;
 			children = (
+				081D75BB236ECF0F008A4940 /* AddItemViewController.swift */,
 				081A577C23600F290037877C /* ItemCollectionViewCell.swift */,
 				085462C3235F1FCB00AA0E4D /* PlanningViewController.swift */,
 			);
@@ -216,7 +217,6 @@
 				4560AC04235AE3AC0034219F /* Info.plist */,
 				087C1337235AFA43003422E2 /* MenuViewController.swift */,
 				4539D7862361473C00144FCC /* GoogleService-Info.plist */,
-				081D75BB236ECF0F008A4940 /* AddItemViewController.swift */,
 			);
 			path = Potluck;
 			sourceTree = "<group>";
