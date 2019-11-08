@@ -9,7 +9,6 @@
 
 import UIKit
 import FirebaseDatabase
-import RYFloatingInput
 
 class AddEventViewController: UIViewController, UITextFieldDelegate {
     

@@ -73,7 +73,6 @@ depends-member:
 - !private ["7Potluck22AddEventViewControllerC", "view"]
 - ["7Potluck22AddEventViewControllerC", "viewDidLoad"]
 - !private ["So15CALayerDelegateP", "date"]
-- !private ["So15CALayerDelegateP", "delegate"]
 - !private ["So15CALayerDelegateP", "endEditing"]
 - !private ["So15CALayerDelegateP", "resignFirstResponder"]
 - !private ["So15CALayerDelegateP", "text"]
@@ -87,7 +86,6 @@ depends-member:
 - !private ["s7CVarArgP", "date"]
 - !private ["s7CVarArgP", "dateFormat"]
 - !private ["s7CVarArgP", "dateTimePicker"]
-- !private ["s7CVarArgP", "delegate"]
 - !private ["s7CVarArgP", "descriptionTextView"]
 - !private ["s7CVarArgP", "destination"]
 - !private ["s7CVarArgP", "endEditing"]
@@ -127,7 +125,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "date"]
 - !private ["s28CustomDebugStringConvertibleP", "dateFormat"]
 - !private ["s28CustomDebugStringConvertibleP", "dateTimePicker"]
-- !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "descriptionTextView"]
 - !private ["s28CustomDebugStringConvertibleP", "destination"]
 - !private ["s28CustomDebugStringConvertibleP", "endEditing"]
@@ -158,7 +155,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - !private ["s17CustomReflectableP", "child"]
 - !private ["s17CustomReflectableP", "date"]
-- !private ["s17CustomReflectableP", "delegate"]
 - !private ["s17CustomReflectableP", "endEditing"]
 - !private ["s17CustomReflectableP", "resignFirstResponder"]
 - !private ["s17CustomReflectableP", "subscript"]
@@ -173,7 +169,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "date"]
 - !private ["s23CustomStringConvertibleP", "dateFormat"]
 - !private ["s23CustomStringConvertibleP", "dateTimePicker"]
-- !private ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "descriptionTextView"]
 - !private ["s23CustomStringConvertibleP", "destination"]
 - !private ["s23CustomStringConvertibleP", "endEditing"]
@@ -223,7 +218,6 @@ depends-member:
 - !private ["So15NSDateFormatterC", "string"]
 - !private ["Se", "child"]
 - !private ["Se", "date"]
-- !private ["Se", "delegate"]
 - !private ["Se", "endEditing"]
 - !private ["Se", "resignFirstResponder"]
 - !private ["Se", "subscript"]
@@ -231,7 +225,6 @@ depends-member:
 - !private ["SD", "subscript"]
 - !private ["SE", "child"]
 - !private ["SE", "date"]
-- !private ["SE", "delegate"]
 - !private ["SE", "endEditing"]
 - !private ["SE", "resignFirstResponder"]
 - !private ["SE", "subscript"]
@@ -246,7 +239,6 @@ depends-member:
 - !private ["SQ", "date"]
 - !private ["SQ", "dateFormat"]
 - !private ["SQ", "dateTimePicker"]
-- !private ["SQ", "delegate"]
 - !private ["SQ", "descriptionTextView"]
 - !private ["SQ", "destination"]
 - !private ["SQ", "endEditing"]
@@ -278,7 +270,6 @@ depends-member:
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s23ExpressibleByNilLiteralP", "child"]
 - !private ["s23ExpressibleByNilLiteralP", "date"]
-- !private ["s23ExpressibleByNilLiteralP", "delegate"]
 - !private ["s23ExpressibleByNilLiteralP", "endEditing"]
 - !private ["s23ExpressibleByNilLiteralP", "resignFirstResponder"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
@@ -295,7 +286,6 @@ depends-member:
 - !private ["SH", "date"]
 - !private ["SH", "dateFormat"]
 - !private ["SH", "dateTimePicker"]
-- !private ["SH", "delegate"]
 - !private ["SH", "descriptionTextView"]
 - !private ["SH", "destination"]
 - !private ["SH", "endEditing"]
@@ -332,7 +322,6 @@ depends-member:
 - !private ["So8NSCodingP", "date"]
 - !private ["So8NSCodingP", "dateFormat"]
 - !private ["So8NSCodingP", "dateTimePicker"]
-- !private ["So8NSCodingP", "delegate"]
 - !private ["So8NSCodingP", "descriptionTextView"]
 - !private ["So8NSCodingP", "endEditing"]
 - !private ["So8NSCodingP", "eventNameTextView"]
@@ -397,7 +386,6 @@ depends-member:
 - !private ["So8NSObjectC", "date"]
 - !private ["So8NSObjectC", "dateFormat"]
 - ["So8NSObjectC", "dateTimePicker"]
-- !private ["So8NSObjectC", "delegate"]
 - ["So8NSObjectC", "descriptionTextView"]
 - !private ["So8NSObjectC", "destination"]
 - !private ["So8NSObjectC", "endEditing"]
@@ -437,7 +425,6 @@ depends-member:
 - !private ["So8NSObjectP", "date"]
 - !private ["So8NSObjectP", "dateFormat"]
 - !private ["So8NSObjectP", "dateTimePicker"]
-- !private ["So8NSObjectP", "delegate"]
 - !private ["So8NSObjectP", "descriptionTextView"]
 - !private ["So8NSObjectP", "destination"]
 - !private ["So8NSObjectP", "endEditing"]
@@ -467,58 +454,17 @@ depends-member:
 - !private ["So8NSObjectP", "viewDidLoad"]
 - !private ["Sq", "child"]
 - !private ["Sq", "date"]
-- !private ["Sq", "delegate"]
 - !private ["Sq", "endEditing"]
 - !private ["Sq", "resignFirstResponder"]
 - !private ["Sq", "text"]
 - !private ["7Potluck22PlanningViewControllerC", "list"]
 - !private ["SY", "value"]
-- !private ["7RxSwift18ReactiveCompatibleP", "Database"]
-- !private ["7RxSwift18ReactiveCompatibleP", "DateFormatter"]
-- !private ["7RxSwift18ReactiveCompatibleP", "List"]
-- ["7RxSwift18ReactiveCompatibleP", ""]
-- !private ["7RxSwift18ReactiveCompatibleP", "child"]
-- !private ["7RxSwift18ReactiveCompatibleP", "childByAutoId"]
-- !private ["7RxSwift18ReactiveCompatibleP", "database"]
-- !private ["7RxSwift18ReactiveCompatibleP", "date"]
-- !private ["7RxSwift18ReactiveCompatibleP", "dateFormat"]
-- !private ["7RxSwift18ReactiveCompatibleP", "dateTimePicker"]
-- !private ["7RxSwift18ReactiveCompatibleP", "delegate"]
-- !private ["7RxSwift18ReactiveCompatibleP", "descriptionTextView"]
-- !private ["7RxSwift18ReactiveCompatibleP", "destination"]
-- !private ["7RxSwift18ReactiveCompatibleP", "endEditing"]
-- !private ["7RxSwift18ReactiveCompatibleP", "eventNameTextView"]
-- !private ["7RxSwift18ReactiveCompatibleP", "init"]
-- !private ["7RxSwift18ReactiveCompatibleP", "key"]
-- !private ["7RxSwift18ReactiveCompatibleP", "list"]
-- !private ["7RxSwift18ReactiveCompatibleP", "locationTextView"]
-- !private ["7RxSwift18ReactiveCompatibleP", "observeSingleEvent"]
-- !private ["7RxSwift18ReactiveCompatibleP", "ref"]
-- !private ["7RxSwift18ReactiveCompatibleP", "reference"]
-- !private ["7RxSwift18ReactiveCompatibleP", "resignFirstResponder"]
-- !private ["7RxSwift18ReactiveCompatibleP", "setValue"]
-- !private ["7RxSwift18ReactiveCompatibleP", "string"]
-- !private ["7RxSwift18ReactiveCompatibleP", "text"]
-- ["7RxSwift18ReactiveCompatibleP", "textField"]
-- ["7RxSwift18ReactiveCompatibleP", "textFieldDidBeginEditing"]
-- ["7RxSwift18ReactiveCompatibleP", "textFieldDidChangeSelection"]
-- ["7RxSwift18ReactiveCompatibleP", "textFieldDidEndEditing"]
-- ["7RxSwift18ReactiveCompatibleP", "textFieldShouldBeginEditing"]
-- ["7RxSwift18ReactiveCompatibleP", "textFieldShouldClear"]
-- ["7RxSwift18ReactiveCompatibleP", "textFieldShouldEndEditing"]
-- ["7RxSwift18ReactiveCompatibleP", "textFieldShouldReturn"]
-- !private ["7RxSwift18ReactiveCompatibleP", "updateChildValues"]
-- !private ["7RxSwift18ReactiveCompatibleP", "value"]
-- !private ["7RxSwift18ReactiveCompatibleP", "view"]
-- !private ["7RxSwift18ReactiveCompatibleP", "viewDidLoad"]
 - !private ["ST", "subscript"]
 - !private ["So29UIAccessibilityIdentificationP", "date"]
-- !private ["So29UIAccessibilityIdentificationP", "delegate"]
 - !private ["So29UIAccessibilityIdentificationP", "endEditing"]
 - !private ["So29UIAccessibilityIdentificationP", "resignFirstResponder"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So12UIAppearanceP", "date"]
-- !private ["So12UIAppearanceP", "delegate"]
 - !private ["So12UIAppearanceP", "endEditing"]
 - !private ["So12UIAppearanceP", "resignFirstResponder"]
 - !private ["So12UIAppearanceP", "text"]
@@ -528,7 +474,6 @@ depends-member:
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "date"]
 - !private ["So21UIAppearanceContainerP", "dateTimePicker"]
-- !private ["So21UIAppearanceContainerP", "delegate"]
 - !private ["So21UIAppearanceContainerP", "descriptionTextView"]
 - !private ["So21UIAppearanceContainerP", "endEditing"]
 - !private ["So21UIAppearanceContainerP", "eventNameTextView"]
@@ -571,21 +516,17 @@ depends-member:
 - ["So18UIContentContainerP", "textFieldShouldReturn"]
 - !private ["So18UIContentContainerP", "view"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
-- !private ["So30UIContentSizeCategoryAdjustingP", "delegate"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "resignFirstResponder"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - !private ["So9UIControlC", "date"]
-- !private ["So9UIControlC", "delegate"]
 - !private ["So9UIControlC", "resignFirstResponder"]
 - !private ["So9UIControlC", "text"]
 - !private ["So17UICoordinateSpaceP", "date"]
-- !private ["So17UICoordinateSpaceP", "delegate"]
 - !private ["So17UICoordinateSpaceP", "endEditing"]
 - !private ["So17UICoordinateSpaceP", "resignFirstResponder"]
 - !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So12UIDatePickerC", "date"]
 - !private ["So13UIDynamicItemP", "date"]
-- !private ["So13UIDynamicItemP", "delegate"]
 - !private ["So13UIDynamicItemP", "endEditing"]
 - !private ["So13UIDynamicItemP", "resignFirstResponder"]
 - !private ["So13UIDynamicItemP", "text"]
@@ -595,7 +536,6 @@ depends-member:
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "date"]
 - !private ["So18UIFocusEnvironmentP", "dateTimePicker"]
-- !private ["So18UIFocusEnvironmentP", "delegate"]
 - !private ["So18UIFocusEnvironmentP", "descriptionTextView"]
 - !private ["So18UIFocusEnvironmentP", "endEditing"]
 - !private ["So18UIFocusEnvironmentP", "eventNameTextView"]
@@ -616,20 +556,16 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "view"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - !private ["So11UIFocusItemP", "date"]
-- !private ["So11UIFocusItemP", "delegate"]
 - !private ["So11UIFocusItemP", "endEditing"]
 - !private ["So11UIFocusItemP", "resignFirstResponder"]
 - !private ["So11UIFocusItemP", "text"]
 - !private ["So20UIFocusItemContainerP", "date"]
-- !private ["So20UIFocusItemContainerP", "delegate"]
 - !private ["So20UIFocusItemContainerP", "endEditing"]
 - !private ["So20UIFocusItemContainerP", "resignFirstResponder"]
 - !private ["So20UIFocusItemContainerP", "text"]
-- !private ["So10UIKeyInputP", "delegate"]
 - !private ["So10UIKeyInputP", "resignFirstResponder"]
 - !private ["So10UIKeyInputP", "text"]
 - !private ["So24UILargeContentViewerItemP", "date"]
-- !private ["So24UILargeContentViewerItemP", "delegate"]
 - !private ["So24UILargeContentViewerItemP", "endEditing"]
 - !private ["So24UILargeContentViewerItemP", "resignFirstResponder"]
 - !private ["So24UILargeContentViewerItemP", "text"]
@@ -639,7 +575,6 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "date"]
 - !private ["So30UIPasteConfigurationSupportingP", "dateTimePicker"]
-- !private ["So30UIPasteConfigurationSupportingP", "delegate"]
 - !private ["So30UIPasteConfigurationSupportingP", "descriptionTextView"]
 - !private ["So30UIPasteConfigurationSupportingP", "endEditing"]
 - !private ["So30UIPasteConfigurationSupportingP", "eventNameTextView"]
@@ -675,7 +610,6 @@ depends-member:
 - ["So11UIResponderC", "UITouch"]
 - !private ["So11UIResponderC", "date"]
 - ["So11UIResponderC", "dateTimePicker"]
-- !private ["So11UIResponderC", "delegate"]
 - ["So11UIResponderC", "descriptionTextView"]
 - !private ["So11UIResponderC", "endEditing"]
 - ["So11UIResponderC", "eventNameTextView"]
@@ -703,7 +637,6 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "date"]
 - !private ["So30UIResponderStandardEditActionsP", "dateTimePicker"]
-- !private ["So30UIResponderStandardEditActionsP", "delegate"]
 - !private ["So30UIResponderStandardEditActionsP", "descriptionTextView"]
 - !private ["So30UIResponderStandardEditActionsP", "endEditing"]
 - !private ["So30UIResponderStandardEditActionsP", "eventNameTextView"]
@@ -746,13 +679,10 @@ depends-member:
 - !private ["So16UIStateRestoringP", "view"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - !private ["So17UIStoryboardSegueC", "destination"]
-- !private ["So15UITextDraggableP", "delegate"]
 - !private ["So15UITextDraggableP", "resignFirstResponder"]
 - !private ["So15UITextDraggableP", "text"]
-- !private ["So15UITextDroppableP", "delegate"]
 - !private ["So15UITextDroppableP", "resignFirstResponder"]
 - !private ["So15UITextDroppableP", "text"]
-- !private ["So11UITextFieldC", "delegate"]
 - !private ["So11UITextFieldC", "resignFirstResponder"]
 - !private ["So11UITextFieldC", "text"]
 - !private ["So19UITextFieldDelegateP", "Database"]
@@ -774,13 +704,10 @@ depends-member:
 - ["So19UITextFieldDelegateP", "textFieldShouldEndEditing"]
 - ["So19UITextFieldDelegateP", "textFieldShouldReturn"]
 - !private ["So19UITextFieldDelegateP", "view"]
-- !private ["So11UITextInputP", "delegate"]
 - !private ["So11UITextInputP", "resignFirstResponder"]
 - !private ["So11UITextInputP", "text"]
-- !private ["So17UITextInputTraitsP", "delegate"]
 - !private ["So17UITextInputTraitsP", "resignFirstResponder"]
 - !private ["So17UITextInputTraitsP", "text"]
-- !private ["So34UITextPasteConfigurationSupportingP", "delegate"]
 - !private ["So34UITextPasteConfigurationSupportingP", "resignFirstResponder"]
 - !private ["So34UITextPasteConfigurationSupportingP", "text"]
 - !private ["So18UITraitEnvironmentP", "Database"]
@@ -789,7 +716,6 @@ depends-member:
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "date"]
 - !private ["So18UITraitEnvironmentP", "dateTimePicker"]
-- !private ["So18UITraitEnvironmentP", "delegate"]
 - !private ["So18UITraitEnvironmentP", "descriptionTextView"]
 - !private ["So18UITraitEnvironmentP", "endEditing"]
 - !private ["So18UITraitEnvironmentP", "eventNameTextView"]
@@ -815,7 +741,6 @@ depends-member:
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "date"]
 - !private ["So23UIUserActivityRestoringP", "dateTimePicker"]
-- !private ["So23UIUserActivityRestoringP", "delegate"]
 - !private ["So23UIUserActivityRestoringP", "descriptionTextView"]
 - !private ["So23UIUserActivityRestoringP", "endEditing"]
 - !private ["So23UIUserActivityRestoringP", "eventNameTextView"]
@@ -836,7 +761,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "view"]
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
 - !private ["So6UIViewC", "date"]
-- !private ["So6UIViewC", "delegate"]
 - !private ["So6UIViewC", "endEditing"]
 - !private ["So6UIViewC", "resignFirstResponder"]
 - !private ["So6UIViewC", "text"]
@@ -885,7 +809,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "date"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dateFormat"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dateTimePicker"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "descriptionTextView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "destination"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "endEditing"]
@@ -923,7 +846,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "date"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dateFormat"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dateTimePicker"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "delegate"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "descriptionTextView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "destination"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "endEditing"]
@@ -953,13 +875,11 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
 - !private ["s21_ObjectiveCBridgeableP", "child"]
 - !private ["s21_ObjectiveCBridgeableP", "date"]
-- !private ["s21_ObjectiveCBridgeableP", "delegate"]
 - !private ["s21_ObjectiveCBridgeableP", "endEditing"]
 - !private ["s21_ObjectiveCBridgeableP", "resignFirstResponder"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "text"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "date"]
-- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "delegate"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "endEditing"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "resignFirstResponder"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
@@ -994,7 +914,6 @@ depends-nominal:
 - !private "Sq"
 - !private "7Potluck22PlanningViewControllerC"
 - !private "SY"
-- "7RxSwift18ReactiveCompatibleP"
 - !private "ST"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
@@ -1061,10 +980,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Swift.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64.swiftmodule"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/RxCocoa/RxCocoa.framework/Modules/RxCocoa.swiftmodule/arm64-apple-ios.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Combine.swiftmodule/arm64-apple-ios.swiftmodule"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/RxSwift/RxSwift.framework/Modules/RxSwift.swiftmodule/arm64-apple-ios.swiftmodule"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/RYFloatingInput/RYFloatingInput.framework/Modules/RYFloatingInput.swiftmodule/arm64-apple-ios.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/_types/_timeval32.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/_types/_timeval64.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/_types/_ucontext64.h"
@@ -1080,19 +996,15 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURL.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPlugInCOM.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/ImageIO.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/_RX.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/alloca.h"
 - "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/RxCocoa-umbrella.h"
 - "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
 - "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/RxSwift/RxSwift.framework/Headers/RxSwift-umbrella.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/RYFloatingInput/RYFloatingInput.framework/Headers/RYFloatingInput-umbrella.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/RxCocoa.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFData.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSData.h"
 - "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/danielmorales/CSUMB/Potluck/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/data.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageMetadata.h"
@@ -1225,8 +1137,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/mach_time.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/objc/NSObjCRuntime.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/_RXObjCRuntime.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/RxCocoaRuntime.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/objc/runtime.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/utime.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIScene.h"
@@ -1469,6 +1379,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGAffineTransform.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/vm.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPlugIn.h"
+- "/Users/danielmorales/CSUMB/Potluck/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
+- "/Users/danielmorales/CSUMB/Potluck/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/machine/boolean.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/boolean.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/arm/boolean.h"
@@ -1500,6 +1412,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFUserNotification.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h"
+- "/Users/danielmorales/CSUMB/Potluck/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFHTTPAuthentication.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSInvocation.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h"
@@ -1555,6 +1468,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBarCommon.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/secure/_common.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h"
+- "/Users/danielmorales/CSUMB/Potluck/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPattern.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreVideo.framework/Headers/CVReturn.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/machine/kern_return.h"
@@ -1730,6 +1644,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIGraphicsRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextDragPreviewRenderer.h"
 - "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/danielmorales/CSUMB/Potluck/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccelerometer.h"
@@ -1759,7 +1674,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFramesetter.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTTypesetter.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSKeyedArchiver.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/_RXKVOObserver.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILargeContentViewer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CALayer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGLayer.h"
@@ -2107,9 +2021,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSDataAsset.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImageAsset.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/_types/_fd_isset.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/RxCocoa-Swift.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/RxSwift/RxSwift.framework/Headers/RxSwift-Swift.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/RYFloatingInput/RYFloatingInput.framework/Headers/RYFloatingInput-Swift.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/wait.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/bsm/audit.h"
@@ -2274,7 +2185,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIUserActivity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUserActivity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProxy.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/_RXDelegateProxy.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach-o/module.map"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/libxml2/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/objc/module.modulemap"
@@ -2287,7 +2197,6 @@ depends-external:
 - "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ImageIO.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Modules/module.modulemap"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/RxCocoa/RxCocoa.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/IOSurface.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Modules/module.modulemap"
 - "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
@@ -2296,6 +2205,7 @@ depends-external:
 - "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Metal.framework/Modules/module.modulemap"
+- "/Users/danielmorales/CSUMB/Potluck/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreVideo.framework/Modules/module.modulemap"
@@ -2303,9 +2213,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Modules/module.modulemap"
 - "/Users/danielmorales/CSUMB/Potluck/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Modules/module.modulemap"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/RxSwift/RxSwift.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Modules/module.modulemap"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/RYFloatingInput/RYFloatingInput.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/shims/module.modulemap"
@@ -2322,4 +2230,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "f4738a6b04d0fedfe0a5d264eef87694"
+interface-hash: "90a8be6867c552785f1b0a28b0c5d533"

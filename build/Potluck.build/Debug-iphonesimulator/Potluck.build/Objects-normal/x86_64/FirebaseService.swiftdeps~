@@ -21,7 +21,6 @@ depends-member:
 - !private ["s7CVarArgP", "child"]
 - !private ["s7CVarArgP", "database"]
 - !private ["s7CVarArgP", "init"]
-- !private ["s7CVarArgP", "name"]
 - !private ["s7CVarArgP", "observeSingleEvent"]
 - !private ["s7CVarArgP", "ref"]
 - !private ["s7CVarArgP", "reference"]
@@ -31,7 +30,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "child"]
 - !private ["s28CustomDebugStringConvertibleP", "database"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
-- !private ["s28CustomDebugStringConvertibleP", "name"]
 - !private ["s28CustomDebugStringConvertibleP", "observeSingleEvent"]
 - !private ["s28CustomDebugStringConvertibleP", "ref"]
 - !private ["s28CustomDebugStringConvertibleP", "reference"]
@@ -42,7 +40,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "child"]
 - !private ["s23CustomStringConvertibleP", "database"]
 - !private ["s23CustomStringConvertibleP", "init"]
-- !private ["s23CustomStringConvertibleP", "name"]
 - !private ["s23CustomStringConvertibleP", "observeSingleEvent"]
 - !private ["s23CustomStringConvertibleP", "ref"]
 - !private ["s23CustomStringConvertibleP", "reference"]
@@ -62,7 +59,6 @@ depends-member:
 - !private ["SQ", "child"]
 - !private ["SQ", "database"]
 - !private ["SQ", "init"]
-- !private ["SQ", "name"]
 - !private ["SQ", "observeSingleEvent"]
 - !private ["SQ", "ref"]
 - !private ["SQ", "reference"]
@@ -74,14 +70,12 @@ depends-member:
 - ["7Potluck15FirebaseServiceC", "deinit"]
 - ["7Potluck15FirebaseServiceC", "getName"]
 - ["7Potluck15FirebaseServiceC", "init"]
-- !private ["7Potluck15FirebaseServiceC", "name"]
 - !private ["7Potluck15FirebaseServiceC", "ref"]
 - !private ["SH", "Database"]
 - ["SH", ""]
 - !private ["SH", "child"]
 - !private ["SH", "database"]
 - !private ["SH", "init"]
-- !private ["SH", "name"]
 - !private ["SH", "observeSingleEvent"]
 - !private ["SH", "ref"]
 - !private ["SH", "reference"]
@@ -94,7 +88,6 @@ depends-member:
 - !private ["So8NSObjectC", "database"]
 - ["So8NSObjectC", "getName"]
 - ["So8NSObjectC", "init"]
-- !private ["So8NSObjectC", "name"]
 - !private ["So8NSObjectC", "observeSingleEvent"]
 - ["So8NSObjectC", "ref"]
 - !private ["So8NSObjectC", "reference"]
@@ -104,7 +97,6 @@ depends-member:
 - !private ["So8NSObjectP", "child"]
 - !private ["So8NSObjectP", "database"]
 - !private ["So8NSObjectP", "init"]
-- !private ["So8NSObjectP", "name"]
 - !private ["So8NSObjectP", "observeSingleEvent"]
 - !private ["So8NSObjectP", "ref"]
 - !private ["So8NSObjectP", "reference"]
@@ -116,7 +108,6 @@ depends-member:
 - !private ["7RxSwift18ReactiveCompatibleP", "child"]
 - !private ["7RxSwift18ReactiveCompatibleP", "database"]
 - !private ["7RxSwift18ReactiveCompatibleP", "init"]
-- !private ["7RxSwift18ReactiveCompatibleP", "name"]
 - !private ["7RxSwift18ReactiveCompatibleP", "observeSingleEvent"]
 - !private ["7RxSwift18ReactiveCompatibleP", "ref"]
 - !private ["7RxSwift18ReactiveCompatibleP", "reference"]
@@ -126,7 +117,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "child"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "database"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "name"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "observeSingleEvent"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ref"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reference"]
@@ -136,7 +126,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "child"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "database"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "name"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "observeSingleEvent"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ref"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "reference"]
@@ -225,6 +214,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFData.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSData.h"
 - "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/danielmorales/CSUMB/Potluck/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/dispatch/data.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageMetadata.h"
@@ -601,6 +591,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGAffineTransform.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/vm.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPlugIn.h"
+- "/Users/danielmorales/CSUMB/Potluck/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
+- "/Users/danielmorales/CSUMB/Potluck/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/i386/boolean.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/machine/boolean.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/boolean.h"
@@ -632,6 +624,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFUserNotification.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h"
+- "/Users/danielmorales/CSUMB/Potluck/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFHTTPAuthentication.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSInvocation.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h"
@@ -687,6 +680,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBarCommon.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/secure/_common.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h"
+- "/Users/danielmorales/CSUMB/Potluck/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPattern.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreVideo.framework/Headers/CVReturn.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/i386/kern_return.h"
@@ -863,6 +857,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIGraphicsRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextDragPreviewRenderer.h"
 - "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/danielmorales/CSUMB/Potluck/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccelerometer.h"
@@ -1430,6 +1425,7 @@ depends-external:
 - "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Metal.framework/Modules/module.modulemap"
+- "/Users/danielmorales/CSUMB/Potluck/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreVideo.framework/Modules/module.modulemap"

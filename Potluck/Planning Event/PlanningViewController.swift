@@ -108,12 +108,9 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
         
             let addItemViewController = segue.destination as! AddItemViewController
             
-      
             addItemViewController.path = list.path
             print("segue")
         }
-
-        
         
     }
 }
