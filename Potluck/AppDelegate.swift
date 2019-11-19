@@ -46,12 +46,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         // Perform any operations on signed in user here.
         let userId = user.userID                  // For client-side use only!
-        //let idToken = user.authentication.idToken // Safe to send to the server
+        let idToken = user.authentication.idToken // Safe to send to the server
         let fullName = user.profile.name
         let email = user.profile.email
         let profile = user.profile.imageURL(withDimension: 480)
-        //let profile = user.profile.
-        //let birthday = user.profile.email.
+        
         // Firebase Sign In
         
         guard let authentication = user.authentication else { return }
@@ -64,8 +63,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             }
             print("User is Signed In with Firebase")
 //            self.ref.child("users").child(userId!).setValue(["name": fullName, "email": email, "profile": profile])
-            self.ref.child("users").child(userId!).setValue(["name": fullName, "email": email])
+            self.ref.child("users").child(userId!).setValue(["name": fullName, "email": email, "id": idToken])
+
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            if #available(iOS 13.0, *) {
+            self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "ViewController")
+//            self.window?.rootViewController = storyboard.instantiateViewController(identifier: "")
+//            } else {
+//                // Fallback on earlier versions
+//            }
+
         }
+        
     }
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
         // Perform any operations when the user disconnects from app here.
