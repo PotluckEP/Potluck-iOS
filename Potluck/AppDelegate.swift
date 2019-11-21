@@ -49,7 +49,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         let idToken = user.authentication.idToken // Safe to send to the server
         let fullName = user.profile.name
         let email = user.profile.email
-        let profile = user.profile.imageURL(withDimension: 480)
         
         // Firebase Sign In
         
@@ -62,9 +61,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                 return
             }
             print("User is Signed In with Firebase")
+            //print(profile)
 //            self.ref.child("users").child(userId!).setValue(["name": fullName, "email": email, "profile": profile])
-            self.ref.child("users").child(userId!).setValue(["name": fullName, "email": email, "id": idToken])
-
+//            self.ref.child("users").child(userId!).setValue(["name": fullName, "email": email, "id": idToken, "profile": profile])
+//            self.ref.child("users").child(userId!).setValue(["name": fullName, "email": email, "id": idToken])
+            if let profile = user.profile.imageURL(withDimension: 480) {
+                self.ref.child("users").child(userId!).setValue(["name": fullName, "email": email, "id": idToken, "profile": profile.absoluteString])
+            }
+            
+            else {
+                self.ref.child("users").child(userId!).setValue(["name": fullName, "email": email, "id": idToken])
+            }
+            
+            
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
 //            if #available(iOS 13.0, *) {
             self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "ViewController")
