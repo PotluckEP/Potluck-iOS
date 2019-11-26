@@ -204,9 +204,21 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class UITextField;
-@class UISegmentedControl;
+@class UIStoryboardSegue;
 @class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC7Potluck26AddCodeEventViewController")
+@interface AddCodeEventViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified codeTextField;
+- (void)viewDidLoad;
+- (IBAction)AddEventClicked:(id _Nonnull)sender;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UISegmentedControl;
 
 SWIFT_CLASS("_TtC7Potluck21AddItemViewController")
 @interface AddItemViewController : UIViewController
@@ -243,7 +255,6 @@ SWIFT_CLASS("_TtC7Potluck11AppDelegate")
 @class UIDatePicker;
 @class UITouch;
 @class UIEvent;
-@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC7Potluck25CreateEventViewController")
 @interface CreateEventViewController : UIViewController <UITextFieldDelegate>

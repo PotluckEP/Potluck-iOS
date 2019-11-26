@@ -34,6 +34,8 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
         
         self.ref.child(self.list.path).observeSingleEvent(of: .value) { (snapshot) in
             
+            print(snapshot)
+            
             var item = snapshot.value as! [String: Any]
             
             self.itemTextView.text = item["name"] as? String
