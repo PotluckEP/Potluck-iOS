@@ -38,12 +38,11 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
             
             self.itemTextView.text = item["name"] as? String
             item.removeValue(forKey: "name");
-            
-//            print(item["charge"])
-//            self.ref.child("users").child(item["charge"] as! String).observeSingleEvent(of: .value, with: { (snapshot2) in
-//                let user = snapshot2.value as! [String: Any]
-//                self.personInChargeTextView.text = user["name"] as! String
-//            })
+
+            self.ref.child("users").child(item["charge"] as! String).observeSingleEvent(of: .value, with: { (snapshot2) in
+                let user = snapshot2.value as! [String: Any]
+                self.personInChargeTextView.text = user["name"] as! String
+            })
             
             item.removeValue(forKey: "charge");
             

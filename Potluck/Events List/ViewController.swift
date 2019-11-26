@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseDatabase
+import FirebaseAuth
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -39,6 +40,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             for (id, rank) in eventsId { // Getting the events information
                 
                 self.ref.child("events").child(id).observeSingleEvent(of: .value, with: { (info) in
+                    print(info)
                     let event = info.value as! [String: Any]
                     
                     self.events.append( Event(id: id, name: event["name"] as! String, location: event["location"] as! String, date: event["date"] as! String, info: event["info"] as! String, owner: event["owner"] as! String, rank: rank, path: "events/" + id + "/planning"));

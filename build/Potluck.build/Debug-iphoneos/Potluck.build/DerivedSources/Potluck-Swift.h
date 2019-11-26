@@ -334,6 +334,8 @@ SWIFT_CLASS("_TtC7Potluck22PlanningViewController")
 SWIFT_CLASS("_TtC7Potluck20SignInViewController")
 @interface SignInViewController : UIViewController
 - (void)viewDidLoad;
+- (IBAction)testButtonClicked:(id _Nonnull)sender;
+- (IBAction)googleSignButtonClicked:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end

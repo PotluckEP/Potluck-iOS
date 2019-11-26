@@ -204,32 +204,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class UITextField;
-@class UIDatePicker;
-@class UITouch;
-@class UIEvent;
-@class UIStoryboardSegue;
+@class UISegmentedControl;
 @class NSBundle;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC7Potluck22AddEventViewController")
-@interface AddEventViewController : UIViewController <UITextFieldDelegate>
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified eventNameTextView;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified locationTextView;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified descriptionTextView;
-@property (nonatomic, weak) IBOutlet UIDatePicker * _Null_unspecified dateTimePicker;
-- (void)viewDidLoad;
-- (IBAction)StartPlanningButtonClicked:(id _Nonnull)sender;
-- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
-- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
-- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 SWIFT_CLASS("_TtC7Potluck21AddItemViewController")
 @interface AddItemViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified titleTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified chargeTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified descriptionTextField;
+@property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified option;
 - (void)viewDidLoad;
+- (IBAction)AddItemButtonClicked:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -252,6 +238,26 @@ SWIFT_CLASS("_TtC7Potluck11AppDelegate")
 - (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIDatePicker;
+@class UITouch;
+@class UIEvent;
+@class UIStoryboardSegue;
+
+SWIFT_CLASS("_TtC7Potluck25CreateEventViewController")
+@interface CreateEventViewController : UIViewController <UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified eventNameTextView;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified locationTextView;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified descriptionTextView;
+@property (nonatomic, weak) IBOutlet UIDatePicker * _Null_unspecified dateTimePicker;
+- (void)viewDidLoad;
+- (IBAction)StartPlanningButtonClicked:(id _Nonnull)sender;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -334,6 +340,8 @@ SWIFT_CLASS("_TtC7Potluck22PlanningViewController")
 SWIFT_CLASS("_TtC7Potluck20SignInViewController")
 @interface SignInViewController : UIViewController
 - (void)viewDidLoad;
+- (IBAction)testButtonClicked:(id _Nonnull)sender;
+- (IBAction)googleSignButtonClicked:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end

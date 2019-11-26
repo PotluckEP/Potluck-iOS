@@ -7,18 +7,45 @@
 //
 
 import UIKit
+import Firebase
 
 class AddItemViewController: UIViewController {
     
     var path: String!
+    var ref: DatabaseReference!
 
+
+    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var chargeTextField: UITextField!
+    @IBOutlet weak var descriptionTextField: UITextField!
+    @IBOutlet weak var option: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(path)
+        ref = Database.database().reference()
     }
     
-
+    @IBAction func AddItemButtonClicked(_ sender: Any) {
+        
+        let type = option.titleForSegment(at: option.selectedSegmentIndex) as! String
+        
+        var newItem = [ "name": titleTextField.text,
+                        "charge": chargeTextField.text,
+                        "description": descriptionTextField.text
+        ]
+        
+        if(type == "Item"){
+            newItem["type"] = "Item"
+        }else{
+            newItem["type"] = "List"
+        }
+        
+        self.ref.child(path).childByAutoId().setValue(newItem);
+        
+        self.presentingViewController?.dismiss(animated: false, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

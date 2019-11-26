@@ -12,8 +12,8 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 - "viewWillAppear"
 depends-top-level:
-- !private "+"
 - "AssignmentPrecedence"
+- "Auth"
 - "Bool"
 - !private "BooleanLiteralType"
 - "CastingPrecedence"
@@ -25,7 +25,6 @@ depends-top-level:
 - "Int"
 - !private "List"
 - !private "PlanningViewController"
-- !private "String"
 - "StringLiteralType"
 - "UIStoryboardSegue"
 - "UITableView"
@@ -34,16 +33,15 @@ depends-top-level:
 - "UITableViewDelegate"
 - "UIViewController"
 - "ViewController"
-- !private "print"
+- "userID"
 depends-member:
-- !private ["Sa", "append"]
 - !private ["Sa", "count"]
 - ["Sa", "init"]
 - !private ["Sa", "subscript"]
 - !private ["s10ArraySliceV", "date"]
 - !private ["s10ArraySliceV", "location"]
 - !private ["s10ArraySliceV", "name"]
-- !private ["SK", "append"]
+- ["So7FIRAuthC", "auth"]
 - !private ["SK", "count"]
 - !private ["SK", "date"]
 - ["SK", "init"]
@@ -57,13 +55,13 @@ depends-member:
 - !private ["So15CALayerDelegateP", "indexPath"]
 - !private ["So15CALayerDelegateP", "locationTextView"]
 - !private ["So15CALayerDelegateP", "nameTextView"]
-- !private ["So15CALayerDelegateP", "reloadData"]
 - !private ["So15CALayerDelegateP", "text"]
+- ["s7CVarArgP", "Auth"]
 - !private ["s7CVarArgP", "Database"]
 - ["s7CVarArgP", "Event"]
 - !private ["s7CVarArgP", "List"]
 - ["s7CVarArgP", ""]
-- !private ["s7CVarArgP", "append"]
+- ["s7CVarArgP", "auth"]
 - !private ["s7CVarArgP", "child"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "database"]
@@ -93,7 +91,6 @@ depends-member:
 - !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "ref"]
 - !private ["s7CVarArgP", "reference"]
-- !private ["s7CVarArgP", "reloadData"]
 - ["s7CVarArgP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s7CVarArgP", "scrollViewDidEndDecelerating"]
 - ["s7CVarArgP", "scrollViewDidEndDragging"]
@@ -114,12 +111,11 @@ depends-member:
 - ["s7CVarArgP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["s7CVarArgP", "tableview"]
 - !private ["s7CVarArgP", "text"]
-- !private ["s7CVarArgP", "value"]
+- ["s7CVarArgP", "userID"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["s7CVarArgP", "viewForZooming"]
 - ["s7CVarArgP", "viewForZoomingInScrollView"]
 - !private ["s7CVarArgP", "viewWillAppear"]
-- !private ["Sl", "append"]
 - !private ["Sl", "count"]
 - !private ["Sl", "date"]
 - ["Sl", "init"]
@@ -128,18 +124,18 @@ depends-member:
 - !private ["Sl", "row"]
 - !private ["Sl", "subscript"]
 - !private ["SL", "row"]
-- !private ["10Foundation15ContiguousBytesP", "append"]
 - !private ["10Foundation15ContiguousBytesP", "count"]
 - !private ["10Foundation15ContiguousBytesP", "date"]
 - ["10Foundation15ContiguousBytesP", "init"]
 - !private ["10Foundation15ContiguousBytesP", "location"]
 - !private ["10Foundation15ContiguousBytesP", "name"]
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
+- ["s28CustomDebugStringConvertibleP", "Auth"]
 - !private ["s28CustomDebugStringConvertibleP", "Database"]
 - ["s28CustomDebugStringConvertibleP", "Event"]
 - !private ["s28CustomDebugStringConvertibleP", "List"]
 - ["s28CustomDebugStringConvertibleP", ""]
-- !private ["s28CustomDebugStringConvertibleP", "append"]
+- ["s28CustomDebugStringConvertibleP", "auth"]
 - !private ["s28CustomDebugStringConvertibleP", "child"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "database"]
@@ -169,7 +165,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "ref"]
 - !private ["s28CustomDebugStringConvertibleP", "reference"]
-- !private ["s28CustomDebugStringConvertibleP", "reloadData"]
 - !private ["s28CustomDebugStringConvertibleP", "row"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewDidEndDecelerating"]
@@ -191,12 +186,11 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["s28CustomDebugStringConvertibleP", "tableview"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
-- !private ["s28CustomDebugStringConvertibleP", "value"]
+- ["s28CustomDebugStringConvertibleP", "userID"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", "viewForZooming"]
 - ["s28CustomDebugStringConvertibleP", "viewForZoomingInScrollView"]
 - !private ["s28CustomDebugStringConvertibleP", "viewWillAppear"]
-- !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "child"]
 - !private ["s17CustomReflectableP", "count"]
 - !private ["s17CustomReflectableP", "date"]
@@ -206,15 +200,15 @@ depends-member:
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "location"]
 - !private ["s17CustomReflectableP", "name"]
-- !private ["s17CustomReflectableP", "reloadData"]
 - !private ["s17CustomReflectableP", "row"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "text"]
+- ["s23CustomStringConvertibleP", "Auth"]
 - !private ["s23CustomStringConvertibleP", "Database"]
 - ["s23CustomStringConvertibleP", "Event"]
 - !private ["s23CustomStringConvertibleP", "List"]
 - ["s23CustomStringConvertibleP", ""]
-- !private ["s23CustomStringConvertibleP", "append"]
+- ["s23CustomStringConvertibleP", "auth"]
 - !private ["s23CustomStringConvertibleP", "child"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "database"]
@@ -244,7 +238,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "ref"]
 - !private ["s23CustomStringConvertibleP", "reference"]
-- !private ["s23CustomStringConvertibleP", "reloadData"]
 - !private ["s23CustomStringConvertibleP", "row"]
 - ["s23CustomStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s23CustomStringConvertibleP", "scrollViewDidEndDecelerating"]
@@ -266,54 +259,47 @@ depends-member:
 - ["s23CustomStringConvertibleP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["s23CustomStringConvertibleP", "tableview"]
 - !private ["s23CustomStringConvertibleP", "text"]
-- !private ["s23CustomStringConvertibleP", "value"]
+- ["s23CustomStringConvertibleP", "userID"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", "viewForZooming"]
 - ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
 - !private ["s23CustomStringConvertibleP", "viewWillAppear"]
-- !private ["So16FIRDataEventTypeV", "value"]
-- !private ["10Foundation12DataProtocolP", "append"]
 - !private ["10Foundation12DataProtocolP", "count"]
 - !private ["10Foundation12DataProtocolP", "date"]
 - ["10Foundation12DataProtocolP", "init"]
 - !private ["10Foundation12DataProtocolP", "location"]
 - !private ["10Foundation12DataProtocolP", "name"]
 - !private ["10Foundation12DataProtocolP", "subscript"]
-- !private ["So15FIRDataSnapshotC", "value"]
 - !private ["So11FIRDatabaseC", "database"]
 - !private ["So11FIRDatabaseC", "reference"]
 - !private ["So16FIRDatabaseQueryC", "child"]
 - !private ["So16FIRDatabaseQueryC", "observeSingleEvent"]
 - !private ["So20FIRDatabaseReferenceC", "child"]
 - !private ["So20FIRDatabaseReferenceC", "observeSingleEvent"]
-- !private ["Se", "append"]
 - !private ["Se", "child"]
 - !private ["Se", "count"]
 - !private ["Se", "dequeueReusableCell"]
 - !private ["Se", "deselectRow"]
 - !private ["Se", "indexPath"]
 - ["Se", "init"]
-- !private ["Se", "reloadData"]
 - !private ["Se", "row"]
 - !private ["Se", "subscript"]
 - !private ["Se", "text"]
-- !private ["SD", "subscript"]
-- !private ["SE", "append"]
 - !private ["SE", "child"]
 - !private ["SE", "count"]
 - !private ["SE", "dequeueReusableCell"]
 - !private ["SE", "deselectRow"]
 - !private ["SE", "indexPath"]
 - ["SE", "init"]
-- !private ["SE", "reloadData"]
 - !private ["SE", "row"]
 - !private ["SE", "subscript"]
 - !private ["SE", "text"]
+- ["SQ", "Auth"]
 - !private ["SQ", "Database"]
 - ["SQ", "Event"]
 - !private ["SQ", "List"]
 - ["SQ", ""]
-- !private ["SQ", "append"]
+- ["SQ", "auth"]
 - !private ["SQ", "child"]
 - !private ["SQ", "count"]
 - !private ["SQ", "database"]
@@ -343,7 +329,6 @@ depends-member:
 - !private ["SQ", "print"]
 - !private ["SQ", "ref"]
 - !private ["SQ", "reference"]
-- !private ["SQ", "reloadData"]
 - !private ["SQ", "row"]
 - ["SQ", "scrollViewDidChangeAdjustedContentInset"]
 - ["SQ", "scrollViewDidEndDecelerating"]
@@ -365,7 +350,7 @@ depends-member:
 - ["SQ", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["SQ", "tableview"]
 - !private ["SQ", "text"]
-- !private ["SQ", "value"]
+- ["SQ", "userID"]
 - !private ["SQ", "viewDidLoad"]
 - ["SQ", "viewForZooming"]
 - ["SQ", "viewForZoomingInScrollView"]
@@ -373,7 +358,6 @@ depends-member:
 - !private ["7Potluck5EventC", "date"]
 - !private ["7Potluck5EventC", "id"]
 - !private ["7Potluck5EventC", "info"]
-- !private ["7Potluck5EventC", "init"]
 - !private ["7Potluck5EventC", "location"]
 - !private ["7Potluck5EventC", "name"]
 - !private ["7Potluck5EventC", "owner"]
@@ -381,7 +365,6 @@ depends-member:
 - !private ["7Potluck13EventViewCellC", "dateTextView"]
 - !private ["7Potluck13EventViewCellC", "locationTextView"]
 - !private ["7Potluck13EventViewCellC", "nameTextView"]
-- !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "date"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
@@ -389,18 +372,17 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "name"]
 - !private ["s25ExpressibleByArrayLiteralP", "row"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
-- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s23ExpressibleByNilLiteralP", "child"]
 - !private ["s23ExpressibleByNilLiteralP", "dequeueReusableCell"]
 - !private ["s23ExpressibleByNilLiteralP", "deselectRow"]
 - !private ["s23ExpressibleByNilLiteralP", "indexPath"]
-- !private ["s23ExpressibleByNilLiteralP", "reloadData"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
+- ["SH", "Auth"]
 - !private ["SH", "Database"]
 - ["SH", "Event"]
 - !private ["SH", "List"]
 - ["SH", ""]
-- !private ["SH", "append"]
+- ["SH", "auth"]
 - !private ["SH", "child"]
 - !private ["SH", "count"]
 - !private ["SH", "database"]
@@ -430,7 +412,6 @@ depends-member:
 - !private ["SH", "print"]
 - !private ["SH", "ref"]
 - !private ["SH", "reference"]
-- !private ["SH", "reloadData"]
 - !private ["SH", "row"]
 - ["SH", "scrollViewDidChangeAdjustedContentInset"]
 - ["SH", "scrollViewDidEndDecelerating"]
@@ -452,14 +433,13 @@ depends-member:
 - ["SH", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["SH", "tableview"]
 - !private ["SH", "text"]
-- !private ["SH", "value"]
+- ["SH", "userID"]
 - !private ["SH", "viewDidLoad"]
 - ["SH", "viewForZooming"]
 - ["SH", "viewForZoomingInScrollView"]
 - !private ["SH", "viewWillAppear"]
 - !private ["10Foundation9IndexPathV", "row"]
 - !private ["7Potluck4ListC", "init"]
-- !private ["SM", "append"]
 - !private ["SM", "count"]
 - !private ["SM", "date"]
 - ["SM", "init"]
@@ -467,10 +447,10 @@ depends-member:
 - !private ["SM", "name"]
 - !private ["SM", "row"]
 - !private ["SM", "subscript"]
-- !private ["10Foundation19MutableDataProtocolP", "append"]
 - !private ["10Foundation19MutableDataProtocolP", "count"]
 - ["10Foundation19MutableDataProtocolP", "init"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- ["So8NSCodingP", "Auth"]
 - !private ["So8NSCodingP", "Database"]
 - ["So8NSCodingP", "Event"]
 - !private ["So8NSCodingP", "List"]
@@ -491,7 +471,6 @@ depends-member:
 - ["So8NSCodingP", "numberOfSectionsInTableView"]
 - !private ["So8NSCodingP", "print"]
 - !private ["So8NSCodingP", "ref"]
-- !private ["So8NSCodingP", "reloadData"]
 - ["So8NSCodingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So8NSCodingP", "scrollViewDidEndDecelerating"]
 - ["So8NSCodingP", "scrollViewDidEndDragging"]
@@ -511,10 +490,12 @@ depends-member:
 - ["So8NSCodingP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["So8NSCodingP", "tableview"]
 - !private ["So8NSCodingP", "text"]
+- ["So8NSCodingP", "userID"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So8NSCodingP", "viewForZooming"]
 - ["So8NSCodingP", "viewForZoomingInScrollView"]
 - !private ["So8NSCodingP", "viewWillAppear"]
+- ["So26NSExtensionRequestHandlingP", "Auth"]
 - !private ["So26NSExtensionRequestHandlingP", "Database"]
 - ["So26NSExtensionRequestHandlingP", "Event"]
 - !private ["So26NSExtensionRequestHandlingP", "List"]
@@ -547,10 +528,12 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "tableView"]
 - ["So26NSExtensionRequestHandlingP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["So26NSExtensionRequestHandlingP", "tableview"]
+- ["So26NSExtensionRequestHandlingP", "userID"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", "viewForZooming"]
 - ["So26NSExtensionRequestHandlingP", "viewForZoomingInScrollView"]
 - !private ["So26NSExtensionRequestHandlingP", "viewWillAppear"]
+- ["So8NSObjectC", "Auth"]
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "Database"]
 - ["So8NSObjectC", "DatabaseReference"]
@@ -560,10 +543,10 @@ depends-member:
 - ["So8NSObjectC", "Int"]
 - !private ["So8NSObjectC", "List"]
 - !private ["So8NSObjectC", "PlanningViewController"]
-- !private ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "UIStoryboardSegue"]
 - ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "UITableViewCell"]
+- ["So8NSObjectC", "auth"]
 - !private ["So8NSObjectC", "child"]
 - !private ["So8NSObjectC", "database"]
 - !private ["So8NSObjectC", "date"]
@@ -593,7 +576,6 @@ depends-member:
 - !private ["So8NSObjectC", "print"]
 - ["So8NSObjectC", "ref"]
 - !private ["So8NSObjectC", "reference"]
-- !private ["So8NSObjectC", "reloadData"]
 - ["So8NSObjectC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So8NSObjectC", "scrollViewDidEndDecelerating"]
 - ["So8NSObjectC", "scrollViewDidEndDragging"]
@@ -614,15 +596,17 @@ depends-member:
 - ["So8NSObjectC", "tableview"]
 - !private ["So8NSObjectC", "text"]
 - ["So8NSObjectC", "user"]
-- !private ["So8NSObjectC", "value"]
+- ["So8NSObjectC", "userID"]
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
 - ["So8NSObjectC", "viewWillAppear"]
+- ["So8NSObjectP", "Auth"]
 - !private ["So8NSObjectP", "Database"]
 - ["So8NSObjectP", "Event"]
 - !private ["So8NSObjectP", "List"]
 - ["So8NSObjectP", ""]
+- ["So8NSObjectP", "auth"]
 - !private ["So8NSObjectP", "child"]
 - !private ["So8NSObjectP", "database"]
 - !private ["So8NSObjectP", "date"]
@@ -651,7 +635,6 @@ depends-member:
 - !private ["So8NSObjectP", "print"]
 - !private ["So8NSObjectP", "ref"]
 - !private ["So8NSObjectP", "reference"]
-- !private ["So8NSObjectP", "reloadData"]
 - ["So8NSObjectP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So8NSObjectP", "scrollViewDidEndDecelerating"]
 - ["So8NSObjectP", "scrollViewDidEndDragging"]
@@ -671,7 +654,7 @@ depends-member:
 - ["So8NSObjectP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["So8NSObjectP", "tableview"]
 - !private ["So8NSObjectP", "text"]
-- !private ["So8NSObjectP", "value"]
+- ["So8NSObjectP", "userID"]
 - !private ["So8NSObjectP", "viewDidLoad"]
 - ["So8NSObjectP", "viewForZooming"]
 - ["So8NSObjectP", "viewForZoomingInScrollView"]
@@ -680,10 +663,8 @@ depends-member:
 - !private ["Sq", "dequeueReusableCell"]
 - !private ["Sq", "deselectRow"]
 - !private ["Sq", "indexPath"]
-- !private ["Sq", "reloadData"]
 - !private ["Sq", "text"]
 - !private ["7Potluck22PlanningViewControllerC", "list"]
-- !private ["Sk", "append"]
 - !private ["Sk", "count"]
 - !private ["Sk", "date"]
 - ["Sk", "init"]
@@ -691,16 +672,13 @@ depends-member:
 - !private ["Sk", "name"]
 - !private ["Sk", "row"]
 - !private ["Sk", "subscript"]
-- !private ["Sm", "append"]
 - !private ["Sm", "count"]
 - !private ["Sm", "date"]
 - ["Sm", "init"]
 - !private ["Sm", "location"]
 - !private ["Sm", "name"]
 - !private ["Sm", "subscript"]
-- !private ["SY", "value"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
-- !private ["ST", "append"]
 - !private ["ST", "count"]
 - !private ["ST", "date"]
 - ["ST", "init"]
@@ -714,7 +692,6 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "indexPath"]
 - !private ["So29UIAccessibilityIdentificationP", "locationTextView"]
 - !private ["So29UIAccessibilityIdentificationP", "nameTextView"]
-- !private ["So29UIAccessibilityIdentificationP", "reloadData"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So12UIAppearanceP", "dateTextView"]
 - !private ["So12UIAppearanceP", "dequeueReusableCell"]
@@ -722,8 +699,8 @@ depends-member:
 - !private ["So12UIAppearanceP", "indexPath"]
 - !private ["So12UIAppearanceP", "locationTextView"]
 - !private ["So12UIAppearanceP", "nameTextView"]
-- !private ["So12UIAppearanceP", "reloadData"]
 - !private ["So12UIAppearanceP", "text"]
+- ["So21UIAppearanceContainerP", "Auth"]
 - !private ["So21UIAppearanceContainerP", "Database"]
 - ["So21UIAppearanceContainerP", "Event"]
 - !private ["So21UIAppearanceContainerP", "List"]
@@ -744,7 +721,6 @@ depends-member:
 - ["So21UIAppearanceContainerP", "numberOfSectionsInTableView"]
 - !private ["So21UIAppearanceContainerP", "print"]
 - !private ["So21UIAppearanceContainerP", "ref"]
-- !private ["So21UIAppearanceContainerP", "reloadData"]
 - ["So21UIAppearanceContainerP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So21UIAppearanceContainerP", "scrollViewDidEndDecelerating"]
 - ["So21UIAppearanceContainerP", "scrollViewDidEndDragging"]
@@ -764,12 +740,14 @@ depends-member:
 - ["So21UIAppearanceContainerP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["So21UIAppearanceContainerP", "tableview"]
 - !private ["So21UIAppearanceContainerP", "text"]
+- ["So21UIAppearanceContainerP", "userID"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So21UIAppearanceContainerP", "viewForZooming"]
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
 - !private ["So21UIAppearanceContainerP", "viewWillAppear"]
 - !private ["So26UICollectionViewDataSourceP", "list"]
 - !private ["So24UICollectionViewDelegateP", "list"]
+- ["So18UIContentContainerP", "Auth"]
 - !private ["So18UIContentContainerP", "Database"]
 - ["So18UIContentContainerP", "Event"]
 - !private ["So18UIContentContainerP", "List"]
@@ -802,6 +780,7 @@ depends-member:
 - ["So18UIContentContainerP", "tableView"]
 - ["So18UIContentContainerP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["So18UIContentContainerP", "tableview"]
+- ["So18UIContentContainerP", "userID"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - ["So18UIContentContainerP", "viewForZooming"]
 - ["So18UIContentContainerP", "viewForZoomingInScrollView"]
@@ -813,20 +792,18 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "indexPath"]
 - !private ["So17UICoordinateSpaceP", "locationTextView"]
 - !private ["So17UICoordinateSpaceP", "nameTextView"]
-- !private ["So17UICoordinateSpaceP", "reloadData"]
 - !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So23UIDataSourceTranslatingP", "dequeueReusableCell"]
 - !private ["So23UIDataSourceTranslatingP", "deselectRow"]
 - !private ["So23UIDataSourceTranslatingP", "indexPath"]
-- !private ["So23UIDataSourceTranslatingP", "reloadData"]
 - !private ["So13UIDynamicItemP", "dateTextView"]
 - !private ["So13UIDynamicItemP", "dequeueReusableCell"]
 - !private ["So13UIDynamicItemP", "deselectRow"]
 - !private ["So13UIDynamicItemP", "indexPath"]
 - !private ["So13UIDynamicItemP", "locationTextView"]
 - !private ["So13UIDynamicItemP", "nameTextView"]
-- !private ["So13UIDynamicItemP", "reloadData"]
 - !private ["So13UIDynamicItemP", "text"]
+- ["So18UIFocusEnvironmentP", "Auth"]
 - !private ["So18UIFocusEnvironmentP", "Database"]
 - ["So18UIFocusEnvironmentP", "Event"]
 - !private ["So18UIFocusEnvironmentP", "List"]
@@ -847,7 +824,6 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "numberOfSectionsInTableView"]
 - !private ["So18UIFocusEnvironmentP", "print"]
 - !private ["So18UIFocusEnvironmentP", "ref"]
-- !private ["So18UIFocusEnvironmentP", "reloadData"]
 - ["So18UIFocusEnvironmentP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So18UIFocusEnvironmentP", "scrollViewDidEndDecelerating"]
 - ["So18UIFocusEnvironmentP", "scrollViewDidEndDragging"]
@@ -867,6 +843,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["So18UIFocusEnvironmentP", "tableview"]
 - !private ["So18UIFocusEnvironmentP", "text"]
+- ["So18UIFocusEnvironmentP", "userID"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - ["So18UIFocusEnvironmentP", "viewForZooming"]
 - ["So18UIFocusEnvironmentP", "viewForZoomingInScrollView"]
@@ -877,7 +854,6 @@ depends-member:
 - !private ["So11UIFocusItemP", "indexPath"]
 - !private ["So11UIFocusItemP", "locationTextView"]
 - !private ["So11UIFocusItemP", "nameTextView"]
-- !private ["So11UIFocusItemP", "reloadData"]
 - !private ["So11UIFocusItemP", "text"]
 - !private ["So20UIFocusItemContainerP", "dateTextView"]
 - !private ["So20UIFocusItemContainerP", "dequeueReusableCell"]
@@ -885,12 +861,10 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "indexPath"]
 - !private ["So20UIFocusItemContainerP", "locationTextView"]
 - !private ["So20UIFocusItemContainerP", "nameTextView"]
-- !private ["So20UIFocusItemContainerP", "reloadData"]
 - !private ["So20UIFocusItemContainerP", "text"]
 - !private ["So30UIFocusItemScrollableContainerP", "dequeueReusableCell"]
 - !private ["So30UIFocusItemScrollableContainerP", "deselectRow"]
 - !private ["So30UIFocusItemScrollableContainerP", "indexPath"]
-- !private ["So30UIFocusItemScrollableContainerP", "reloadData"]
 - !private ["So27UIGestureRecognizerDelegateP", "dateTextView"]
 - !private ["So27UIGestureRecognizerDelegateP", "locationTextView"]
 - !private ["So27UIGestureRecognizerDelegateP", "nameTextView"]
@@ -901,8 +875,8 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "indexPath"]
 - !private ["So24UILargeContentViewerItemP", "locationTextView"]
 - !private ["So24UILargeContentViewerItemP", "nameTextView"]
-- !private ["So24UILargeContentViewerItemP", "reloadData"]
 - !private ["So24UILargeContentViewerItemP", "text"]
+- ["So30UIPasteConfigurationSupportingP", "Auth"]
 - !private ["So30UIPasteConfigurationSupportingP", "Database"]
 - ["So30UIPasteConfigurationSupportingP", "Event"]
 - !private ["So30UIPasteConfigurationSupportingP", "List"]
@@ -923,7 +897,6 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "numberOfSectionsInTableView"]
 - !private ["So30UIPasteConfigurationSupportingP", "print"]
 - !private ["So30UIPasteConfigurationSupportingP", "ref"]
-- !private ["So30UIPasteConfigurationSupportingP", "reloadData"]
 - ["So30UIPasteConfigurationSupportingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So30UIPasteConfigurationSupportingP", "scrollViewDidEndDecelerating"]
 - ["So30UIPasteConfigurationSupportingP", "scrollViewDidEndDragging"]
@@ -943,10 +916,12 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["So30UIPasteConfigurationSupportingP", "tableview"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
+- ["So30UIPasteConfigurationSupportingP", "userID"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZooming"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewWillAppear"]
+- ["So11UIResponderC", "Auth"]
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "Database"]
 - ["So11UIResponderC", "DatabaseReference"]
@@ -956,7 +931,6 @@ depends-member:
 - ["So11UIResponderC", "Int"]
 - !private ["So11UIResponderC", "List"]
 - !private ["So11UIResponderC", "PlanningViewController"]
-- !private ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "UIStoryboardSegue"]
 - ["So11UIResponderC", "UITableView"]
 - ["So11UIResponderC", "UITableViewCell"]
@@ -977,7 +951,6 @@ depends-member:
 - ["So11UIResponderC", "prepare"]
 - !private ["So11UIResponderC", "print"]
 - ["So11UIResponderC", "ref"]
-- !private ["So11UIResponderC", "reloadData"]
 - ["So11UIResponderC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So11UIResponderC", "scrollViewDidEndDecelerating"]
 - ["So11UIResponderC", "scrollViewDidEndDragging"]
@@ -998,10 +971,12 @@ depends-member:
 - ["So11UIResponderC", "tableview"]
 - !private ["So11UIResponderC", "text"]
 - ["So11UIResponderC", "user"]
+- ["So11UIResponderC", "userID"]
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewForZooming"]
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
 - ["So11UIResponderC", "viewWillAppear"]
+- ["So30UIResponderStandardEditActionsP", "Auth"]
 - !private ["So30UIResponderStandardEditActionsP", "Database"]
 - ["So30UIResponderStandardEditActionsP", "Event"]
 - !private ["So30UIResponderStandardEditActionsP", "List"]
@@ -1022,7 +997,6 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "numberOfSectionsInTableView"]
 - !private ["So30UIResponderStandardEditActionsP", "print"]
 - !private ["So30UIResponderStandardEditActionsP", "ref"]
-- !private ["So30UIResponderStandardEditActionsP", "reloadData"]
 - ["So30UIResponderStandardEditActionsP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So30UIResponderStandardEditActionsP", "scrollViewDidEndDecelerating"]
 - ["So30UIResponderStandardEditActionsP", "scrollViewDidEndDragging"]
@@ -1042,6 +1016,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["So30UIResponderStandardEditActionsP", "tableview"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
+- ["So30UIResponderStandardEditActionsP", "userID"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - ["So30UIResponderStandardEditActionsP", "viewForZooming"]
 - ["So30UIResponderStandardEditActionsP", "viewForZoomingInScrollView"]
@@ -1049,7 +1024,7 @@ depends-member:
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
 - !private ["So12UIScrollViewC", "deselectRow"]
 - !private ["So12UIScrollViewC", "indexPath"]
-- !private ["So12UIScrollViewC", "reloadData"]
+- ["So20UIScrollViewDelegateP", "Auth"]
 - !private ["So20UIScrollViewDelegateP", "Database"]
 - ["So20UIScrollViewDelegateP", "Event"]
 - !private ["So20UIScrollViewDelegateP", "List"]
@@ -1081,12 +1056,13 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "tableView"]
 - ["So20UIScrollViewDelegateP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["So20UIScrollViewDelegateP", "tableview"]
+- ["So20UIScrollViewDelegateP", "userID"]
 - ["So20UIScrollViewDelegateP", "viewForZooming"]
 - ["So20UIScrollViewDelegateP", "viewForZoomingInScrollView"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "deselectRow"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "indexPath"]
-- !private ["So35UISpringLoadedInteractionSupportingP", "reloadData"]
+- ["So16UIStateRestoringP", "Auth"]
 - !private ["So16UIStateRestoringP", "Database"]
 - ["So16UIStateRestoringP", "Event"]
 - !private ["So16UIStateRestoringP", "List"]
@@ -1119,6 +1095,7 @@ depends-member:
 - ["So16UIStateRestoringP", "tableView"]
 - ["So16UIStateRestoringP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["So16UIStateRestoringP", "tableview"]
+- ["So16UIStateRestoringP", "userID"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - ["So16UIStateRestoringP", "viewForZooming"]
 - ["So16UIStateRestoringP", "viewForZoomingInScrollView"]
@@ -1127,10 +1104,10 @@ depends-member:
 - !private ["So11UITableViewC", "dequeueReusableCell"]
 - !private ["So11UITableViewC", "deselectRow"]
 - !private ["So11UITableViewC", "indexPath"]
-- !private ["So11UITableViewC", "reloadData"]
 - !private ["So15UITableViewCellC", "dateTextView"]
 - !private ["So15UITableViewCellC", "locationTextView"]
 - !private ["So15UITableViewCellC", "nameTextView"]
+- ["So21UITableViewDataSourceP", "Auth"]
 - !private ["So21UITableViewDataSourceP", "Database"]
 - ["So21UITableViewDataSourceP", "Event"]
 - !private ["So21UITableViewDataSourceP", "List"]
@@ -1161,8 +1138,10 @@ depends-member:
 - ["So21UITableViewDataSourceP", "tableView"]
 - ["So21UITableViewDataSourceP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["So21UITableViewDataSourceP", "tableview"]
+- ["So21UITableViewDataSourceP", "userID"]
 - ["So21UITableViewDataSourceP", "viewForZooming"]
 - ["So21UITableViewDataSourceP", "viewForZoomingInScrollView"]
+- ["So19UITableViewDelegateP", "Auth"]
 - !private ["So19UITableViewDelegateP", "Database"]
 - ["So19UITableViewDelegateP", "Event"]
 - !private ["So19UITableViewDelegateP", "List"]
@@ -1193,8 +1172,10 @@ depends-member:
 - ["So19UITableViewDelegateP", "tableView"]
 - ["So19UITableViewDelegateP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["So19UITableViewDelegateP", "tableview"]
+- ["So19UITableViewDelegateP", "userID"]
 - ["So19UITableViewDelegateP", "viewForZooming"]
 - ["So19UITableViewDelegateP", "viewForZoomingInScrollView"]
+- ["So18UITraitEnvironmentP", "Auth"]
 - !private ["So18UITraitEnvironmentP", "Database"]
 - ["So18UITraitEnvironmentP", "Event"]
 - !private ["So18UITraitEnvironmentP", "List"]
@@ -1215,7 +1196,6 @@ depends-member:
 - ["So18UITraitEnvironmentP", "numberOfSectionsInTableView"]
 - !private ["So18UITraitEnvironmentP", "print"]
 - !private ["So18UITraitEnvironmentP", "ref"]
-- !private ["So18UITraitEnvironmentP", "reloadData"]
 - ["So18UITraitEnvironmentP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So18UITraitEnvironmentP", "scrollViewDidEndDecelerating"]
 - ["So18UITraitEnvironmentP", "scrollViewDidEndDragging"]
@@ -1235,10 +1215,12 @@ depends-member:
 - ["So18UITraitEnvironmentP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["So18UITraitEnvironmentP", "tableview"]
 - !private ["So18UITraitEnvironmentP", "text"]
+- ["So18UITraitEnvironmentP", "userID"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", "viewForZooming"]
 - ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
 - !private ["So18UITraitEnvironmentP", "viewWillAppear"]
+- ["So23UIUserActivityRestoringP", "Auth"]
 - !private ["So23UIUserActivityRestoringP", "Database"]
 - ["So23UIUserActivityRestoringP", "Event"]
 - !private ["So23UIUserActivityRestoringP", "List"]
@@ -1259,7 +1241,6 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "numberOfSectionsInTableView"]
 - !private ["So23UIUserActivityRestoringP", "print"]
 - !private ["So23UIUserActivityRestoringP", "ref"]
-- !private ["So23UIUserActivityRestoringP", "reloadData"]
 - ["So23UIUserActivityRestoringP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So23UIUserActivityRestoringP", "scrollViewDidEndDecelerating"]
 - ["So23UIUserActivityRestoringP", "scrollViewDidEndDragging"]
@@ -1279,6 +1260,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["So23UIUserActivityRestoringP", "tableview"]
 - !private ["So23UIUserActivityRestoringP", "text"]
+- ["So23UIUserActivityRestoringP", "userID"]
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
 - ["So23UIUserActivityRestoringP", "viewForZooming"]
 - ["So23UIUserActivityRestoringP", "viewForZoomingInScrollView"]
@@ -1289,8 +1271,8 @@ depends-member:
 - !private ["So6UIViewC", "indexPath"]
 - !private ["So6UIViewC", "locationTextView"]
 - !private ["So6UIViewC", "nameTextView"]
-- !private ["So6UIViewC", "reloadData"]
 - !private ["So6UIViewC", "text"]
+- ["So16UIViewControllerC", "Auth"]
 - ["So16UIViewControllerC", "Bool"]
 - !private ["So16UIViewControllerC", "Database"]
 - ["So16UIViewControllerC", "DatabaseReference"]
@@ -1300,7 +1282,6 @@ depends-member:
 - ["So16UIViewControllerC", "Int"]
 - !private ["So16UIViewControllerC", "List"]
 - !private ["So16UIViewControllerC", "PlanningViewController"]
-- !private ["So16UIViewControllerC", "String"]
 - ["So16UIViewControllerC", "UIStoryboardSegue"]
 - ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", "UITableViewCell"]
@@ -1335,10 +1316,12 @@ depends-member:
 - ["So16UIViewControllerC", "tableViewDidEndMultipleSelectionInteraction"]
 - ["So16UIViewControllerC", "tableview"]
 - ["So16UIViewControllerC", "user"]
+- ["So16UIViewControllerC", "userID"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewForZooming"]
 - ["So16UIViewControllerC", "viewForZoomingInScrollView"]
 - ["So16UIViewControllerC", "viewWillAppear"]
+- ["7Potluck14ViewControllerC", "Auth"]
 - ["7Potluck14ViewControllerC", "Bool"]
 - !private ["7Potluck14ViewControllerC", "Database"]
 - ["7Potluck14ViewControllerC", "DatabaseReference"]
@@ -1348,7 +1331,6 @@ depends-member:
 - ["7Potluck14ViewControllerC", "Int"]
 - !private ["7Potluck14ViewControllerC", "List"]
 - !private ["7Potluck14ViewControllerC", "PlanningViewController"]
-- !private ["7Potluck14ViewControllerC", "String"]
 - ["7Potluck14ViewControllerC", "UIStoryboardSegue"]
 - ["7Potluck14ViewControllerC", "UITableView"]
 - ["7Potluck14ViewControllerC", "UITableViewCell"]
@@ -1382,36 +1364,35 @@ depends-member:
 - ["7Potluck14ViewControllerC", "tableViewDidEndMultipleSelectionInteraction"]
 - ["7Potluck14ViewControllerC", "tableview"]
 - ["7Potluck14ViewControllerC", "user"]
+- ["7Potluck14ViewControllerC", "userID"]
 - ["7Potluck14ViewControllerC", "viewDidLoad"]
 - ["7Potluck14ViewControllerC", "viewForZooming"]
 - ["7Potluck14ViewControllerC", "viewForZoomingInScrollView"]
 - ["7Potluck14ViewControllerC", "viewWillAppear"]
-- !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "date"]
 - ["s14_ArrayProtocolP", "init"]
 - !private ["s14_ArrayProtocolP", "location"]
 - !private ["s14_ArrayProtocolP", "name"]
 - !private ["s14_ArrayProtocolP", "subscript"]
-- !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "date"]
 - ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "location"]
 - !private ["s24_DestructorSafeContainerP", "name"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
-- !private ["s19_HasContiguousBytesP", "append"]
 - !private ["s19_HasContiguousBytesP", "count"]
 - ["s19_HasContiguousBytesP", "init"]
 - !private ["s19_HasContiguousBytesP", "subscript"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
 - ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Database"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Event"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "List"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "child"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "database"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "date"]
@@ -1440,7 +1421,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ref"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reference"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "reloadData"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndDecelerating"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndDragging"]
@@ -1460,15 +1440,17 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "tableview"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "userID"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZooming"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZoomingInScrollView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillAppear"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Auth"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Database"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Event"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "List"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "auth"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "child"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "database"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "date"]
@@ -1497,7 +1479,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ref"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "reference"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "reloadData"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewDidEndDecelerating"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewDidEndDragging"]
@@ -1517,19 +1498,17 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tableview"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "text"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "value"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "userID"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewForZooming"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewForZoomingInScrollView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewWillAppear"]
-- !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "child"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "dequeueReusableCell"]
 - !private ["s21_ObjectiveCBridgeableP", "deselectRow"]
 - !private ["s21_ObjectiveCBridgeableP", "indexPath"]
 - ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s21_ObjectiveCBridgeableP", "reloadData"]
 - !private ["s21_ObjectiveCBridgeableP", "row"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "text"]
@@ -1539,11 +1518,11 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "indexPath"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "locationTextView"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "nameTextView"]
-- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "reloadData"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
 depends-nominal:
 - "Sa"
 - !private "s10ArraySliceV"
+- "So7FIRAuthC"
 - "SK"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
@@ -1553,20 +1532,16 @@ depends-nominal:
 - "s28CustomDebugStringConvertibleP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "So16FIRDataEventTypeV"
 - "10Foundation12DataProtocolP"
-- !private "So15FIRDataSnapshotC"
 - !private "So11FIRDatabaseC"
 - !private "So16FIRDatabaseQueryC"
 - !private "So20FIRDatabaseReferenceC"
 - "Se"
-- !private "SD"
 - "SE"
 - "SQ"
 - !private "7Potluck5EventC"
 - !private "7Potluck13EventViewCellC"
 - "s25ExpressibleByArrayLiteralP"
-- !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - "SH"
 - !private "10Foundation9IndexPathV"
@@ -1581,7 +1556,6 @@ depends-nominal:
 - !private "7Potluck22PlanningViewControllerC"
 - "Sk"
 - "Sm"
-- !private "SY"
 - !private "10Foundation20ReferenceConvertibleP"
 - "ST"
 - !private "So29UIAccessibilityIdentificationP"
@@ -1662,27 +1636,27 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CATransform3D.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFUUID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUUID.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFURL.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURL.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPlugInCOM.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/ImageIO.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/alloca.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFData.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSData.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
-- "/Users/danielmorales/CSUMB/Potluck/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/data.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolMetadata.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/quota.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTTextTab.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/netdb.h"
@@ -1745,7 +1719,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UINavigationBarAppearance.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIToolbarAppearance.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLFence.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSOrderedCollectionDifference.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/once.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDiffableDataSource.h"
@@ -1825,8 +1799,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSTimeZone.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIFilterShape.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLCaptureScope.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/ctype.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/_ctype.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/xlocale/_ctype.h"
@@ -1836,7 +1810,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/__wctype.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/xlocale/__wctype.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/runetype.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKitCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/semaphore.h"
@@ -1858,9 +1832,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/IOSurface.framework/Headers/IOSurfaceBase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/os/base.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabase.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
-- "/Users/danielmorales/CSUMB/Potluck/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/Firebase/CoreOnly/Sources/Firebase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/readpassphrase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLResponse.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UNNotificationResponse.h"
@@ -1871,10 +1845,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSCompoundPredicate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSComparisonPredicate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecCertificate.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextPasteDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTRunDelegate.h"
-- "/Users/danielmorales/CSUMB/Potluck/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/machine/thread_state.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/arm/thread_state.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/CipherSuite.h"
@@ -1886,7 +1860,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStoryboardSegue.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStoryboardPopoverSegue.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSValue.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRServerValue.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/time_value.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/vm_page_size.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/_types/_fd_setsize.h"
@@ -1948,8 +1922,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/shims/KeyPath.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/math.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/tgmath.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/kauth.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/objc/objc-api.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/port_obj.h"
@@ -1966,9 +1940,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/vm_task.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLCredential.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecSharedCredential.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthCredential.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthCredential.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDecimal.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/signal.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/machine/signal.h"
@@ -1984,7 +1958,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILabel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIKernel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/dyld_kernel.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/gl.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES3/gl.h"
@@ -2052,8 +2026,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGAffineTransform.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/vm.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPlugIn.h"
-- "/Users/danielmorales/CSUMB/Potluck/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
-- "/Users/danielmorales/CSUMB/Potluck/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/machine/boolean.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/boolean.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/arm/boolean.h"
@@ -2073,7 +2047,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderExtension.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSFileProviderExtension.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileVersion.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLSession.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneSession.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDragSession.h"
@@ -2085,7 +2059,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFUserNotification.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h"
-- "/Users/danielmorales/CSUMB/Potluck/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFHTTPAuthentication.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSInvocation.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h"
@@ -2099,7 +2073,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSOperation.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderItemDecoration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStateRestoration.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImageConfiguration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPasteConfiguration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImageSymbolConfiguration.h"
@@ -2141,7 +2115,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBarCommon.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/secure/_common.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h"
-- "/Users/danielmorales/CSUMB/Potluck/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPattern.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreVideo.framework/Headers/CVReturn.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/machine/kern_return.h"
@@ -2155,8 +2129,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreVideo.framework/Headers/CoreVideo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTGlyphInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGColorConversionInfo.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProcessInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPrintInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach_debug/ipc_info.h"
@@ -2198,7 +2172,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFRunLoop.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRunLoop.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/workloop.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/grp.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBarButtonItemGroup.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/group.h"
@@ -2222,15 +2196,15 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImageProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/FileProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITimingCurveProvider.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSUserActivity+NSItemProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSItemProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActivityItemProvider.h"
@@ -2316,8 +2290,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIGraphicsImageRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIGraphicsRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextDragPreviewRenderer.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
-- "/Users/danielmorales/CSUMB/Potluck/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccelerometer.h"
@@ -2430,17 +2404,17 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIFontMetrics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/vm_statistics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetDiagnostics.h"
-- "/Users/danielmorales/CSUMB/Potluck/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
-- "/Users/danielmorales/CSUMB/Potluck/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetServices.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSNetServices.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPreferences.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFUtilities.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSPathUtilities.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageProperties.h"
-- "/Users/danielmorales/CSUMB/Potluck/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
-- "/Users/danielmorales/CSUMB/Potluck/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
-- "/Users/danielmorales/CSUMB/Potluck/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/times.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLDefines.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTDefines.h"
@@ -2486,8 +2460,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/xattr_flags.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/strings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/secure/_strings.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UNNotificationSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIUserNotificationSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/paths.h"
@@ -2533,7 +2507,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibilityAdditions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneActivationConditions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneDefinitions.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneOptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolOptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/termios.h"
@@ -2548,7 +2522,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITimingParameters.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPreviewParameters.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDragPreviewParameters.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetworkErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/FoundationErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFontManagerErrors.h"
@@ -2701,10 +2675,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUnit.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/mach_init.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/vm_inherit.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSTextCheckingResult.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/_types/_s_ifmt.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGradient.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIMenuElement.h"
@@ -2733,7 +2707,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFont.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/shims/RefCount.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/mount.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/host_reboot.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/vm_prot.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/getopt.h"
@@ -2836,7 +2810,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLLibrary.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/monetary.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/xlocale/_monetary.h"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderSearchQuery.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIContentSizeCategory.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UNNotificationCategory.h"
@@ -2866,25 +2840,25 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/CommonCrypto/module.modulemap"
-- "/Users/danielmorales/CSUMB/Potluck/Pods/Firebase/CoreOnly/Sources/module.modulemap"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ImageIO.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/IOSurface.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Modules/module.modulemap"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Modules/module.modulemap"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
-- "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Metal.framework/Modules/module.modulemap"
-- "/Users/danielmorales/CSUMB/Potluck/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreVideo.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Modules/module.modulemap"
-- "/Users/danielmorales/CSUMB/Potluck/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Modules/module.modulemap"
@@ -2903,4 +2877,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "42b4303875ff804604bc985f5f4542cd"
+interface-hash: "4688740790ee444752be9cb10a3dd5dc"

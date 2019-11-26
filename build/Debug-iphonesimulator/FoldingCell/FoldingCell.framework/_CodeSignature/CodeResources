@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Xt47f7Obl5/ArdYRMXEOYFluep0=
+		oAD+CMJuZNX2Zu60Ki2AyZbBW/A=
 		</data>
 		<key>Modules/FoldingCell.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/FoldingCell.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		1Mk1WywN+zkk5zjzMShs4JodeVY=
+		G0M+4B/SarlFxCWo1AqQ3pEDL2Y=
 		</data>
 		<key>Modules/FoldingCell.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/FoldingCell.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		1Mk1WywN+zkk5zjzMShs4JodeVY=
+		G0M+4B/SarlFxCWo1AqQ3pEDL2Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -76,11 +76,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1Mk1WywN+zkk5zjzMShs4JodeVY=
+			G0M+4B/SarlFxCWo1AqQ3pEDL2Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			99x0Vn5m6XzMaprPA8Ij3yQJ1Uszm6gpnz3Q23xP1P8=
+			kmXbxCMSco0T4hj3vHWSmJLOwwokzfQuXQFGpvYdpvc=
 			</data>
 		</dict>
 		<key>Modules/FoldingCell.swiftmodule/x86_64.swiftdoc</key>
@@ -98,11 +98,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1Mk1WywN+zkk5zjzMShs4JodeVY=
+			G0M+4B/SarlFxCWo1AqQ3pEDL2Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			99x0Vn5m6XzMaprPA8Ij3yQJ1Uszm6gpnz3Q23xP1P8=
+			kmXbxCMSco0T4hj3vHWSmJLOwwokzfQuXQFGpvYdpvc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

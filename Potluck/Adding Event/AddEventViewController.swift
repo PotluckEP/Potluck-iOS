@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseDatabase
 
-class AddEventViewController: UIViewController, UITextFieldDelegate {
+class CreateEventViewController: UIViewController, UITextFieldDelegate {
     
     var ref: DatabaseReference!
     var list:List!

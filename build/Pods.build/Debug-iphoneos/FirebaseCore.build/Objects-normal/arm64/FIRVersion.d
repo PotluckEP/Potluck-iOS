@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/danielmorales/CSUMB/Potluck/Pods/FirebaseCore/Firebase/Core/FIRVersion.m
+  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FirebaseCore/Firebase/Core/FIRVersion.m

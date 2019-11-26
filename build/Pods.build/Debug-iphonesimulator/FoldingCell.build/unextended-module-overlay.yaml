@@ -3,11 +3,11 @@
   'case-sensitive': 'false',
   'roots': [{
     'type': 'directory',
-    'name': "/Users/danielmorales/CSUMB/Potluck/build/Debug-iphonesimulator/FoldingCell/FoldingCell.framework/Modules"
+    'name': "/Users/danielmorales/CSUMB/Potluck-iOS/build/Debug-iphonesimulator/FoldingCell/FoldingCell.framework/Modules"
     'contents': [{
       'type': 'file',
       'name': "module.modulemap",
-      'external-contents': "/Users/danielmorales/CSUMB/Potluck/build/Pods.build/Debug-iphonesimulator/FoldingCell.build/unextended-module.modulemap",
+      'external-contents': "/Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FoldingCell.build/unextended-module.modulemap",
     }]
   }]
 }

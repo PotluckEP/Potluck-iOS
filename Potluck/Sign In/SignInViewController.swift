@@ -24,9 +24,7 @@ class SignInViewController: UIViewController{
         performSegue(withIdentifier: "toMenu", sender: self)
     }
     @IBAction func googleSignButtonClicked(_ sender: Any) {
-        print("sup")
         performSegue(withIdentifier: "toMenu", sender: self)
-    
     }
     //    @IBAction func didTapSignOut(_ sender: AnyObject) {
 //        GIDSignIn.sharedInstance().signOut()
