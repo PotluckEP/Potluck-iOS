@@ -37,6 +37,7 @@ class AddItemViewController: UIViewController {
         
         if(type == "Item"){
             newItem["type"] = "Item"
+            newItem["bringing"] = "f0dsfjdf0sd"
         }else{
             newItem["type"] = "List"
         }

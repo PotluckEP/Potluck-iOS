@@ -15,6 +15,7 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 depends-top-level:
 - !private "+"
+- !private "=="
 - !private "AddItemViewController"
 - "AssignmentPrecedence"
 - "CastingPrecedence"

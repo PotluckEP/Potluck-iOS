@@ -26,19 +26,6 @@ class SignInViewController: UIViewController{
     @IBAction func googleSignButtonClicked(_ sender: Any) {
         performSegue(withIdentifier: "toMenu", sender: self)
     }
-    //    @IBAction func didTapSignOut(_ sender: AnyObject) {
-//        GIDSignIn.sharedInstance().signOut()
-//        let firebaseAuth = Auth.auth()
-//        do {
-//            try firebaseAuth.signOut()
-//        } catch let signOutError as NSError {
-//            print("Failed to Sign Out")
-//            print(signOutError)
-//            return
-//        }
-//        print("Signed Out")
-//    }
-//    
 
     /*
     // MARK: - Navigation

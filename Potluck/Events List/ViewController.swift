@@ -13,16 +13,20 @@ import FirebaseAuth
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var ref: DatabaseReference!
-    
-    @IBOutlet weak var tableview: UITableView!
-    
     let user = "f0dsfjdf0sd"
     var events = [Event]()
+    var eventClicked : String?
+    
+    @IBOutlet weak var tableview: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         ref = Database.database().reference()
+        
+        let user = Auth.auth().currentUser?.uid as! String
+        
+        print("Current User:", user)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,7 +44,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             for (id, rank) in eventsId { // Getting the events information
                 
                 self.ref.child("events").child(id).observeSingleEvent(of: .value, with: { (info) in
-                    print(info)
+
                     let event = info.value as! [String: Any]
                     
                     self.events.append( Event(id: id, name: event["name"] as! String, location: event["location"] as! String, date: event["date"] as! String, info: event["info"] as! String, owner: event["owner"] as! String, rank: rank, path: "events/" + id + "/planning"));

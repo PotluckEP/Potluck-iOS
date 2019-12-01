@@ -1,7 +1,9 @@
 /Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Events\ List/ViewController.swift
+/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Adding\ Event/AddCodeEventViewController.swift
 /Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Model/Item.swift
-/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Adding\ Event/AddEventViewController.swift
+/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Adding\ Event/CreateEventViewController.swift
 /Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Planning\ Event/PlanningViewController.swift
+/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Planning\ Event/infoItemViewController.swift
 /Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Events\ List/EventViewCell.swift
 /Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Sign\ In/SignInViewController.swift
 /Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Planning\ Event/AddItemViewController.swift

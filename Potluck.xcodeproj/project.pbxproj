@@ -17,6 +17,7 @@
 		087C1338235AFA43003422E2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C1337235AFA43003422E2 /* MenuViewController.swift */; };
 		087C133A235B075A003422E2 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C1339235B075A003422E2 /* CreateEventViewController.swift */; };
 		08CDFBC9238CC6A300EFDA94 /* AddCodeEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDFBC8238CC6A300EFDA94 /* AddCodeEventViewController.swift */; };
+		08CDFBCB238D13D600EFDA94 /* infoItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDFBCA238D13D600EFDA94 /* infoItemViewController.swift */; };
 		08D8F94D2373BDD000D00527 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D8F94C2373BDCF00D00527 /* SignInViewController.swift */; };
 		08DB2CFC23682B8E00754DBD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DB2CFB23682B8E00754DBD /* Item.swift */; };
 		31E9B118B081FCE19ACDE41F /* Pods_PotluckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE91B7512785F1ADB107482F /* Pods_PotluckTests.framework */; };
@@ -60,6 +61,7 @@
 		087C1337235AFA43003422E2 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		087C1339235B075A003422E2 /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		08CDFBC8238CC6A300EFDA94 /* AddCodeEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCodeEventViewController.swift; sourceTree = "<group>"; };
+		08CDFBCA238D13D600EFDA94 /* infoItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoItemViewController.swift; sourceTree = "<group>"; };
 		08D8F94C2373BDCF00D00527 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		08DB2CFB23682B8E00754DBD /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		21195E840A2DCF88948DF148 /* Pods_Potluck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Potluck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +141,7 @@
 				081D75BB236ECF0F008A4940 /* AddItemViewController.swift */,
 				081A577C23600F290037877C /* ItemCollectionViewCell.swift */,
 				085462C3235F1FCB00AA0E4D /* PlanningViewController.swift */,
+				08CDFBCA238D13D600EFDA94 /* infoItemViewController.swift */,
 			);
 			path = "Planning Event";
 			sourceTree = "<group>";
@@ -533,6 +536,7 @@
 				08DB2CFC23682B8E00754DBD /* Item.swift in Sources */,
 				087C133A235B075A003422E2 /* CreateEventViewController.swift in Sources */,
 				085462C4235F1FCB00AA0E4D /* PlanningViewController.swift in Sources */,
+				08CDFBCB238D13D600EFDA94 /* infoItemViewController.swift in Sources */,
 				0849539423622AE300128BCB /* EventViewCell.swift in Sources */,
 				08D8F94D2373BDD000D00527 /* SignInViewController.swift in Sources */,
 				081D75BC236ECF0F008A4940 /* AddItemViewController.swift in Sources */,

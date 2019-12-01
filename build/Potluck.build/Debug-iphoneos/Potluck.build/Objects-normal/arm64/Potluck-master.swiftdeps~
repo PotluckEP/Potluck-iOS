@@ -1,8 +1,8 @@
 version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
 options: "4199dbeceae4c3e13d48c8b1973a4b34"
-build_time: [1574471522, 188694000]
+build_time: [1574472002, 727028000]
 inputs:
-  "/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Events List/ViewController.swift": !dirty [1574471522, 35004019]
+  "/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Events List/ViewController.swift": [1574472002, 331538143]
   "/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Model/Item.swift": [1573207926, 492980095]
   "/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Adding Event/AddEventViewController.swift": [1573207926, 481674919]
   "/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Planning Event/PlanningViewController.swift": [1573207926, 493663561]

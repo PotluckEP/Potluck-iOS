@@ -45,12 +45,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         }
         
         // Perform any operations on signed in user here.
-        let userId = user.userID                  // For client-side use only!
-        let idToken = user.authentication.idToken // Safe to send to the server
-        let fullName = user.profile.name
-        let email = user.profile.email
-        
-        // Firebase Sign In
         
         guard let authentication = user.authentication else { return }
         let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
@@ -60,17 +54,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                 print(error)
                 return
             }
-            print("User is Signed In with Firebase")
-            //print(profile)
-//            self.ref.child("users").child(userId!).setValue(["name": fullName, "email": email, "profile": profile])
-//            self.ref.child("users").child(userId!).setValue(["name": fullName, "email": email, "id": idToken, "profile": profile])
-//            self.ref.child("users").child(userId!).setValue(["name": fullName, "email": email, "id": idToken])
-            if let profile = user.profile.imageURL(withDimension: 480) {
-                self.ref.child("users").child(userId!).setValue(["name": fullName, "email": email, "id": idToken, "profile": profile.absoluteString])
-            }
             
+            print("User is Signed In with Firebase")
+            
+            
+            let userId = Auth.auth().currentUser!.uid                  // For client-side use only!
+            let fullName = user.profile.name
+            let email = user.profile.email
+            
+            if let profile = user.profile.imageURL(withDimension: 480) {
+                self.ref.child("users").child(userId).setValue(["name": fullName, "email": email, "id": userId, "img": profile.absoluteString])
+            }
             else {
-                self.ref.child("users").child(userId!).setValue(["name": fullName, "email": email, "id": idToken])
+                self.ref.child("users").child(userId).setValue(["name": fullName, "email": email, "id": userId])
             }
             
             
