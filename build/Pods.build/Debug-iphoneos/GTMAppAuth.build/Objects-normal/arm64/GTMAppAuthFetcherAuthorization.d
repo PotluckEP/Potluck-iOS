@@ -13,6 +13,7 @@ dependencies: \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/GTMSessionFetcher/Source/GTMSessionFetcher.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/Target\ Support\ Files/GTMSessionFetcher/GTMSessionFetcher-umbrella.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphoneos/AppAuth.build/module.modulemap \
+  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/AppAuth/Source/iOS/OIDExternalUserAgentCatalyst.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/AppAuth/Source/iOS/OIDExternalUserAgentIOSCustomBrowser.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/AppAuth/Source/iOS/OIDExternalUserAgentIOS.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/AppAuth/Source/iOS/OIDAuthorizationService+IOS.h \
@@ -20,10 +21,10 @@ dependencies: \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/AppAuth/Source/AppAuth.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/AppAuth/Source/OIDURLQueryComponent.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/AppAuth/Source/OIDFieldMapping.h \
-  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/AppAuth/Source/OIDEndSessionResponse.h \
-  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/AppAuth/Source/OIDEndSessionRequest.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/AppAuth/Source/OIDDefines.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/AppAuth/Source/OIDClientMetadataParameters.h \
+  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/AppAuth/Source/OIDEndSessionResponse.h \
+  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/AppAuth/Source/OIDEndSessionRequest.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/AppAuth/Source/OIDURLSessionProvider.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/AppAuth/Source/OIDTokenUtilities.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/AppAuth/Source/OIDTokenResponse.h \

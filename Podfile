@@ -12,7 +12,7 @@ target 'Potluck' do
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
   pod 'FBSDKLoginKit'
-  pod 'FoldingCell'
+  pod 'TextFieldEffects'
 
   target 'PotluckTests' do
     inherit! :search_paths

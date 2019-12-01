@@ -279,12 +279,16 @@ SWIFT_CLASS("_TtC7Potluck5Event")
 @end
 
 @class UILabel;
+@class UIButton;
 
 SWIFT_CLASS("_TtC7Potluck13EventViewCell")
 @interface EventViewCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameTextView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dateTextView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified locationTextView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified detailsTextView;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified directionsButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified planButton;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
@@ -365,6 +369,8 @@ SWIFT_CLASS("_TtC7Potluck14ViewController")
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

@@ -18,6 +18,7 @@ dependencies: \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FirebaseCore/Firebase/Core/Private/FIRLibrary.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphoneos/GoogleUtilities.build/module.modulemap \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/GoogleUtilities/GoogleUtilities/Environment/third_party/GULAppEnvironmentUtil.h \
+  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/GoogleUtilities/GoogleUtilities/UserDefaults/Private/GULUserDefaults.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FirebaseInstanceID/Firebase/InstanceID/Private/FIRInstanceID+Private.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FirebaseInstanceID/Firebase/InstanceID/Private/FIRInstanceIDCheckinPreferences.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDAuthService.h \
@@ -27,6 +28,7 @@ dependencies: \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDConstants.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDDefines.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDKeyPairStore.h \
+  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDKeyPairUtilities.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDLogger.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRIMessageCode.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDStore.h \

@@ -15,12 +15,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var ref: DatabaseReference!
     let user = "f0dsfjdf0sd"
     var events = [Event]()
-    var eventClicked : String?
+    var selectedIndex = -1
+    var isCollapce = false
     
     @IBOutlet weak var tableview: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableview.backgroundView = UIImageView(image: UIImage(named: "backgroundImage"))
         
         ref = Database.database().reference()
         
@@ -67,29 +70,52 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return(self.events.count)
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if self.selectedIndex == indexPath.row && isCollapce == true{
+            return 387
+        }else{
+            return 50
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        if selectedIndex == indexPath.row{
+            if self.isCollapce == false {
+                self.isCollapce = true
+            }else{
+                self.isCollapce = false
+            }
+        }
+        else{
+            self.isCollapce = true
+        }
+        
+        self.selectedIndex = indexPath.row
+        tableView.reloadRows(at: [indexPath], with: .automatic)
+    }
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableview.dequeueReusableCell(withIdentifier: "EventViewCell") as! EventViewCell
         
         cell.nameTextView.text = self.events[indexPath.row].name
-        cell.dateTextView.text = self.events[indexPath.row].date
-        cell.locationTextView.text = self.events[indexPath.row].location
+        cell.dateTextView.text = "Date: " + self.events[indexPath.row].date
+        cell.locationTextView.text = "Location: " + self.events[indexPath.row].location
         return cell
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.destination is PlanningViewController{
-            let cell = sender as! UITableViewCell
-            let indexPath = tableview.indexPath(for: cell)!
-            let event = events[indexPath.row]
+            let event = events[selectedIndex]
 
             let planningViewController = segue.destination as! PlanningViewController
 
             let list = List(id: event.id, name: event.name, charge: event.owner, details: event.info, owner: event.owner, path: event.path)
             planningViewController.list = list
-
-            tableview.deselectRow(at: indexPath, animated: true)
         }
     }
 }

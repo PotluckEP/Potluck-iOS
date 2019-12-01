@@ -8,171 +8,309 @@ provides-member:
 provides-dynamic-lookup:
 - "awakeFromNib"
 - "dateTextView"
+- "detailsTextView"
+- "directionsButton"
 - "locationTextView"
 - "nameTextView"
+- "planButton"
 - "setSelected"
 depends-top-level:
+- "AssignmentPrecedence"
 - "Bool"
 - "EventViewCell"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "UIButton"
 - "UILabel"
 - "UITableViewCell"
 depends-member:
+- !private ["So7CALayerC", "cornerRadius"]
 - ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "awakeFromNib"]
+- !private ["So15CALayerDelegateP", "directionsButton"]
 - !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "layer"]
+- !private ["So15CALayerDelegateP", "planButton"]
 - !private ["So15CALayerDelegateP", "setSelected"]
+- !private ["So13CAMediaTimingP", "cornerRadius"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "awakeFromNib"]
+- !private ["s7CVarArgP", "cornerRadius"]
+- !private ["s7CVarArgP", "directionsButton"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "layer"]
+- !private ["s7CVarArgP", "planButton"]
 - !private ["s7CVarArgP", "setSelected"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "awakeFromNib"]
+- !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
+- !private ["s28CustomDebugStringConvertibleP", "directionsButton"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "layer"]
+- !private ["s28CustomDebugStringConvertibleP", "planButton"]
 - !private ["s28CustomDebugStringConvertibleP", "setSelected"]
+- !private ["s17CustomReflectableP", "layer"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "awakeFromNib"]
+- !private ["s23CustomStringConvertibleP", "cornerRadius"]
+- !private ["s23CustomStringConvertibleP", "directionsButton"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "layer"]
+- !private ["s23CustomStringConvertibleP", "planButton"]
 - !private ["s23CustomStringConvertibleP", "setSelected"]
+- !private ["Se", "layer"]
+- !private ["SE", "layer"]
 - ["SQ", ""]
 - !private ["SQ", "awakeFromNib"]
+- !private ["SQ", "cornerRadius"]
+- !private ["SQ", "directionsButton"]
 - !private ["SQ", "init"]
+- !private ["SQ", "layer"]
+- !private ["SQ", "planButton"]
 - !private ["SQ", "setSelected"]
 - ["7Potluck13EventViewCellC", "Bool"]
+- ["7Potluck13EventViewCellC", "UIButton"]
 - ["7Potluck13EventViewCellC", "UILabel"]
 - ["7Potluck13EventViewCellC", "awakeFromNib"]
 - ["7Potluck13EventViewCellC", "dateTextView"]
 - ["7Potluck13EventViewCellC", "deinit"]
+- ["7Potluck13EventViewCellC", "detailsTextView"]
+- ["7Potluck13EventViewCellC", "directionsButton"]
 - ["7Potluck13EventViewCellC", "init"]
 - ["7Potluck13EventViewCellC", "locationTextView"]
 - ["7Potluck13EventViewCellC", "nameTextView"]
+- ["7Potluck13EventViewCellC", "planButton"]
 - ["7Potluck13EventViewCellC", "setSelected"]
+- !private ["s23ExpressibleByNilLiteralP", "layer"]
 - ["SH", ""]
 - !private ["SH", "awakeFromNib"]
+- !private ["SH", "cornerRadius"]
+- !private ["SH", "directionsButton"]
 - !private ["SH", "init"]
+- !private ["SH", "layer"]
+- !private ["SH", "planButton"]
 - !private ["SH", "setSelected"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "awakeFromNib"]
+- !private ["So8NSCodingP", "cornerRadius"]
+- !private ["So8NSCodingP", "directionsButton"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "layer"]
+- !private ["So8NSCodingP", "planButton"]
 - !private ["So8NSCodingP", "setSelected"]
 - ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "UIButton"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "awakeFromNib"]
+- !private ["So8NSObjectC", "cornerRadius"]
 - ["So8NSObjectC", "dateTextView"]
+- ["So8NSObjectC", "detailsTextView"]
+- ["So8NSObjectC", "directionsButton"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "layer"]
 - ["So8NSObjectC", "locationTextView"]
 - ["So8NSObjectC", "nameTextView"]
+- ["So8NSObjectC", "planButton"]
 - ["So8NSObjectC", "setSelected"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "awakeFromNib"]
+- !private ["So8NSObjectP", "cornerRadius"]
+- !private ["So8NSObjectP", "directionsButton"]
 - !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "layer"]
+- !private ["So8NSObjectP", "planButton"]
 - !private ["So8NSObjectP", "setSelected"]
+- !private ["So14NSSecureCodingP", "cornerRadius"]
+- !private ["Sq", "layer"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "layer"]
 - ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So29UIAccessibilityIdentificationP", "awakeFromNib"]
+- !private ["So29UIAccessibilityIdentificationP", "directionsButton"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "layer"]
+- !private ["So29UIAccessibilityIdentificationP", "planButton"]
 - !private ["So29UIAccessibilityIdentificationP", "setSelected"]
 - ["So12UIAppearanceP", ""]
 - !private ["So12UIAppearanceP", "awakeFromNib"]
+- !private ["So12UIAppearanceP", "directionsButton"]
 - !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "layer"]
+- !private ["So12UIAppearanceP", "planButton"]
 - !private ["So12UIAppearanceP", "setSelected"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "awakeFromNib"]
+- !private ["So21UIAppearanceContainerP", "directionsButton"]
 - !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "layer"]
+- !private ["So21UIAppearanceContainerP", "planButton"]
 - !private ["So21UIAppearanceContainerP", "setSelected"]
+- !private ["So8UIButtonC", "layer"]
+- !private ["So9UIControlC", "layer"]
 - ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "awakeFromNib"]
+- !private ["So17UICoordinateSpaceP", "directionsButton"]
 - !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "layer"]
+- !private ["So17UICoordinateSpaceP", "planButton"]
 - !private ["So17UICoordinateSpaceP", "setSelected"]
 - ["So13UIDynamicItemP", ""]
 - !private ["So13UIDynamicItemP", "awakeFromNib"]
+- !private ["So13UIDynamicItemP", "directionsButton"]
 - !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "layer"]
+- !private ["So13UIDynamicItemP", "planButton"]
 - !private ["So13UIDynamicItemP", "setSelected"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "awakeFromNib"]
+- !private ["So18UIFocusEnvironmentP", "directionsButton"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "layer"]
+- !private ["So18UIFocusEnvironmentP", "planButton"]
 - !private ["So18UIFocusEnvironmentP", "setSelected"]
 - ["So11UIFocusItemP", ""]
 - !private ["So11UIFocusItemP", "awakeFromNib"]
+- !private ["So11UIFocusItemP", "directionsButton"]
 - !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "layer"]
+- !private ["So11UIFocusItemP", "planButton"]
 - !private ["So11UIFocusItemP", "setSelected"]
 - ["So20UIFocusItemContainerP", ""]
 - !private ["So20UIFocusItemContainerP", "awakeFromNib"]
+- !private ["So20UIFocusItemContainerP", "directionsButton"]
 - !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "layer"]
+- !private ["So20UIFocusItemContainerP", "planButton"]
 - !private ["So20UIFocusItemContainerP", "setSelected"]
 - ["So27UIGestureRecognizerDelegateP", ""]
 - !private ["So27UIGestureRecognizerDelegateP", "awakeFromNib"]
+- !private ["So27UIGestureRecognizerDelegateP", "directionsButton"]
 - !private ["So27UIGestureRecognizerDelegateP", "init"]
+- !private ["So27UIGestureRecognizerDelegateP", "planButton"]
 - !private ["So27UIGestureRecognizerDelegateP", "setSelected"]
 - ["So24UILargeContentViewerItemP", ""]
 - !private ["So24UILargeContentViewerItemP", "awakeFromNib"]
+- !private ["So24UILargeContentViewerItemP", "directionsButton"]
 - !private ["So24UILargeContentViewerItemP", "init"]
+- !private ["So24UILargeContentViewerItemP", "layer"]
+- !private ["So24UILargeContentViewerItemP", "planButton"]
 - !private ["So24UILargeContentViewerItemP", "setSelected"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "awakeFromNib"]
+- !private ["So30UIPasteConfigurationSupportingP", "directionsButton"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "layer"]
+- !private ["So30UIPasteConfigurationSupportingP", "planButton"]
 - !private ["So30UIPasteConfigurationSupportingP", "setSelected"]
 - ["So11UIResponderC", "Bool"]
+- ["So11UIResponderC", "UIButton"]
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "awakeFromNib"]
 - ["So11UIResponderC", "dateTextView"]
+- ["So11UIResponderC", "detailsTextView"]
+- ["So11UIResponderC", "directionsButton"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "layer"]
 - ["So11UIResponderC", "locationTextView"]
 - ["So11UIResponderC", "nameTextView"]
+- ["So11UIResponderC", "planButton"]
 - ["So11UIResponderC", "setSelected"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "awakeFromNib"]
+- !private ["So30UIResponderStandardEditActionsP", "directionsButton"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "layer"]
+- !private ["So30UIResponderStandardEditActionsP", "planButton"]
 - !private ["So30UIResponderStandardEditActionsP", "setSelected"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "layer"]
 - ["So15UITableViewCellC", "Bool"]
+- ["So15UITableViewCellC", "UIButton"]
 - ["So15UITableViewCellC", "UILabel"]
 - ["So15UITableViewCellC", ""]
 - ["So15UITableViewCellC", "awakeFromNib"]
 - ["So15UITableViewCellC", "dateTextView"]
+- ["So15UITableViewCellC", "detailsTextView"]
+- ["So15UITableViewCellC", "directionsButton"]
 - ["So15UITableViewCellC", "init"]
 - ["So15UITableViewCellC", "locationTextView"]
 - ["So15UITableViewCellC", "nameTextView"]
+- ["So15UITableViewCellC", "planButton"]
 - ["So15UITableViewCellC", "setSelected"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "awakeFromNib"]
+- !private ["So18UITraitEnvironmentP", "directionsButton"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "layer"]
+- !private ["So18UITraitEnvironmentP", "planButton"]
 - !private ["So18UITraitEnvironmentP", "setSelected"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "awakeFromNib"]
+- !private ["So23UIUserActivityRestoringP", "directionsButton"]
 - !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "layer"]
+- !private ["So23UIUserActivityRestoringP", "planButton"]
 - !private ["So23UIUserActivityRestoringP", "setSelected"]
 - ["So6UIViewC", "Bool"]
+- ["So6UIViewC", "UIButton"]
 - ["So6UIViewC", "UILabel"]
 - ["So6UIViewC", "awakeFromNib"]
 - ["So6UIViewC", "dateTextView"]
+- ["So6UIViewC", "detailsTextView"]
+- ["So6UIViewC", "directionsButton"]
 - ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "layer"]
 - ["So6UIViewC", "locationTextView"]
 - ["So6UIViewC", "nameTextView"]
+- ["So6UIViewC", "planButton"]
 - ["So6UIViewC", "setSelected"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "awakeFromNib"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "directionsButton"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "planButton"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setSelected"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "awakeFromNib"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "cornerRadius"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "directionsButton"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "layer"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "planButton"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setSelected"]
+- !private ["s21_ObjectiveCBridgeableP", "layer"]
 - ["s38__DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "awakeFromNib"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "directionsButton"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "layer"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "planButton"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "setSelected"]
 depends-nominal:
+- !private "So7CALayerC"
 - "So15CALayerDelegateP"
+- !private "So13CAMediaTimingP"
 - "s7CVarArgP"
 - "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
 - "SQ"
 - "7Potluck13EventViewCellC"
+- !private "s23ExpressibleByNilLiteralP"
 - "SH"
 - "So8NSCodingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "Sq"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
+- !private "So8UIButtonC"
+- !private "So9UIControlC"
 - "So17UICoordinateSpaceP"
 - "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
@@ -183,12 +321,14 @@ depends-nominal:
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
 - "So15UITableViewCellC"
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - "So6UIViewC"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
 - "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
@@ -1467,4 +1607,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "b576047781bc602b48e0c794affad6a0"
+interface-hash: "ad60352c24da444fdf4ab8f59675fd31"

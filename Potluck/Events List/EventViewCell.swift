@@ -12,10 +12,16 @@ class EventViewCell: UITableViewCell {
     @IBOutlet weak var nameTextView: UILabel!
     @IBOutlet weak var dateTextView: UILabel!
     @IBOutlet weak var locationTextView: UILabel!
+    @IBOutlet weak var detailsTextView: UILabel!
+    @IBOutlet weak var directionsButton: UIButton!
+    @IBOutlet weak var planButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        directionsButton.layer.cornerRadius = 10
+        planButton.layer.cornerRadius = 10
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
