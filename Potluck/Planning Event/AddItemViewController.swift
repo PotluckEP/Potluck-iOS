@@ -19,11 +19,14 @@ class AddItemViewController: UIViewController {
     @IBOutlet weak var chargeTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
     @IBOutlet weak var option: UISegmentedControl!
+    @IBOutlet weak var addItemButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         ref = Database.database().reference()
+        
+        addItemButton.layer.cornerRadius = 10
     }
     
     @IBAction func AddItemButtonClicked(_ sender: Any) {

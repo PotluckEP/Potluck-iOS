@@ -14,11 +14,12 @@ class AddCodeEventViewController: UIViewController{
     var ref: DatabaseReference!
     var list:List!
     @IBOutlet weak var codeTextField: UITextField!
+    @IBOutlet weak var addButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Database.database().reference()
-        
+        addButton.layer.cornerRadius = 10
     }
    
     @IBAction func AddEventClicked(_ sender: Any) {

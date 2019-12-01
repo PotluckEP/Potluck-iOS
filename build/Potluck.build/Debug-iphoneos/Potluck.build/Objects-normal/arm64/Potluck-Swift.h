@@ -204,6 +204,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class UITextField;
+@class UIButton;
 @class UIStoryboardSegue;
 @class NSBundle;
 @class NSCoder;
@@ -211,6 +212,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC7Potluck26AddCodeEventViewController")
 @interface AddCodeEventViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified codeTextField;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified addButton;
 - (void)viewDidLoad;
 - (IBAction)AddEventClicked:(id _Nonnull)sender;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
@@ -226,6 +228,7 @@ SWIFT_CLASS("_TtC7Potluck21AddItemViewController")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified chargeTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified descriptionTextField;
 @property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified option;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified addItemButton;
 - (void)viewDidLoad;
 - (IBAction)AddItemButtonClicked:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -262,6 +265,7 @@ SWIFT_CLASS("_TtC7Potluck25CreateEventViewController")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified locationTextView;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified descriptionTextView;
 @property (nonatomic, weak) IBOutlet UIDatePicker * _Null_unspecified dateTimePicker;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified startPlanningButton;
 - (void)viewDidLoad;
 - (IBAction)StartPlanningButtonClicked:(id _Nonnull)sender;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
@@ -279,7 +283,6 @@ SWIFT_CLASS("_TtC7Potluck5Event")
 @end
 
 @class UILabel;
-@class UIButton;
 
 SWIFT_CLASS("_TtC7Potluck13EventViewCell")
 @interface EventViewCell : UITableViewCell

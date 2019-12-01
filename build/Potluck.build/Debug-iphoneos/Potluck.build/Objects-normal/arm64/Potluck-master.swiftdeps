@@ -1,16 +1,16 @@
 version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
 options: "37f3408de0072c6ee5e5b336c5844d39"
-build_time: [1575193475, 798001000]
+build_time: [1575197591, 454216000]
 inputs:
   "/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Events List/ViewController.swift": [1575190788, 342739421]
-  "/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Adding Event/AddCodeEventViewController.swift": [1574751969, 955308638]
+  "/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Adding Event/AddCodeEventViewController.swift": [1575197591, 228956538]
   "/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Model/Item.swift": [1573207926, 492980095]
-  "/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Adding Event/CreateEventViewController.swift": [1574735702, 756554941]
+  "/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Adding Event/CreateEventViewController.swift": [1575197591, 243055181]
   "/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Planning Event/PlanningViewController.swift": [1574758330, 849921621]
   "/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Planning Event/infoItemViewController.swift": [1574755520, 515546678]
   "/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Events List/EventViewCell.swift": [1575190103, 66737618]
   "/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Sign In/SignInViewController.swift": [1574762751, 357908324]
-  "/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Planning Event/AddItemViewController.swift": [1574757597, 4725512]
+  "/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Planning Event/AddItemViewController.swift": [1575194374, 354086844]
   "/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/MenuViewController.swift": [1573207926, 492678021]
   "/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Model/List.swift": [1573207926, 493092078]
   "/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Planning Event/ItemCollectionViewCell.swift": [1573207926, 493408896]

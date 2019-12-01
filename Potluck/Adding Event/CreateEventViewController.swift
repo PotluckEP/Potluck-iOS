@@ -18,11 +18,13 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var locationTextView: UITextField!
     @IBOutlet weak var descriptionTextView: UITextField!
     @IBOutlet weak var dateTimePicker: UIDatePicker!
+    @IBOutlet weak var startPlanningButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         ref = Database.database().reference()
+        startPlanningButton.layer.cornerRadius = 10
     }
     
     @IBAction func StartPlanningButtonClicked(_ sender: Any) {
