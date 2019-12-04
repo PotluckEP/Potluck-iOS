@@ -72,9 +72,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if self.selectedIndex == indexPath.row && isCollapce == true{
-            return 387
+            return 424
         }else{
-            return 50
+            return 75
         }
     }
     
