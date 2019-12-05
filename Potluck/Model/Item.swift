@@ -15,15 +15,17 @@ class Item: NSObject{
     var image: String!
     var details: String!
     var owner: String!
+    var type: String!
     var path: String!
     
-    init(id: String!, name: String!, person: String!, image: String!, details: String!, owner: String!, path: String!){
+    init(id: String!, name: String!, person: String!, image: String!, details: String!, owner: String!, type: String!, path: String!){
         self.id = id
         self.name = name
         self.person = person
         self.image = image
         self.details = details
         self.owner = owner
+        self.type = type
         self.path = path
     }
 }

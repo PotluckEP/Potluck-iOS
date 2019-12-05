@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseDatabase
 
-class PlanningViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
+class PlanningViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     var list: List!
     var items = [Item]()
@@ -31,8 +31,13 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
     }
     
     func fetchPlanning(){
-        
-        self.ref.child(self.list.path).observeSingleEvent(of: .value) { (snapshot) in
+
+        guard self.list != nil else {
+            print("HELLO")
+            
+            return
+        }
+        self.ref.child(list.path).observeSingleEvent(of: .value) { (snapshot) in
             
             var item = snapshot.value as! [String: Any]
             
@@ -43,12 +48,13 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
             self.itemTextView.text = item["name"] as? String
             item.removeValue(forKey: "name");
 
-            self.ref.child("users").child(item["charge"] as! String).observeSingleEvent(of: .value, with: { (snapshot2) in
-                let user = snapshot2.value as! [String: Any]
-                self.personInChargeTextView.text = user["name"] as! String
-            })
+//            self.ref.child("users").child(item["charge"] as! String).observeSingleEvent(of: .value, with: { (snapshot2) in
+//                let user = snapshot2.value as! [String: Any]
+//                self.personInChargeTextView.text = user["name"] as! String
+//            })
             
             item.removeValue(forKey: "charge");
+            item.removeValue(forKey: "type");
             
             for (itemId, bringing) in item  {
                 
@@ -57,13 +63,14 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
                     let details = snapshot2.value as! [String: Any]
                    
                     let name = details["name"] as! String
+                    let itemType = details["type"] as! String
                     
                     self.ref.child(self.list.path).child(itemId).child("bringing").observeSingleEvent(of: .value) { (snapshot3) in
                         
                        // print(snapshot3)
                     }
                     
-                    self.items.append(Item(id: itemId, name: name, person: "fix", image: "none", details: "none", owner: "none", path: self.list.path + "/" + itemId))
+                    self.items.append(Item(id: itemId, name: name, person: "fix", image: "none", details: "none", owner: "none", type: itemType, path: self.list.path + "/" + itemId))
                     
                     self.itemsCollection.reloadData();
                 }
@@ -86,6 +93,30 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
         
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let item = items[indexPath.row]
+        
+        if item.type == "item" {
+            self.performSegue(withIdentifier: "itemViewController", sender: nil)
+        } else {
+            list = List(id: item.id, name: item.name, charge: item.owner, details: item.details, owner: item.owner, path: item.path + "/bringing")
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            if #available(iOS 13.0, *) {
+                let vc = storyboard.instantiateViewController(identifier: "PlanningVC") as PlanningViewController
+                
+                vc.list = list
+                self.navigationController?.pushViewController(vc, animated: true)
+//                present(vc, animated: true, completion: nil)
+                
+            } else {
+                // Fallback on earlier versions
+            }
+            
+        }
+
+    }
 
     // MARK: - Navigation
 
@@ -93,19 +124,23 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        
-       if segue.destination is PlanningViewController{
-            let cell = sender as! UICollectionViewCell
-            let indexPath = itemsCollection.indexPath(for: cell)!
-            let item = items[indexPath.row]
-
-            let planningViewController = segue.destination as! PlanningViewController
-
-        let list = List(id: item.id, name: item.name, charge: item.owner, details: item.details, owner: item.owner, path: item.path + "/bringing")
-        
-        planningViewController.list = list
-    
-        }
+        print(segue.identifier)
+//        if segue.destination is PlanningViewController {
+//            let cell = sender as! UICollectionViewCell
+//            let indexPath = itemsCollection.indexPath(for: cell)!
+//            let item = items[indexPath.row]
+//
+//            if(item.type == "item"){
+//                self.performSegue(withIdentifier: "itemViewController", sender: nil)
+//            } else {
+//                let planningViewController = segue.destination as! PlanningViewController
+//
+//                let list = List(id: item.id, name: item.name, charge: item.owner, details: item.details, owner: item.owner, path: item.path + "/bringing")
+//
+//                planningViewController.list = list
+//        }
+//
+//        }
     
        if segue.destination is AddItemViewController{
         
