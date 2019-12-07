@@ -14,7 +14,6 @@
 		0820BE89236D197D00BE9B4C /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0820BE88236D197D00BE9B4C /* List.swift */; };
 		0849539423622AE300128BCB /* EventViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0849539323622AE300128BCB /* EventViewCell.swift */; };
 		085462C4235F1FCB00AA0E4D /* PlanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085462C3235F1FCB00AA0E4D /* PlanningViewController.swift */; };
-		087C1338235AFA43003422E2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C1337235AFA43003422E2 /* MenuViewController.swift */; };
 		087C133A235B075A003422E2 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C1339235B075A003422E2 /* CreateEventViewController.swift */; };
 		08CDFBC9238CC6A300EFDA94 /* AddCodeEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDFBC8238CC6A300EFDA94 /* AddCodeEventViewController.swift */; };
 		08D8F94D2373BDD000D00527 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D8F94C2373BDCF00D00527 /* SignInViewController.swift */; };
@@ -58,7 +57,6 @@
 		0820BE88236D197D00BE9B4C /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		0849539323622AE300128BCB /* EventViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewCell.swift; sourceTree = "<group>"; };
 		085462C3235F1FCB00AA0E4D /* PlanningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningViewController.swift; sourceTree = "<group>"; };
-		087C1337235AFA43003422E2 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		087C1339235B075A003422E2 /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		08CDFBC8238CC6A300EFDA94 /* AddCodeEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCodeEventViewController.swift; sourceTree = "<group>"; };
 		08D8F94C2373BDCF00D00527 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -138,9 +136,8 @@
 		0820BE85236D0E2600BE9B4C /* Planning Event */ = {
 			isa = PBXGroup;
 			children = (
+				458CC89D239C175B00E623E9 /* Home */,
 				081D75BB236ECF0F008A4940 /* AddItemViewController.swift */,
-				081A577C23600F290037877C /* ItemCollectionViewCell.swift */,
-				085462C3235F1FCB00AA0E4D /* PlanningViewController.swift */,
 				458CC89B2399D6C000E623E9 /* InfoListViewController.swift */,
 			);
 			path = "Planning Event";
@@ -221,7 +218,6 @@
 				4560AC01235AE3AC0034219F /* LaunchScreen.storyboard */,
 				4560ABFC235AE3AB0034219F /* Main.storyboard */,
 				4560AC04235AE3AC0034219F /* Info.plist */,
-				087C1337235AFA43003422E2 /* MenuViewController.swift */,
 				AA8A5EF5237CE44A006D7768 /* GoogleService-Info.plist */,
 			);
 			path = Potluck;
@@ -243,6 +239,15 @@
 				4560AC1A235AE3AD0034219F /* Info.plist */,
 			);
 			path = PotluckUITests;
+			sourceTree = "<group>";
+		};
+		458CC89D239C175B00E623E9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				081A577C23600F290037877C /* ItemCollectionViewCell.swift */,
+				085462C3235F1FCB00AA0E4D /* PlanningViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		81305D47835C3E921D76CC89 /* Frameworks */ = {
@@ -539,7 +544,6 @@
 				0849539423622AE300128BCB /* EventViewCell.swift in Sources */,
 				08D8F94D2373BDD000D00527 /* SignInViewController.swift in Sources */,
 				081D75BC236ECF0F008A4940 /* AddItemViewController.swift in Sources */,
-				087C1338235AFA43003422E2 /* MenuViewController.swift in Sources */,
 				0820BE89236D197D00BE9B4C /* List.swift in Sources */,
 				081A577D23600F290037877C /* ItemCollectionViewCell.swift in Sources */,
 				4560ABF9235AE3AB0034219F /* AppDelegate.swift in Sources */,

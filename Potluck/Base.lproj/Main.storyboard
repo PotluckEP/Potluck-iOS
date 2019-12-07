@@ -252,6 +252,67 @@
                     <view key="view" contentMode="scaleToFill" id="9p7-rT-8vM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3U8-tf-Fn6">
+                                <rect key="frame" x="123" y="174" width="169" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXb-KL-6aO">
+                                <rect key="frame" x="186" y="121" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kRi-cZ-r8j" customClass="AkiraTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="50" y="353" width="314" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="MA0-bJ-1iP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1.3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Description" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2cx-bd-arZ" customClass="AkiraTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="50" y="478" width="314" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="mkq-3c-dxI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1.3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bK-wV-h5s">
+                                <rect key="frame" x="145" y="612" width="125" height="60"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="62j-dZ-sOQ"/>
+                                    <constraint firstAttribute="width" constant="125" id="kXx-ON-lIl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Update">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="AddItemButtonClicked:" destination="X0G-R8-zyU" eventType="touchUpInside" id="EW5-YX-tG6"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="AuI-jB-szO"/>
                     </view>
@@ -259,7 +320,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rNc-Kf-Cih" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="16" y="1556"/>
+            <point key="canvasLocation" x="15.942028985507248" y="1555.5803571428571"/>
         </scene>
         <!--Item-->
         <scene sceneID="PGB-r1-53v">
@@ -643,7 +704,7 @@
         <scene sceneID="H37-T3-i9Z">
             <objects>
                 <viewController id="DIh-92-fRX" customClass="InfoListViewController" customModule="Potluck" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="feW-0Y-ORd">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="InfoListViewController" id="feW-0Y-ORd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -754,8 +815,9 @@
                         <viewLayoutGuide key="safeArea" id="4BY-2n-wKI"/>
                     </view>
                     <connections>
-                        <outlet property="TitleTextView" destination="p8s-5Y-CnK" id="LDt-TS-gDj"/>
-                        <outlet property="titleTextField" destination="p8s-5Y-CnK" id="vfi-SY-8df"/>
+                        <outlet property="chargeTextField" destination="g53-1D-DLQ" id="nM9-a8-lWc"/>
+                        <outlet property="descriptionTextField" destination="WEM-pp-0Vg" id="fo7-fg-DfK"/>
+                        <outlet property="titleTextField" destination="p8s-5Y-CnK" id="Fvz-66-Khn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LTt-Fv-lyp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -955,6 +1017,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="psz-ax-56G"/>
-        <segue reference="nC4-Od-1p9"/>
+        <segue reference="7iS-xI-xyD"/>
     </inferredMetricsTieBreakers>
 </document>

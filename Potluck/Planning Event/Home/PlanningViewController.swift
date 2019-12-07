@@ -124,30 +124,20 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        print(segue.identifier)
-//        if segue.destination is PlanningViewController {
-//            let cell = sender as! UICollectionViewCell
-//            let indexPath = itemsCollection.indexPath(for: cell)!
-//            let item = items[indexPath.row]
-//
-//            if(item.type == "item"){
-//                self.performSegue(withIdentifier: "itemViewController", sender: nil)
-//            } else {
-//                let planningViewController = segue.destination as! PlanningViewController
-//
-//                let list = List(id: item.id, name: item.name, charge: item.owner, details: item.details, owner: item.owner, path: item.path + "/bringing")
-//
-//                planningViewController.list = list
-//        }
-//
-//        }
     
        if segue.destination is AddItemViewController{
         
             let addItemViewController = segue.destination as! AddItemViewController
             
             addItemViewController.path = list.path
-            print("segue")
+        }
+        
+        if segue.description is InfoListViewController{
+            
+            print("sfksjdklfskdjflkdskfjkldsjfjkdsjkfjksd")
+            let infoListViewController = segue.destination as! InfoListViewController
+            
+            infoListViewController.path = list.path
         }
         
     }

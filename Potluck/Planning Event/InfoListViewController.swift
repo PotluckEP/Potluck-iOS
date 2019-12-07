@@ -7,18 +7,33 @@
 //
 
 import UIKit
+import Firebase
 import MessageUI
 
 class InfoListViewController: UIViewController, MFMessageComposeViewControllerDelegate {
     
-    //@IBOutlet weak var TitleTextView: AkiraTextField!
+    var ref: DatabaseReference!
+    var path: String = ""
+    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var chargeTextField: UITextField!
+    @IBOutlet weak var descriptionTextField: UITextField!
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        ref = Database.database().reference()
+        
+        fetchInfo()
         // Do any additional setup after loading the view.
+    }
+    
+    func fetchInfo(){
+        
+        print(path, "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO")
+//        ref.child(path).observeSingleEvent(of: .value) { (snapshot) in
+//            <#code#>
+//        }
+        
     }
     
     func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
@@ -40,13 +55,14 @@ class InfoListViewController: UIViewController, MFMessageComposeViewControllerDe
     }
 
     @IBAction func sendInvite(_ sender: Any) {
-        let message = MFMessageComposeViewController()
-        
-        message.body = "daniel"
-        message.recipients = ["daniel"]
-        message.messageComposeDelegate = self
         
         if MFMessageComposeViewController.canSendText() {
+            let message = MFMessageComposeViewController()
+            
+            message.body = "daniel"
+            message.recipients = ["daniel"]
+            message.messageComposeDelegate = self
+            
             self.present(message, animated: true, completion: nil)
         }else{
             print("Can't send message")
