@@ -11,7 +11,6 @@ import GoogleSignIn
 
 class SignInViewController: UIViewController{
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Google Sign In stuff

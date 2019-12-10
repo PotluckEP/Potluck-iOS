@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class EventViewCell: UITableViewCell {
     @IBOutlet weak var nameTextView: UILabel!
@@ -15,6 +16,7 @@ class EventViewCell: UITableViewCell {
     @IBOutlet weak var detailsTextView: UILabel!
     @IBOutlet weak var directionsButton: UIButton!
     @IBOutlet weak var planButton: UIButton!
+    @IBOutlet weak var map: MKMapView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

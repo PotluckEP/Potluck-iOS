@@ -196,6 +196,7 @@
                                             <outlet property="detailsTextView" destination="5NY-II-ogm" id="nbH-xQ-wXH"/>
                                             <outlet property="directionsButton" destination="2cf-Vm-jgv" id="h38-2Y-8YZ"/>
                                             <outlet property="locationTextView" destination="2Wf-0R-qOS" id="QRu-8Q-kbt"/>
+                                            <outlet property="map" destination="u5c-fV-j9M" id="M5L-qy-k1X"/>
                                             <outlet property="nameTextView" destination="4Ts-Nw-iTm" id="21N-y2-2u7"/>
                                             <outlet property="planButton" destination="HgD-uF-gr0" id="8Vl-ie-h8d"/>
                                         </connections>
@@ -1111,7 +1112,7 @@
         <image name="profile" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="oAC-It-ZUS"/>
-        <segue reference="bPD-gS-Dgp"/>
+        <segue reference="psz-ax-56G"/>
+        <segue reference="7iS-xI-xyD"/>
     </inferredMetricsTieBreakers>
 </document>

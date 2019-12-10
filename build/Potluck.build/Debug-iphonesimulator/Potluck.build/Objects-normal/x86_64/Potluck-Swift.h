@@ -299,6 +299,7 @@ SWIFT_CLASS("_TtC7Potluck5Event")
 @end
 
 @class UILabel;
+@class MKMapView;
 
 SWIFT_CLASS("_TtC7Potluck13EventViewCell")
 @interface EventViewCell : UITableViewCell
@@ -308,6 +309,7 @@ SWIFT_CLASS("_TtC7Potluck13EventViewCell")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified detailsTextView;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified directionsButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified planButton;
+@property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified map;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);

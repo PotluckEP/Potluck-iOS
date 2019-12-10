@@ -104,6 +104,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.nameTextView.text = self.events[indexPath.row].name
         cell.dateTextView.text = "Date: " + self.events[indexPath.row].date
         cell.locationTextView.text = "Location: " + self.events[indexPath.row].location
+    
+        let location = "108 6th "
+        //cell.map =
+        
         return cell
     }
     
