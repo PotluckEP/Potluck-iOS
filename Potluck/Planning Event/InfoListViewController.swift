@@ -29,8 +29,14 @@ class InfoListViewController: UIViewController, MFMessageComposeViewControllerDe
     
     func fetchInfo(){
         
-        print(path)
-        
+        ref.child(path).observeSingleEvent(of: .value) { (snapshot) in
+            
+            print(snapshot)
+            let list  = snapshot.value as! [String: Any]
+            
+            self.titleTextField.text = list["name"] as! String
+            self.descriptionTextField.text = list["description"] as! String
+        }
     }
     
     func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {

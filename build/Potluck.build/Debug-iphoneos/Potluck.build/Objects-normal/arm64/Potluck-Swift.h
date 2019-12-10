@@ -358,7 +358,14 @@ SWIFT_CLASS("_TtC7Potluck22ItemCollectionViewCell")
 
 SWIFT_CLASS("_TtC7Potluck22ItemInfoViewController")
 @interface ItemInfoViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified chargeTextField;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified profileImage;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified itemTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified descriptionTextField;
 - (void)viewDidLoad;
+- (IBAction)updateButtonClicked:(id _Nonnull)sender;
+- (IBAction)deleteButtonClicked:(id _Nonnull)sender;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end

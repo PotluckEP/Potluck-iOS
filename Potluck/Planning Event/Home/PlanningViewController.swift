@@ -14,6 +14,7 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
     var list: List!
     var items = [Item]()
     var ref: DatabaseReference!
+    var itemSelected: String = ""
     
     @IBOutlet weak var itemTextView: UILabel!
     @IBOutlet weak var personInChangeImg: UIImageView!
@@ -115,12 +116,7 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
         
         if item.type == "Item" {
 
-//               let destinationVC = itemViewController()
-//               destinationVC.path = item.path
-//
-//               destinationVC.performSegueWithIdentifier("itemViewController", sender: self)
-            
-                
+            itemSelected = item.id;
             self.performSegue(withIdentifier: "itemViewController", sender: nil)
         } else {
             list = List(id: item.id, name: item.name, charge: item.owner, details: item.details, owner: item.owner, path: item.path)
@@ -165,7 +161,7 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
         
             let itemInfoViewController = segue.destination as! ItemInfoViewController
             
-            itemInfoViewController.path = list.path
+            itemInfoViewController.path = list.path + "/" + itemSelected
         }
         
     }
