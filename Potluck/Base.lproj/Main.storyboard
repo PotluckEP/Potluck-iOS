@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cju-HG-IJG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XsY-E5-6qj">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -17,11 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="23N-vD-3j6">
-                                <rect key="frame" x="-22" y="0.0" width="458" height="902"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nIV-Bc-hjq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SsT-GH-2ZC">
-                                <rect key="frame" x="139" y="731" width="46" height="30"/>
+                                <rect key="frame" x="184" y="433" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -29,9 +31,9 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FMV-f4-Y1U" customClass="GIDSignInButton">
-                                <rect key="frame" x="77" y="675" width="261" height="39"/>
+                                <rect key="frame" x="76" y="428" width="261" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES"/>
                                     <bool key="isElement" value="YES"/>
@@ -39,15 +41,10 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="23N-vD-3j6" firstAttribute="leading" secondItem="1A7-eL-ohV" secondAttribute="leading" constant="-22" id="Kv7-h0-kF1"/>
-                            <constraint firstAttribute="bottom" secondItem="23N-vD-3j6" secondAttribute="bottom" constant="-6" id="UCO-FS-XQv"/>
-                            <constraint firstItem="23N-vD-3j6" firstAttribute="top" secondItem="1A7-eL-ohV" secondAttribute="top" id="V69-mj-6Jo"/>
-                            <constraint firstAttribute="trailing" secondItem="23N-vD-3j6" secondAttribute="trailing" constant="-22" id="jEY-nj-nLl"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="h90-j9-fHI"/>
                     </view>
                     <connections>
+                        <outlet property="videoView" destination="nIV-Bc-hjq" id="Wfg-Mc-PVy"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="toMenu" id="7iS-xI-xyD"/>
                     </connections>
                 </viewController>
@@ -1104,7 +1101,6 @@
     </scenes>
     <resources>
         <image name="add-500" width="500" height="500"/>
-        <image name="backgroundImage" width="978" height="1940"/>
         <image name="home-500" width="500" height="500"/>
         <image name="info-squared-500" width="500" height="500"/>
         <image name="list-500" width="500" height="500"/>
