@@ -31,7 +31,6 @@
 		4560AC19235AE3AD0034219F /* PotluckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4560AC18235AE3AD0034219F /* PotluckUITests.swift */; };
 		458CC89C2399D6C000E623E9 /* InfoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458CC89B2399D6C000E623E9 /* InfoListViewController.swift */; };
 		458CC89F239C19F100E623E9 /* ItemInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458CC89E239C19F100E623E9 /* ItemInfoViewController.swift */; };
-		6599FAB523A0385900590BA0 /* Sign in Video.mov in Resources */ = {isa = PBXBuildFile; fileRef = 6599FAB423A0385900590BA0 /* Sign in Video.mov */; };
 		AA8A5EF6237CE44A006D7768 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA8A5EF5237CE44A006D7768 /* GoogleService-Info.plist */; };
 		E950AA0AF5E1FB7420E605D4 /* Pods_Potluck_PotluckUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B712D5657FECEEF94022C1 /* Pods_Potluck_PotluckUITests.framework */; };
 /* End PBXBuildFile section */
@@ -86,7 +85,6 @@
 		48B712D5657FECEEF94022C1 /* Pods_Potluck_PotluckUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Potluck_PotluckUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4969B4A6A13C8C6C89778534 /* Pods-Potluck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Potluck.debug.xcconfig"; path = "Target Support Files/Pods-Potluck/Pods-Potluck.debug.xcconfig"; sourceTree = "<group>"; };
 		5355BFE86E5469A9F1635FFA /* Pods-PotluckTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotluckTests.debug.xcconfig"; path = "Target Support Files/Pods-PotluckTests/Pods-PotluckTests.debug.xcconfig"; sourceTree = "<group>"; };
-		6599FAB423A0385900590BA0 /* Sign in Video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "Sign in Video.mov"; path = "../../../../../Downloads/Sign in Video.mov"; sourceTree = "<group>"; };
 		85C39E56EE9D9C4C061AEE72 /* Pods-Potluck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Potluck.release.xcconfig"; path = "Target Support Files/Pods-Potluck/Pods-Potluck.release.xcconfig"; sourceTree = "<group>"; };
 		9EBF08AAD2A7EF9EA4354D6A /* Pods-Potluck-PotluckUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Potluck-PotluckUITests.release.xcconfig"; path = "Target Support Files/Pods-Potluck-PotluckUITests/Pods-Potluck-PotluckUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AA8A5EF5237CE44A006D7768 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -218,7 +216,6 @@
 		4560ABF7235AE3AB0034219F /* Potluck */ = {
 			isa = PBXGroup;
 			children = (
-				6599FAB423A0385900590BA0 /* Sign in Video.mov */,
 				08D8F94B2373BDB900D00527 /* Sign In */,
 				081D75B8236EB7B8008A4940 /* Service */,
 				0820BE87236D0EF700BE9B4C /* Adding Event */,
@@ -383,7 +380,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6599FAB523A0385900590BA0 /* Sign in Video.mov in Resources */,
 				4560AC03235AE3AC0034219F /* LaunchScreen.storyboard in Resources */,
 				AA8A5EF6237CE44A006D7768 /* GoogleService-Info.plist in Resources */,
 				4560AC00235AE3AC0034219F /* Assets.xcassets in Resources */,
