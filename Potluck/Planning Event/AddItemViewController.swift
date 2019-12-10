@@ -13,7 +13,7 @@ class AddItemViewController: UIViewController {
     
     var path: String!
     var ref: DatabaseReference!
-
+    var nameList: [String: String] = ["Jessica": "wepourpowqeu", "Daniel": "f0dsfjdf0sd", "Josh": "p2Quzpx1azansI4GhNEr8ZuRGhi1"]
 
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var chargeTextField: UITextField!
@@ -34,7 +34,7 @@ class AddItemViewController: UIViewController {
         let type = option.titleForSegment(at: option.selectedSegmentIndex) as! String
         
         var newItem = [ "name": titleTextField.text,
-                        "charge": chargeTextField.text,
+                        "charge": nameList[chargeTextField.text as! String],
                         "description": descriptionTextField.text
         ]
         
@@ -50,6 +50,18 @@ class AddItemViewController: UIViewController {
         self.presentingViewController?.dismiss(animated: false, completion: nil)
     }
     
+    // Hide the keyboard if users touches out side the keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true);
+    }
+    
+    // Hide the keyboard if users press return
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        titleTextField.resignFirstResponder()
+        chargeTextField.resignFirstResponder()
+        descriptionTextField.resignFirstResponder()
+        return true;
+    }
     /*
     // MARK: - Navigation
 

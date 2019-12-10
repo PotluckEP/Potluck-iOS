@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		08015B4A235C7824000EFEB0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08015B49235C7824000EFEB0 /* Event.swift */; };
 		08120472239F5593003522C5 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08120471239F5592003522C5 /* AccountViewController.swift */; };
+		08120474239F95E4003522C5 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08120473239F95E4003522C5 /* ItemListViewController.swift */; };
 		081A577D23600F290037877C /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081A577C23600F290037877C /* ItemCollectionViewCell.swift */; };
 		081D75BA236EB7CC008A4940 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081D75B9236EB7CC008A4940 /* FirebaseService.swift */; };
 		081D75BC236ECF0F008A4940 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081D75BB236ECF0F008A4940 /* AddItemViewController.swift */; };
@@ -54,6 +55,7 @@
 /* Begin PBXFileReference section */
 		08015B49235C7824000EFEB0 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		08120471239F5592003522C5 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		08120473239F95E4003522C5 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 		081A577C23600F290037877C /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		081D75B9236EB7CC008A4940 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		081D75BB236ECF0F008A4940 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			children = (
 				458CC89D239C175B00E623E9 /* Home */,
 				081D75BB236ECF0F008A4940 /* AddItemViewController.swift */,
+				08120473239F95E4003522C5 /* ItemListViewController.swift */,
 				458CC89B2399D6C000E623E9 /* InfoListViewController.swift */,
 				458CC89E239C19F100E623E9 /* ItemInfoViewController.swift */,
 			);
@@ -544,6 +547,7 @@
 			files = (
 				4560ABFB235AE3AB0034219F /* ViewController.swift in Sources */,
 				08CDFBC9238CC6A300EFDA94 /* AddCodeEventViewController.swift in Sources */,
+				08120474239F95E4003522C5 /* ItemListViewController.swift in Sources */,
 				08120472239F5593003522C5 /* AccountViewController.swift in Sources */,
 				08DB2CFC23682B8E00754DBD /* Item.swift in Sources */,
 				087C133A235B075A003422E2 /* CreateEventViewController.swift in Sources */,
