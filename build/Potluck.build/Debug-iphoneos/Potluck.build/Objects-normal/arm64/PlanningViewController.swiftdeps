@@ -31,6 +31,7 @@ depends-top-level:
 - "IntegerLiteralType"
 - "Item"
 - !private "ItemCollectionViewCell"
+- !private "ItemInfoViewController"
 - "List"
 - "PlanningViewController"
 - !private "String"
@@ -110,7 +111,6 @@ depends-member:
 - !private ["s7CVarArgP", "database"]
 - !private ["s7CVarArgP", "delegate"]
 - !private ["s7CVarArgP", "dequeueReusableCell"]
-- !private ["s7CVarArgP", "description"]
 - !private ["s7CVarArgP", "destination"]
 - !private ["s7CVarArgP", "details"]
 - !private ["s7CVarArgP", "fetchPlanning"]
@@ -209,7 +209,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "database"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "dequeueReusableCell"]
-- !private ["s28CustomDebugStringConvertibleP", "description"]
 - !private ["s28CustomDebugStringConvertibleP", "destination"]
 - !private ["s28CustomDebugStringConvertibleP", "details"]
 - !private ["s28CustomDebugStringConvertibleP", "fetchPlanning"]
@@ -313,7 +312,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "database"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "dequeueReusableCell"]
-- !private ["s23CustomStringConvertibleP", "description"]
 - !private ["s23CustomStringConvertibleP", "destination"]
 - !private ["s23CustomStringConvertibleP", "details"]
 - !private ["s23CustomStringConvertibleP", "fetchPlanning"]
@@ -450,7 +448,6 @@ depends-member:
 - !private ["SQ", "database"]
 - !private ["SQ", "delegate"]
 - !private ["SQ", "dequeueReusableCell"]
-- !private ["SQ", "description"]
 - !private ["SQ", "destination"]
 - !private ["SQ", "details"]
 - !private ["SQ", "fetchPlanning"]
@@ -555,7 +552,6 @@ depends-member:
 - !private ["SH", "database"]
 - !private ["SH", "delegate"]
 - !private ["SH", "dequeueReusableCell"]
-- !private ["SH", "description"]
 - !private ["SH", "destination"]
 - !private ["SH", "details"]
 - !private ["SH", "fetchPlanning"]
@@ -629,6 +625,7 @@ depends-member:
 - !private ["7Potluck22ItemCollectionViewCellC", "ItemName"]
 - !private ["7Potluck22ItemCollectionViewCellC", "itemImage"]
 - !private ["7Potluck22ItemCollectionViewCellC", "person"]
+- !private ["7Potluck22ItemInfoViewControllerC", "path"]
 - !private ["7Potluck4ListC", "deinit"]
 - !private ["7Potluck4ListC", "init"]
 - !private ["7Potluck4ListC", "path"]
@@ -770,6 +767,7 @@ depends-member:
 - ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "Item"]
 - !private ["So8NSObjectC", "ItemCollectionViewCell"]
+- !private ["So8NSObjectC", "ItemInfoViewController"]
 - !private ["So8NSObjectC", "ItemName"]
 - ["So8NSObjectC", "List"]
 - !private ["So8NSObjectC", "PlanningViewController"]
@@ -795,7 +793,6 @@ depends-member:
 - !private ["So8NSObjectC", "database"]
 - !private ["So8NSObjectC", "delegate"]
 - !private ["So8NSObjectC", "dequeueReusableCell"]
-- !private ["So8NSObjectC", "description"]
 - !private ["So8NSObjectC", "destination"]
 - !private ["So8NSObjectC", "details"]
 - ["So8NSObjectC", "fetchPlanning"]
@@ -872,7 +869,6 @@ depends-member:
 - !private ["So8NSObjectP", "database"]
 - !private ["So8NSObjectP", "delegate"]
 - !private ["So8NSObjectP", "dequeueReusableCell"]
-- !private ["So8NSObjectP", "description"]
 - !private ["So8NSObjectP", "destination"]
 - !private ["So8NSObjectP", "details"]
 - !private ["So8NSObjectP", "fetchPlanning"]
@@ -953,6 +949,7 @@ depends-member:
 - ["7Potluck22PlanningViewControllerC", "Int"]
 - ["7Potluck22PlanningViewControllerC", "Item"]
 - !private ["7Potluck22PlanningViewControllerC", "ItemCollectionViewCell"]
+- !private ["7Potluck22PlanningViewControllerC", "ItemInfoViewController"]
 - ["7Potluck22PlanningViewControllerC", "List"]
 - !private ["7Potluck22PlanningViewControllerC", "PlanningViewController"]
 - !private ["7Potluck22PlanningViewControllerC", "String"]
@@ -1455,6 +1452,7 @@ depends-member:
 - ["So11UIResponderC", "Int"]
 - ["So11UIResponderC", "Item"]
 - !private ["So11UIResponderC", "ItemCollectionViewCell"]
+- !private ["So11UIResponderC", "ItemInfoViewController"]
 - !private ["So11UIResponderC", "ItemName"]
 - ["So11UIResponderC", "List"]
 - !private ["So11UIResponderC", "PlanningViewController"]
@@ -1670,7 +1668,6 @@ depends-member:
 - ["So16UIStateRestoringP", "viewForZoomingInScrollView"]
 - !private ["So12UIStoryboardC", "init"]
 - !private ["So12UIStoryboardC", "instantiateViewController"]
-- !private ["So17UIStoryboardSegueC", "description"]
 - !private ["So17UIStoryboardSegueC", "destination"]
 - !private ["So18UITraitEnvironmentP", "Database"]
 - ["So18UITraitEnvironmentP", "Item"]
@@ -1806,6 +1803,7 @@ depends-member:
 - ["So16UIViewControllerC", "Int"]
 - ["So16UIViewControllerC", "Item"]
 - !private ["So16UIViewControllerC", "ItemCollectionViewCell"]
+- !private ["So16UIViewControllerC", "ItemInfoViewController"]
 - ["So16UIViewControllerC", "List"]
 - !private ["So16UIViewControllerC", "PlanningViewController"]
 - !private ["So16UIViewControllerC", "String"]
@@ -1905,7 +1903,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "database"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dequeueReusableCell"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "description"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "destination"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "details"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fetchPlanning"]
@@ -1981,7 +1978,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "database"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "delegate"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dequeueReusableCell"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "description"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "destination"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "details"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "fetchPlanning"]
@@ -2101,6 +2097,7 @@ depends-nominal:
 - !private "7Potluck22InfoListViewControllerC"
 - !private "7Potluck4ItemC"
 - !private "7Potluck22ItemCollectionViewCellC"
+- !private "7Potluck22ItemInfoViewControllerC"
 - !private "7Potluck4ListC"
 - !private "So38MFMessageComposeViewControllerDelegateP"
 - "SM"

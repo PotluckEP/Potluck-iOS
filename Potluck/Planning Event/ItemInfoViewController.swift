@@ -13,13 +13,14 @@ class ItemInfoViewController: UIViewController {
 
     var ref: DatabaseReference!
     var path: String = "events"
-    var items: [Item] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         ref = Database.database().reference()
         fetchItems()
+        
+        print(path)
     }
     
     func fetchItems() {
