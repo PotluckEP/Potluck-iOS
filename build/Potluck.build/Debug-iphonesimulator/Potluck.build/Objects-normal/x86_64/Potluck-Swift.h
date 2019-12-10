@@ -184,6 +184,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreGraphics;
 @import Foundation;
 @import GoogleSignIn;
+@import MessageUI;
 @import ObjectiveC;
 @import UIKit;
 #endif
@@ -203,16 +204,35 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class UIImageView;
 @class UITextField;
-@class UIStoryboardSegue;
+@class UITouch;
+@class UIEvent;
 @class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC7Potluck21AccountViewController")
+@interface AccountViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified profileImage;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified nameTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailTextField;
+- (void)viewDidLoad;
+- (IBAction)updateButtonClicked:(id _Nonnull)sender;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIButton;
+@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC7Potluck26AddCodeEventViewController")
 @interface AddCodeEventViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified codeTextField;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified addButton;
 - (void)viewDidLoad;
 - (IBAction)AddEventClicked:(id _Nonnull)sender;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -226,6 +246,7 @@ SWIFT_CLASS("_TtC7Potluck21AddItemViewController")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified chargeTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified descriptionTextField;
 @property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified option;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified addItemButton;
 - (void)viewDidLoad;
 - (IBAction)AddItemButtonClicked:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -253,8 +274,6 @@ SWIFT_CLASS("_TtC7Potluck11AppDelegate")
 @end
 
 @class UIDatePicker;
-@class UITouch;
-@class UIEvent;
 
 SWIFT_CLASS("_TtC7Potluck25CreateEventViewController")
 @interface CreateEventViewController : UIViewController <UITextFieldDelegate>
@@ -262,6 +281,7 @@ SWIFT_CLASS("_TtC7Potluck25CreateEventViewController")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified locationTextView;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified descriptionTextView;
 @property (nonatomic, weak) IBOutlet UIDatePicker * _Null_unspecified dateTimePicker;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified startPlanningButton;
 - (void)viewDidLoad;
 - (IBAction)StartPlanningButtonClicked:(id _Nonnull)sender;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
@@ -285,6 +305,9 @@ SWIFT_CLASS("_TtC7Potluck13EventViewCell")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameTextView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dateTextView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified locationTextView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified detailsTextView;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified directionsButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified planButton;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
@@ -297,6 +320,20 @@ SWIFT_CLASS("_TtC7Potluck15FirebaseService")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class MFMessageComposeViewController;
+
+SWIFT_CLASS("_TtC7Potluck22InfoListViewController")
+@interface InfoListViewController : UIViewController <MFMessageComposeViewControllerDelegate>
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified titleTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified chargeTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified descriptionTextField;
+- (void)viewDidLoad;
+- (void)messageComposeViewController:(MFMessageComposeViewController * _Nonnull)controller didFinishWithResult:(MessageComposeResult)result;
+- (IBAction)sendInvite:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC7Potluck4Item")
 @interface Item : NSObject
@@ -304,7 +341,6 @@ SWIFT_CLASS("_TtC7Potluck4Item")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class UIImageView;
 
 SWIFT_CLASS("_TtC7Potluck22ItemCollectionViewCell")
 @interface ItemCollectionViewCell : UICollectionViewCell
@@ -316,19 +352,18 @@ SWIFT_CLASS("_TtC7Potluck22ItemCollectionViewCell")
 @end
 
 
+SWIFT_CLASS("_TtC7Potluck22ItemInfoViewController")
+@interface ItemInfoViewController : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC7Potluck4List")
 @interface List : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC7Potluck18MenuViewController")
-@interface MenuViewController : UITableViewController
-- (void)viewDidLoad;
-- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UICollectionView;
@@ -342,6 +377,7 @@ SWIFT_CLASS("_TtC7Potluck22PlanningViewController")
 - (void)viewDidLoad;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -365,16 +401,10 @@ SWIFT_CLASS("_TtC7Potluck14ViewController")
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC7Potluck22infoItemViewController")
-@interface infoItemViewController : UIViewController
-- (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end

@@ -2,14 +2,14 @@
 /Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Adding\ Event/AddCodeEventViewController.swift
 /Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Model/Item.swift
 /Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Adding\ Event/CreateEventViewController.swift
-/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Planning\ Event/PlanningViewController.swift
-/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Planning\ Event/infoItemViewController.swift
+/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Planning\ Event/Home/PlanningViewController.swift
 /Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Events\ List/EventViewCell.swift
 /Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Sign\ In/SignInViewController.swift
 /Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Planning\ Event/AddItemViewController.swift
-/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/MenuViewController.swift
 /Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Model/List.swift
-/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Planning\ Event/ItemCollectionViewCell.swift
+/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Planning\ Event/Home/ItemCollectionViewCell.swift
 /Users/danielmorales/CSUMB/Potluck-iOS/Potluck/AppDelegate.swift
 /Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Service/FirebaseService.swift
+/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Planning\ Event/InfoListViewController.swift
+/Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Planning\ Event/ItemInfoViewController.swift
 /Users/danielmorales/CSUMB/Potluck-iOS/Potluck/Model/Event.swift

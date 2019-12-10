@@ -39,17 +39,27 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
             
             var item = snapshot.value as! [String: Any]
             
-            if(item["bringing"] == nil){
-                // is item
-            }
-            
             self.itemTextView.text = item["name"] as? String
             item.removeValue(forKey: "name");
+            
+            print("lolololololololololollololo")
+            print(item)
+            print("lolololololololololollololo")
+            
+            var charge = item["charge"] as! String
+            
+            self.ref.child("users").child(charge).observeSingleEvent(of: .value) { (snapshot2) in
 
-//            self.ref.child("users").child(item["charge"] as! String).observeSingleEvent(of: .value, with: { (snapshot2) in
-//                let user = snapshot2.value as! [String: Any]
-//                self.personInChargeTextView.text = user["name"] as! String
-//            })
+                let user = snapshot2.value as! [String: Any]
+                self.personInChargeTextView.text = user["name"] as! String
+                
+                self.personInChangeImg.image = UIImage(named: user["img"] as! String)
+                self.personInChangeImg.layer.borderWidth = 1
+                self.personInChangeImg.layer.masksToBounds = false
+                self.personInChangeImg.layer.borderColor = UIColor.black.cgColor
+                self.personInChangeImg.layer.cornerRadius = self.personInChangeImg.frame.height/2
+                self.personInChangeImg.clipsToBounds = true
+            }
             
             item.removeValue(forKey: "charge");
             item.removeValue(forKey: "type");
@@ -62,15 +72,16 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
                    
                     let name = details["name"] as! String
                     let itemType = details["type"] as! String
+                    charge = details["charge"] as! String
                     
-                    self.ref.child(self.list.path).child(itemId).child("bringing").observeSingleEvent(of: .value) { (snapshot3) in
+                    self.ref.child("users").child(charge).observeSingleEvent(of: .value) { (snapshot3) in
                         
-                       // print(snapshot3)
+                       print(snapshot3)
+                       let user = snapshot3.value as! [String: Any]
+                    
+                        self.items.append(Item(id: itemId, name: name, person: user["name"] as! String, image: user["img"] as! String, details: "none", owner: "none", type: itemType, path: self.list.path + "/" + itemId))
+                       self.itemsCollection.reloadData();
                     }
-                    
-                    self.items.append(Item(id: itemId, name: name, person: "fix", image: "none", details: "none", owner: "none", type: itemType, path: self.list.path + "/" + itemId))
-                    
-                    self.itemsCollection.reloadData();
                 }
             }
             
@@ -85,9 +96,15 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = itemsCollection.dequeueReusableCell(withReuseIdentifier: "ItemCollectionViewCell", for: indexPath) as! ItemCollectionViewCell
         
-        cell.ItemName.text = self.items[indexPath.item].name;
+        cell.ItemName.text = self.items[indexPath.item].name
+        cell.person.text = self.items[indexPath.item].person
         
-        cell.person.text = self.items[indexPath.item].person;
+        cell.itemImage.image =  UIImage(named: self.items[indexPath.item].image)
+        cell.itemImage.layer.borderWidth = 1
+        cell.itemImage.layer.masksToBounds = false
+        cell.itemImage.layer.borderColor = UIColor.black.cgColor
+        cell.itemImage.layer.cornerRadius = cell.itemImage.frame.height/2
+        cell.itemImage.clipsToBounds = true
         
         return cell
     }
@@ -107,6 +124,9 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
         } else {
             list = List(id: item.id, name: item.name, charge: item.owner, details: item.details, owner: item.owner, path: item.path + "/bringing")
             
+            print("rerererererererererererere")
+            print(list.path)
+            print("rerererererererererererere")
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             if #available(iOS 13.0, *) {
                 let vc = storyboard.instantiateViewController(identifier: "PlanningVC") as PlanningViewController
@@ -120,7 +140,6 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
             }
             
         }
-
     }
 
     // MARK: - Navigation
@@ -138,8 +157,7 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
         }
         
         if segue.description is InfoListViewController{
-            
-            print("sfksjdklfskdjflkdskfjkldsjfjkdsjkfjksd")
+        
             let infoListViewController = segue.destination as! InfoListViewController
             
             infoListViewController.path = list.path

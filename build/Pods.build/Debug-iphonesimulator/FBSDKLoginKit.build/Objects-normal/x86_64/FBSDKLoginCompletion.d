@@ -34,11 +34,15 @@ dependencies: \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCopying.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAccessToken.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/Target\ Support\ Files/FBSDKCoreKit/FBSDKCoreKit-umbrella.h \
+  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginConstants.h \
+  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginError.h \
+  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginManager+Internal.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKCoreKit+Internal.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/Codeless/FBSDKViewHierarchy.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/Codeless/FBSDKCodelessMacros.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/Codeless/FBSDKCodelessIndexer.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/AAM/FBSDKMetadataIndexer.h \
+  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/SuggestedEvents/FBSDKSuggestedEventsIndexer.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/Cryptography/FBSDKCrypto.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKAudioResourceLoader.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKContainerViewController.h \
@@ -101,8 +105,5 @@ dependencies: \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKKeychainStoreViaBundleID.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKButton+Subclass.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKLogo.h \
-  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginConstants.h \
-  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginError.h \
-  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginManager+Internal.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginManager.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginUtility.h

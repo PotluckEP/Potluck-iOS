@@ -13,7 +13,7 @@ import MessageUI
 class InfoListViewController: UIViewController, MFMessageComposeViewControllerDelegate {
     
     var ref: DatabaseReference!
-    var path: String = ""
+    var path: String!
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var chargeTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
@@ -29,10 +29,7 @@ class InfoListViewController: UIViewController, MFMessageComposeViewControllerDe
     
     func fetchInfo(){
         
-        print(path, "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO")
-//        ref.child(path).observeSingleEvent(of: .value) { (snapshot) in
-//            <#code#>
-//        }
+        print(path)
         
     }
     

@@ -7,6 +7,7 @@ provides-member:
 - ["7Potluck26AddCodeEventViewControllerC", ""]
 provides-dynamic-lookup:
 - "AddEventClicked"
+- "addButton"
 - "codeTextField"
 - "prepare"
 - "viewDidLoad"
@@ -17,10 +18,13 @@ depends-top-level:
 - "CastingPrecedence"
 - !private "Database"
 - "DatabaseReference"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
 - "List"
 - !private "PlanningViewController"
 - !private "String"
 - !private "StringLiteralType"
+- "UIButton"
 - "UIStoryboardSegue"
 - "UITextField"
 - "UIViewController"
@@ -32,8 +36,10 @@ depends-member:
 - ["7Potluck26AddCodeEventViewControllerC", "List"]
 - !private ["7Potluck26AddCodeEventViewControllerC", "PlanningViewController"]
 - !private ["7Potluck26AddCodeEventViewControllerC", "String"]
+- ["7Potluck26AddCodeEventViewControllerC", "UIButton"]
 - ["7Potluck26AddCodeEventViewControllerC", "UIStoryboardSegue"]
 - ["7Potluck26AddCodeEventViewControllerC", "UITextField"]
+- ["7Potluck26AddCodeEventViewControllerC", "addButton"]
 - ["7Potluck26AddCodeEventViewControllerC", "codeTextField"]
 - ["7Potluck26AddCodeEventViewControllerC", "deinit"]
 - ["7Potluck26AddCodeEventViewControllerC", "init"]
@@ -42,15 +48,21 @@ depends-member:
 - !private ["7Potluck26AddCodeEventViewControllerC", "print"]
 - ["7Potluck26AddCodeEventViewControllerC", "ref"]
 - ["7Potluck26AddCodeEventViewControllerC", "viewDidLoad"]
+- !private ["So7CALayerC", "cornerRadius"]
+- !private ["So15CALayerDelegateP", "layer"]
 - !private ["So15CALayerDelegateP", "text"]
+- !private ["So13CAMediaTimingP", "cornerRadius"]
 - !private ["s7CVarArgP", "Database"]
 - !private ["s7CVarArgP", "List"]
 - ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "addButton"]
 - !private ["s7CVarArgP", "child"]
 - !private ["s7CVarArgP", "codeTextField"]
+- !private ["s7CVarArgP", "cornerRadius"]
 - !private ["s7CVarArgP", "database"]
 - !private ["s7CVarArgP", "destination"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "list"]
 - !private ["s7CVarArgP", "observeSingleEvent"]
 - !private ["s7CVarArgP", "print"]
@@ -65,11 +77,14 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "Database"]
 - !private ["s28CustomDebugStringConvertibleP", "List"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "addButton"]
 - !private ["s28CustomDebugStringConvertibleP", "child"]
 - !private ["s28CustomDebugStringConvertibleP", "codeTextField"]
+- !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
 - !private ["s28CustomDebugStringConvertibleP", "database"]
 - !private ["s28CustomDebugStringConvertibleP", "destination"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "layer"]
 - !private ["s28CustomDebugStringConvertibleP", "list"]
 - !private ["s28CustomDebugStringConvertibleP", "observeSingleEvent"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
@@ -81,16 +96,20 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "value"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - !private ["s17CustomReflectableP", "child"]
+- !private ["s17CustomReflectableP", "layer"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "text"]
 - !private ["s23CustomStringConvertibleP", "Database"]
 - !private ["s23CustomStringConvertibleP", "List"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "addButton"]
 - !private ["s23CustomStringConvertibleP", "child"]
 - !private ["s23CustomStringConvertibleP", "codeTextField"]
+- !private ["s23CustomStringConvertibleP", "cornerRadius"]
 - !private ["s23CustomStringConvertibleP", "database"]
 - !private ["s23CustomStringConvertibleP", "destination"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "list"]
 - !private ["s23CustomStringConvertibleP", "observeSingleEvent"]
 - !private ["s23CustomStringConvertibleP", "print"]
@@ -112,20 +131,25 @@ depends-member:
 - !private ["So20FIRDatabaseReferenceC", "observeSingleEvent"]
 - !private ["So20FIRDatabaseReferenceC", "setValue"]
 - !private ["Se", "child"]
+- !private ["Se", "layer"]
 - !private ["Se", "subscript"]
 - !private ["Se", "text"]
 - !private ["SD", "subscript"]
 - !private ["SE", "child"]
+- !private ["SE", "layer"]
 - !private ["SE", "subscript"]
 - !private ["SE", "text"]
 - !private ["SQ", "Database"]
 - !private ["SQ", "List"]
 - ["SQ", ""]
+- !private ["SQ", "addButton"]
 - !private ["SQ", "child"]
 - !private ["SQ", "codeTextField"]
+- !private ["SQ", "cornerRadius"]
 - !private ["SQ", "database"]
 - !private ["SQ", "destination"]
 - !private ["SQ", "init"]
+- !private ["SQ", "layer"]
 - !private ["SQ", "list"]
 - !private ["SQ", "observeSingleEvent"]
 - !private ["SQ", "print"]
@@ -138,15 +162,19 @@ depends-member:
 - !private ["SQ", "viewDidLoad"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s23ExpressibleByNilLiteralP", "child"]
+- !private ["s23ExpressibleByNilLiteralP", "layer"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
 - !private ["SH", "Database"]
 - !private ["SH", "List"]
 - ["SH", ""]
+- !private ["SH", "addButton"]
 - !private ["SH", "child"]
 - !private ["SH", "codeTextField"]
+- !private ["SH", "cornerRadius"]
 - !private ["SH", "database"]
 - !private ["SH", "destination"]
 - !private ["SH", "init"]
+- !private ["SH", "layer"]
 - !private ["SH", "list"]
 - !private ["SH", "observeSingleEvent"]
 - !private ["SH", "print"]
@@ -161,8 +189,11 @@ depends-member:
 - !private ["So8NSCodingP", "Database"]
 - !private ["So8NSCodingP", "List"]
 - ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "addButton"]
 - !private ["So8NSCodingP", "codeTextField"]
+- !private ["So8NSCodingP", "cornerRadius"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "layer"]
 - !private ["So8NSCodingP", "list"]
 - !private ["So8NSCodingP", "print"]
 - !private ["So8NSCodingP", "ref"]
@@ -171,6 +202,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "Database"]
 - !private ["So26NSExtensionRequestHandlingP", "List"]
 - ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "addButton"]
 - !private ["So26NSExtensionRequestHandlingP", "codeTextField"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "list"]
@@ -183,13 +215,17 @@ depends-member:
 - ["So8NSObjectC", "List"]
 - !private ["So8NSObjectC", "PlanningViewController"]
 - !private ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UIButton"]
 - ["So8NSObjectC", "UIStoryboardSegue"]
 - ["So8NSObjectC", "UITextField"]
+- ["So8NSObjectC", "addButton"]
 - !private ["So8NSObjectC", "child"]
 - ["So8NSObjectC", "codeTextField"]
+- !private ["So8NSObjectC", "cornerRadius"]
 - !private ["So8NSObjectC", "database"]
 - !private ["So8NSObjectC", "destination"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "layer"]
 - ["So8NSObjectC", "list"]
 - !private ["So8NSObjectC", "observeSingleEvent"]
 - ["So8NSObjectC", "prepare"]
@@ -203,11 +239,14 @@ depends-member:
 - !private ["So8NSObjectP", "Database"]
 - !private ["So8NSObjectP", "List"]
 - ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addButton"]
 - !private ["So8NSObjectP", "child"]
 - !private ["So8NSObjectP", "codeTextField"]
+- !private ["So8NSObjectP", "cornerRadius"]
 - !private ["So8NSObjectP", "database"]
 - !private ["So8NSObjectP", "destination"]
 - !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "layer"]
 - !private ["So8NSObjectP", "list"]
 - !private ["So8NSObjectP", "observeSingleEvent"]
 - !private ["So8NSObjectP", "print"]
@@ -217,28 +256,37 @@ depends-member:
 - !private ["So8NSObjectP", "text"]
 - !private ["So8NSObjectP", "value"]
 - !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["So14NSSecureCodingP", "cornerRadius"]
 - !private ["Sq", "child"]
+- !private ["Sq", "layer"]
 - !private ["Sq", "text"]
 - !private ["7Potluck22PlanningViewControllerC", "list"]
 - !private ["SY", "value"]
 - !private ["ST", "subscript"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "layer"]
+- !private ["So29UIAccessibilityIdentificationP", "layer"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So12UIAppearanceP", "layer"]
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So21UIAppearanceContainerP", "Database"]
 - !private ["So21UIAppearanceContainerP", "List"]
 - ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "addButton"]
 - !private ["So21UIAppearanceContainerP", "codeTextField"]
 - !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "layer"]
 - !private ["So21UIAppearanceContainerP", "list"]
 - !private ["So21UIAppearanceContainerP", "print"]
 - !private ["So21UIAppearanceContainerP", "ref"]
 - !private ["So21UIAppearanceContainerP", "text"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So8UIButtonC", "layer"]
 - !private ["So26UICollectionViewDataSourceP", "list"]
 - !private ["So24UICollectionViewDelegateP", "list"]
 - !private ["So18UIContentContainerP", "Database"]
 - !private ["So18UIContentContainerP", "List"]
 - ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "addButton"]
 - !private ["So18UIContentContainerP", "codeTextField"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "list"]
@@ -246,28 +294,38 @@ depends-member:
 - !private ["So18UIContentContainerP", "ref"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So9UIControlC", "layer"]
 - !private ["So9UIControlC", "text"]
+- !private ["So17UICoordinateSpaceP", "layer"]
 - !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So13UIDynamicItemP", "layer"]
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So18UIFocusEnvironmentP", "Database"]
 - !private ["So18UIFocusEnvironmentP", "List"]
 - ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "addButton"]
 - !private ["So18UIFocusEnvironmentP", "codeTextField"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "layer"]
 - !private ["So18UIFocusEnvironmentP", "list"]
 - !private ["So18UIFocusEnvironmentP", "print"]
 - !private ["So18UIFocusEnvironmentP", "ref"]
 - !private ["So18UIFocusEnvironmentP", "text"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So11UIFocusItemP", "layer"]
 - !private ["So11UIFocusItemP", "text"]
+- !private ["So20UIFocusItemContainerP", "layer"]
 - !private ["So20UIFocusItemContainerP", "text"]
 - !private ["So10UIKeyInputP", "text"]
+- !private ["So24UILargeContentViewerItemP", "layer"]
 - !private ["So24UILargeContentViewerItemP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "Database"]
 - !private ["So30UIPasteConfigurationSupportingP", "List"]
 - ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "addButton"]
 - !private ["So30UIPasteConfigurationSupportingP", "codeTextField"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "layer"]
 - !private ["So30UIPasteConfigurationSupportingP", "list"]
 - !private ["So30UIPasteConfigurationSupportingP", "print"]
 - !private ["So30UIPasteConfigurationSupportingP", "ref"]
@@ -279,10 +337,13 @@ depends-member:
 - ["So11UIResponderC", "List"]
 - !private ["So11UIResponderC", "PlanningViewController"]
 - !private ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "UIButton"]
 - ["So11UIResponderC", "UIStoryboardSegue"]
 - ["So11UIResponderC", "UITextField"]
+- ["So11UIResponderC", "addButton"]
 - ["So11UIResponderC", "codeTextField"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "layer"]
 - ["So11UIResponderC", "list"]
 - ["So11UIResponderC", "prepare"]
 - !private ["So11UIResponderC", "print"]
@@ -292,17 +353,21 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "Database"]
 - !private ["So30UIResponderStandardEditActionsP", "List"]
 - ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "addButton"]
 - !private ["So30UIResponderStandardEditActionsP", "codeTextField"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "layer"]
 - !private ["So30UIResponderStandardEditActionsP", "list"]
 - !private ["So30UIResponderStandardEditActionsP", "print"]
 - !private ["So30UIResponderStandardEditActionsP", "ref"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - !private ["So20UIScrollViewDelegateP", "list"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "layer"]
 - !private ["So16UIStateRestoringP", "Database"]
 - !private ["So16UIStateRestoringP", "List"]
 - ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "addButton"]
 - !private ["So16UIStateRestoringP", "codeTextField"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "list"]
@@ -319,8 +384,10 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "Database"]
 - !private ["So18UITraitEnvironmentP", "List"]
 - ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "addButton"]
 - !private ["So18UITraitEnvironmentP", "codeTextField"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "layer"]
 - !private ["So18UITraitEnvironmentP", "list"]
 - !private ["So18UITraitEnvironmentP", "print"]
 - !private ["So18UITraitEnvironmentP", "ref"]
@@ -329,13 +396,16 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "Database"]
 - !private ["So23UIUserActivityRestoringP", "List"]
 - ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "addButton"]
 - !private ["So23UIUserActivityRestoringP", "codeTextField"]
 - !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "layer"]
 - !private ["So23UIUserActivityRestoringP", "list"]
 - !private ["So23UIUserActivityRestoringP", "print"]
 - !private ["So23UIUserActivityRestoringP", "ref"]
 - !private ["So23UIUserActivityRestoringP", "text"]
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- !private ["So6UIViewC", "layer"]
 - !private ["So6UIViewC", "text"]
 - ["So16UIViewControllerC", "AddEventClicked"]
 - !private ["So16UIViewControllerC", "Database"]
@@ -343,9 +413,11 @@ depends-member:
 - ["So16UIViewControllerC", "List"]
 - !private ["So16UIViewControllerC", "PlanningViewController"]
 - !private ["So16UIViewControllerC", "String"]
+- ["So16UIViewControllerC", "UIButton"]
 - ["So16UIViewControllerC", "UIStoryboardSegue"]
 - ["So16UIViewControllerC", "UITextField"]
 - ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "addButton"]
 - ["So16UIViewControllerC", "codeTextField"]
 - ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "list"]
@@ -357,11 +429,14 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Database"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "List"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addButton"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "child"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "codeTextField"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "database"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "destination"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "list"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "observeSingleEvent"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
@@ -374,11 +449,14 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Database"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "List"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addButton"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "child"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "codeTextField"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "cornerRadius"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "database"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "destination"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "layer"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "list"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "observeSingleEvent"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
@@ -389,12 +467,16 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "value"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
 - !private ["s21_ObjectiveCBridgeableP", "child"]
+- !private ["s21_ObjectiveCBridgeableP", "layer"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "text"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "layer"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
 depends-nominal:
 - "7Potluck26AddCodeEventViewControllerC"
+- !private "So7CALayerC"
 - !private "So15CALayerDelegateP"
+- !private "So13CAMediaTimingP"
 - "s7CVarArgP"
 - !private "Sl"
 - "s28CustomDebugStringConvertibleP"
@@ -417,13 +499,16 @@ depends-nominal:
 - "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
+- !private "So14NSSecureCodingP"
 - !private "Sq"
 - !private "7Potluck22PlanningViewControllerC"
 - !private "SY"
 - !private "ST"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
+- !private "So8UIButtonC"
 - !private "So26UICollectionViewDataSourceP"
 - !private "So24UICollectionViewDelegateP"
 - "So18UIContentContainerP"
@@ -440,6 +525,7 @@ depends-nominal:
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - !private "So20UIScrollViewDelegateP"
+- !private "So35UISpringLoadedInteractionSupportingP"
 - "So16UIStateRestoringP"
 - !private "So17UIStoryboardSegueC"
 - !private "So15UITextDraggableP"
@@ -1724,6 +1810,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/shims/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MessageUI.framework/Headers/MessageUI.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
@@ -1736,4 +1823,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "b60d973d165443cf7a6d068d8d2b89c0"
+interface-hash: "65884e788cdd25da7a0567c8d4187db5"

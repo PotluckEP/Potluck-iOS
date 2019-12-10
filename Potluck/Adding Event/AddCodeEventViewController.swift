@@ -33,8 +33,6 @@ class AddCodeEventViewController: UIViewController{
             self.list = List(id: code, name: eventsList["name"] as! String, charge: eventsList["owner"] as! String,
                         details: eventsList["info"] as! String, owner: eventsList["owner"] as! String,
             path: "events/" + code + "/planning");
-
-
         }
         
         self.ref.child("users/f0dsfjdf0sd/events").observeSingleEvent(of: .value) { (snapshot) in
@@ -48,10 +46,20 @@ class AddCodeEventViewController: UIViewController{
         
     }
     
+    // Hide the keyboard if users touches out side the keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true);
+    }
+    
+    // Hide the keyboard if users press return
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        codeTextField.resignFirstResponder()
+        return true;
+    }
+    
     // MARK: - Navigation
      
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         
         if segue.destination is PlanningViewController{
                    

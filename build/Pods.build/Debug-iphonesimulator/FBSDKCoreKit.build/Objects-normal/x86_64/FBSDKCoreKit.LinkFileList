@@ -35,6 +35,7 @@
 /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKCoreKit-dummy.o
 /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKCrashHandler.o
 /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKCrashObserver.o
+/Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKCrashShield.o
 /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKCrypto.o
 /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKDeviceRequestsHelper.o
 /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKDialogConfiguration.o
@@ -46,6 +47,8 @@
 /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKErrorReport.o
 /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKEventBinding.o
 /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKEventBindingManager.o
+/Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKEventInferencer.o
+/Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKFeatureExtractor.o
 /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKFeatureManager.o
 /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKGateKeeperManager.o
 /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKGraphErrorRecoveryProcessor.o
@@ -70,6 +73,7 @@
 /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKMeasurementEvent.o
 /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKMeasurementEventListener.o
 /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKMetadataIndexer.o
+/Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKModelManager.o
 /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKMonotonicTime.o
 /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKPaymentObserver.o
 /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKProfile.o
@@ -78,6 +82,7 @@
 /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKServerConfiguration.o
 /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKServerConfigurationManager.o
 /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKSettings.o
+/Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKSuggestedEventsIndexer.o
 /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKSwizzler.o
 /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKTestUsersManager.o
 /Users/danielmorales/CSUMB/Potluck-iOS/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/Objects-normal/x86_64/FBSDKTimeSpentData.o

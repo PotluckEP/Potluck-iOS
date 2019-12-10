@@ -1,8 +1,8 @@
 version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
 options: "1ba4d26d1b10d37cc577e7aaf22112ce"
-build_time: [1575194733, 744278000]
+build_time: [1575195899, 200699000]
 inputs:
-  "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/AkiraTextField.swift": [1575193461, 722278884]
+  "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/AkiraTextField.swift": [1575195896, 500486301]
   "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/HoshiTextField.swift": [1575193461, 716525814]
   "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/IsaoTextField.swift": [1575193461, 723017637]
   "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/JiroTextField.swift": [1575193461, 719857395]

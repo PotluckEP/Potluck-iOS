@@ -4,14 +4,16 @@ dependencies: \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/Target\ Support\ Files/FBSDKCoreKit/FBSDKCoreKit-prefix.pch \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/Network/FBSDKGraphRequestConnection+Internal.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequestConnection.h \
+  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKAppEvents+Internal.h \
+  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/FBSDKAppEvents.h \
+  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKAppEventsUtility.h \
+  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKConstants.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKCoreKit+Internal.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAccessToken.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCopying.h \
-  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/FBSDKAppEvents.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKApplicationDelegate.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKButton.h \
-  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKConstants.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequest.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequestDataAttachment.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKSettings.h \
@@ -36,6 +38,7 @@ dependencies: \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/Codeless/FBSDKCodelessMacros.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/Codeless/FBSDKCodelessIndexer.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/AAM/FBSDKMetadataIndexer.h \
+  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/SuggestedEvents/FBSDKSuggestedEventsIndexer.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/Cryptography/FBSDKCrypto.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKAudioResourceLoader.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKContainerViewController.h \
@@ -54,8 +57,6 @@ dependencies: \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKUIUtility.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKViewImpressionTracker.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/WebDialog/FBSDKWebDialog.h \
-  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKAppEvents+Internal.h \
-  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKAppEventsUtility.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKAppEventsState.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKAppEventsStateManager.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/RestrictiveDataFilter/FBSDKRestrictiveDataFilterManager.h \

@@ -38,6 +38,7 @@ dependencies: \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/Codeless/FBSDKCodelessMacros.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/Codeless/FBSDKCodelessIndexer.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/AAM/FBSDKMetadataIndexer.h \
+  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/SuggestedEvents/FBSDKSuggestedEventsIndexer.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/Cryptography/FBSDKCrypto.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKAudioResourceLoader.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKContainerViewController.h \
@@ -101,7 +102,7 @@ dependencies: \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKButton+Subclass.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKLogo.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginKit+Internal.h \
-  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit.h \
+  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/Internal/../FBSDKLoginKit.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKDeviceLoginCodeInfo.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKDeviceLoginManager.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKDeviceLoginManagerResult.h \

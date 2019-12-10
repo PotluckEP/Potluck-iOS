@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/GDTCOREventTransformer.h</key>
 		<data>
-		+XqSdTLDbkXvu53R7LjoscRcdyQ=
+		1rrLonJHF3GgbUFpegWWCokndso=
 		</data>
 		<key>Headers/GDTCORLifecycle.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/GDTCORPlatform.h</key>
 		<data>
-		C5m5cD2BkjrdE/ejs6CidHbZyR0=
+		pcB0DPjrks8XbbBSyKgJRU+YhiM=
 		</data>
 		<key>Headers/GDTCORPrioritizer.h</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QmCwfici3gECejuNdo+JT70ryMI=
+		O7btbXWI+jbiGnFTRgQhMTRQMbo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -201,11 +201,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+XqSdTLDbkXvu53R7LjoscRcdyQ=
+			1rrLonJHF3GgbUFpegWWCokndso=
 			</data>
 			<key>hash2</key>
 			<data>
-			rdFkgTTMpHkGt+RhG5XaCo2yIjrvEN+14h3BYul5Qlw=
+			VdbKh12dQWncGhKcIkxzIHl921RpsPGtJG7RYjQ+riI=
 			</data>
 		</dict>
 		<key>Headers/GDTCORLifecycle.h</key>
@@ -223,11 +223,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			C5m5cD2BkjrdE/ejs6CidHbZyR0=
+			pcB0DPjrks8XbbBSyKgJRU+YhiM=
 			</data>
 			<key>hash2</key>
 			<data>
-			MWaI6qkorAOYzfXgfJBWk+ehat1VE2b6rDGZ4LyHEck=
+			DJClO7YqshsroV+gD+kFBw/C8d3iTpcvqMMSKyxSkP0=
 			</data>
 		</dict>
 		<key>Headers/GDTCORPrioritizer.h</key>

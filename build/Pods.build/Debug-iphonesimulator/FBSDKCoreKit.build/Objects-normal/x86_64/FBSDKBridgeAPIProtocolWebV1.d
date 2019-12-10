@@ -42,6 +42,7 @@ dependencies: \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/Codeless/FBSDKCodelessMacros.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/Codeless/FBSDKCodelessIndexer.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/AAM/FBSDKMetadataIndexer.h \
+  /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/SuggestedEvents/FBSDKSuggestedEventsIndexer.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/Cryptography/FBSDKCrypto.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKAudioResourceLoader.h \
   /Users/danielmorales/CSUMB/Potluck-iOS/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKContainerViewController.h \

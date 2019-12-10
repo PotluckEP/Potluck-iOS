@@ -1,0 +1,14 @@
+version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+options: "35e019076c068d04e3707644d1d2045a"
+build_time: [1575940314, 99872000]
+inputs:
+  "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/AkiraTextField.swift": [1575940133, 776340450]
+  "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/HoshiTextField.swift": [1575940133, 776562082]
+  "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/IsaoTextField.swift": [1575940133, 776768421]
+  "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/JiroTextField.swift": [1575940133, 776959677]
+  "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/KaedeTextField.swift": [1575940133, 777123192]
+  "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/MadokaTextField.swift": [1575940133, 777259005]
+  "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/MinoruTextField.swift": [1575940133, 777405611]
+  "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/TextFieldEffects.swift": [1575940133, 777553905]
+  "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/YokoTextField.swift": [1575940133, 777767531]
+  "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/YoshikoTextField.swift": [1575940133, 777977514]
