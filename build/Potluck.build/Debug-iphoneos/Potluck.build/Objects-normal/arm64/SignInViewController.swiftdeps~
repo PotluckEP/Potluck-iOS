@@ -9,7 +9,6 @@ provides-dynamic-lookup:
 - "googleSignButtonClicked"
 - "testButtonClicked"
 - "videoDidPlayToEnd"
-- "videoView"
 - "viewDidLoad"
 depends-top-level:
 - !private "AVLayerVideoGravity"
@@ -27,7 +26,6 @@ depends-top-level:
 - !private "NotificationCenter"
 - "SignInViewController"
 - !private "StringLiteralType"
-- "UIView"
 - "UIViewController"
 - !private "URL"
 depends-member:
@@ -44,13 +42,9 @@ depends-member:
 - !private ["So23AVPlayerActionAtItemEndV", "none"]
 - !private ["So8NSBundleC", "main"]
 - !private ["So8NSBundleC", "path"]
-- !private ["So7CALayerC", "addSublayer"]
 - !private ["So7CALayerC", "frame"]
 - !private ["So7CALayerC", "init"]
 - !private ["So7CALayerC", "videoGravity"]
-- !private ["So15CALayerDelegateP", "frame"]
-- !private ["So15CALayerDelegateP", "layer"]
-- !private ["So13CAMediaTimingP", "addSublayer"]
 - !private ["So13CAMediaTimingP", "frame"]
 - !private ["So13CAMediaTimingP", "init"]
 - !private ["So13CAMediaTimingP", "videoGravity"]
@@ -70,12 +64,10 @@ depends-member:
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "actionAtItemEnd"]
 - !private ["s7CVarArgP", "addObserver"]
-- !private ["s7CVarArgP", "addSublayer"]
 - !private ["s7CVarArgP", "currentItem"]
 - !private ["s7CVarArgP", "default"]
 - !private ["s7CVarArgP", "frame"]
 - !private ["s7CVarArgP", "init"]
-- !private ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "main"]
 - !private ["s7CVarArgP", "path"]
 - !private ["s7CVarArgP", "performSegue"]
@@ -105,12 +97,10 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "actionAtItemEnd"]
 - !private ["s28CustomDebugStringConvertibleP", "addObserver"]
-- !private ["s28CustomDebugStringConvertibleP", "addSublayer"]
 - !private ["s28CustomDebugStringConvertibleP", "currentItem"]
 - !private ["s28CustomDebugStringConvertibleP", "default"]
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
-- !private ["s28CustomDebugStringConvertibleP", "layer"]
 - !private ["s28CustomDebugStringConvertibleP", "main"]
 - !private ["s28CustomDebugStringConvertibleP", "object"]
 - !private ["s28CustomDebugStringConvertibleP", "path"]
@@ -125,8 +115,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "videoGravity"]
 - !private ["s28CustomDebugStringConvertibleP", "videoView"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
-- !private ["s17CustomReflectableP", "frame"]
-- !private ["s17CustomReflectableP", "layer"]
 - !private ["s17CustomReflectableP", "object"]
 - !private ["s23CustomStringConvertibleP", "AVLayerVideoGravity"]
 - !private ["s23CustomStringConvertibleP", "AVPlayer"]
@@ -143,12 +131,10 @@ depends-member:
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "actionAtItemEnd"]
 - !private ["s23CustomStringConvertibleP", "addObserver"]
-- !private ["s23CustomStringConvertibleP", "addSublayer"]
 - !private ["s23CustomStringConvertibleP", "currentItem"]
 - !private ["s23CustomStringConvertibleP", "default"]
 - !private ["s23CustomStringConvertibleP", "frame"]
 - !private ["s23CustomStringConvertibleP", "init"]
-- !private ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "main"]
 - !private ["s23CustomStringConvertibleP", "object"]
 - !private ["s23CustomStringConvertibleP", "path"]
@@ -163,10 +149,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "videoGravity"]
 - !private ["s23CustomStringConvertibleP", "videoView"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
-- !private ["Se", "frame"]
-- !private ["Se", "layer"]
-- !private ["SE", "frame"]
-- !private ["SE", "layer"]
 - !private ["SQ", "AVLayerVideoGravity"]
 - !private ["SQ", "AVPlayer"]
 - !private ["SQ", "AVPlayerLayer"]
@@ -182,12 +164,10 @@ depends-member:
 - ["SQ", ""]
 - !private ["SQ", "actionAtItemEnd"]
 - !private ["SQ", "addObserver"]
-- !private ["SQ", "addSublayer"]
 - !private ["SQ", "currentItem"]
 - !private ["SQ", "default"]
 - !private ["SQ", "frame"]
 - !private ["SQ", "init"]
-- !private ["SQ", "layer"]
 - !private ["SQ", "main"]
 - !private ["SQ", "none"]
 - !private ["SQ", "object"]
@@ -205,8 +185,6 @@ depends-member:
 - !private ["SQ", "videoView"]
 - !private ["SQ", "viewDidLoad"]
 - !private ["SQ", "zero"]
-- !private ["s23ExpressibleByNilLiteralP", "frame"]
-- !private ["s23ExpressibleByNilLiteralP", "layer"]
 - !private ["So9GIDSignInC", "presentingViewController"]
 - !private ["So9GIDSignInC", "restorePreviousSignIn"]
 - !private ["So9GIDSignInC", "sharedInstance"]
@@ -225,12 +203,10 @@ depends-member:
 - ["SH", ""]
 - !private ["SH", "actionAtItemEnd"]
 - !private ["SH", "addObserver"]
-- !private ["SH", "addSublayer"]
 - !private ["SH", "currentItem"]
 - !private ["SH", "default"]
 - !private ["SH", "frame"]
 - !private ["SH", "init"]
-- !private ["SH", "layer"]
 - !private ["SH", "main"]
 - !private ["SH", "none"]
 - !private ["SH", "object"]
@@ -259,10 +235,8 @@ depends-member:
 - !private ["So8NSCodingP", "NotificationCenter"]
 - !private ["So8NSCodingP", "SignInViewController"]
 - ["So8NSCodingP", ""]
-- !private ["So8NSCodingP", "addSublayer"]
 - !private ["So8NSCodingP", "frame"]
 - !private ["So8NSCodingP", "init"]
-- !private ["So8NSCodingP", "layer"]
 - !private ["So8NSCodingP", "performSegue"]
 - !private ["So8NSCodingP", "setupView"]
 - !private ["So8NSCodingP", "videoDidPlayToEnd"]
@@ -306,17 +280,14 @@ depends-member:
 - ["So8NSObjectC", "Notification"]
 - !private ["So8NSObjectC", "NotificationCenter"]
 - !private ["So8NSObjectC", "SignInViewController"]
-- ["So8NSObjectC", "UIView"]
 - !private ["So8NSObjectC", "URL"]
 - !private ["So8NSObjectC", "actionAtItemEnd"]
 - !private ["So8NSObjectC", "addObserver"]
-- !private ["So8NSObjectC", "addSublayer"]
 - !private ["So8NSObjectC", "currentItem"]
 - !private ["So8NSObjectC", "default"]
 - !private ["So8NSObjectC", "frame"]
 - ["So8NSObjectC", "googleSignButtonClicked"]
 - ["So8NSObjectC", "init"]
-- !private ["So8NSObjectC", "layer"]
 - !private ["So8NSObjectC", "main"]
 - !private ["So8NSObjectC", "path"]
 - !private ["So8NSObjectC", "performSegue"]
@@ -329,7 +300,7 @@ depends-member:
 - ["So8NSObjectC", "testButtonClicked"]
 - ["So8NSObjectC", "videoDidPlayToEnd"]
 - !private ["So8NSObjectC", "videoGravity"]
-- ["So8NSObjectC", "videoView"]
+- !private ["So8NSObjectC", "videoView"]
 - ["So8NSObjectC", "viewDidLoad"]
 - !private ["So8NSObjectP", "AVLayerVideoGravity"]
 - !private ["So8NSObjectP", "AVPlayer"]
@@ -346,12 +317,10 @@ depends-member:
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "actionAtItemEnd"]
 - !private ["So8NSObjectP", "addObserver"]
-- !private ["So8NSObjectP", "addSublayer"]
 - !private ["So8NSObjectP", "currentItem"]
 - !private ["So8NSObjectP", "default"]
 - !private ["So8NSObjectP", "frame"]
 - !private ["So8NSObjectP", "init"]
-- !private ["So8NSObjectP", "layer"]
 - !private ["So8NSObjectP", "main"]
 - !private ["So8NSObjectP", "path"]
 - !private ["So8NSObjectP", "performSegue"]
@@ -365,7 +334,6 @@ depends-member:
 - !private ["So8NSObjectP", "videoGravity"]
 - !private ["So8NSObjectP", "videoView"]
 - !private ["So8NSObjectP", "viewDidLoad"]
-- !private ["So14NSSecureCodingP", "addSublayer"]
 - !private ["So14NSSecureCodingP", "frame"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "videoGravity"]
@@ -374,8 +342,6 @@ depends-member:
 - !private ["10Foundation12NotificationV", "object"]
 - !private ["So20NSNotificationCenterC", "addObserver"]
 - !private ["So20NSNotificationCenterC", "default"]
-- !private ["Sq", "frame"]
-- !private ["Sq", "layer"]
 - !private ["SY", "init"]
 - !private ["SY", "none"]
 - !private ["SY", "resizeAspectFill"]
@@ -392,7 +358,6 @@ depends-member:
 - ["7Potluck20SignInViewControllerC", "Notification"]
 - !private ["7Potluck20SignInViewControllerC", "NotificationCenter"]
 - !private ["7Potluck20SignInViewControllerC", "SignInViewController"]
-- ["7Potluck20SignInViewControllerC", "UIView"]
 - !private ["7Potluck20SignInViewControllerC", "URL"]
 - ["7Potluck20SignInViewControllerC", "deinit"]
 - ["7Potluck20SignInViewControllerC", "googleSignButtonClicked"]
@@ -401,12 +366,8 @@ depends-member:
 - !private ["7Potluck20SignInViewControllerC", "setupView"]
 - ["7Potluck20SignInViewControllerC", "testButtonClicked"]
 - ["7Potluck20SignInViewControllerC", "videoDidPlayToEnd"]
-- ["7Potluck20SignInViewControllerC", "videoView"]
+- !private ["7Potluck20SignInViewControllerC", "videoView"]
 - ["7Potluck20SignInViewControllerC", "viewDidLoad"]
-- !private ["So29UIAccessibilityIdentificationP", "frame"]
-- !private ["So29UIAccessibilityIdentificationP", "layer"]
-- !private ["So12UIAppearanceP", "frame"]
-- !private ["So12UIAppearanceP", "layer"]
 - !private ["So21UIAppearanceContainerP", "AVLayerVideoGravity"]
 - !private ["So21UIAppearanceContainerP", "AVPlayer"]
 - !private ["So21UIAppearanceContainerP", "AVPlayerLayer"]
@@ -418,9 +379,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "NotificationCenter"]
 - !private ["So21UIAppearanceContainerP", "SignInViewController"]
 - ["So21UIAppearanceContainerP", ""]
-- !private ["So21UIAppearanceContainerP", "frame"]
 - !private ["So21UIAppearanceContainerP", "init"]
-- !private ["So21UIAppearanceContainerP", "layer"]
 - !private ["So21UIAppearanceContainerP", "performSegue"]
 - !private ["So21UIAppearanceContainerP", "setupView"]
 - !private ["So21UIAppearanceContainerP", "videoDidPlayToEnd"]
@@ -443,10 +402,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "videoDidPlayToEnd"]
 - !private ["So18UIContentContainerP", "videoView"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
-- !private ["So17UICoordinateSpaceP", "frame"]
-- !private ["So17UICoordinateSpaceP", "layer"]
-- !private ["So13UIDynamicItemP", "frame"]
-- !private ["So13UIDynamicItemP", "layer"]
 - !private ["So18UIFocusEnvironmentP", "AVLayerVideoGravity"]
 - !private ["So18UIFocusEnvironmentP", "AVPlayer"]
 - !private ["So18UIFocusEnvironmentP", "AVPlayerLayer"]
@@ -458,20 +413,12 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "NotificationCenter"]
 - !private ["So18UIFocusEnvironmentP", "SignInViewController"]
 - ["So18UIFocusEnvironmentP", ""]
-- !private ["So18UIFocusEnvironmentP", "frame"]
 - !private ["So18UIFocusEnvironmentP", "init"]
-- !private ["So18UIFocusEnvironmentP", "layer"]
 - !private ["So18UIFocusEnvironmentP", "performSegue"]
 - !private ["So18UIFocusEnvironmentP", "setupView"]
 - !private ["So18UIFocusEnvironmentP", "videoDidPlayToEnd"]
 - !private ["So18UIFocusEnvironmentP", "videoView"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
-- !private ["So11UIFocusItemP", "frame"]
-- !private ["So11UIFocusItemP", "layer"]
-- !private ["So20UIFocusItemContainerP", "frame"]
-- !private ["So20UIFocusItemContainerP", "layer"]
-- !private ["So24UILargeContentViewerItemP", "frame"]
-- !private ["So24UILargeContentViewerItemP", "layer"]
 - !private ["So30UIPasteConfigurationSupportingP", "AVLayerVideoGravity"]
 - !private ["So30UIPasteConfigurationSupportingP", "AVPlayer"]
 - !private ["So30UIPasteConfigurationSupportingP", "AVPlayerLayer"]
@@ -483,9 +430,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "NotificationCenter"]
 - !private ["So30UIPasteConfigurationSupportingP", "SignInViewController"]
 - ["So30UIPasteConfigurationSupportingP", ""]
-- !private ["So30UIPasteConfigurationSupportingP", "frame"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
-- !private ["So30UIPasteConfigurationSupportingP", "layer"]
 - !private ["So30UIPasteConfigurationSupportingP", "performSegue"]
 - !private ["So30UIPasteConfigurationSupportingP", "setupView"]
 - !private ["So30UIPasteConfigurationSupportingP", "videoDidPlayToEnd"]
@@ -503,17 +448,14 @@ depends-member:
 - ["So11UIResponderC", "Notification"]
 - !private ["So11UIResponderC", "NotificationCenter"]
 - !private ["So11UIResponderC", "SignInViewController"]
-- ["So11UIResponderC", "UIView"]
 - !private ["So11UIResponderC", "URL"]
-- !private ["So11UIResponderC", "frame"]
 - ["So11UIResponderC", "googleSignButtonClicked"]
 - ["So11UIResponderC", "init"]
-- !private ["So11UIResponderC", "layer"]
 - !private ["So11UIResponderC", "performSegue"]
 - ["So11UIResponderC", "setupView"]
 - ["So11UIResponderC", "testButtonClicked"]
 - ["So11UIResponderC", "videoDidPlayToEnd"]
-- ["So11UIResponderC", "videoView"]
+- !private ["So11UIResponderC", "videoView"]
 - ["So11UIResponderC", "viewDidLoad"]
 - !private ["So30UIResponderStandardEditActionsP", "AVLayerVideoGravity"]
 - !private ["So30UIResponderStandardEditActionsP", "AVPlayer"]
@@ -526,9 +468,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "NotificationCenter"]
 - !private ["So30UIResponderStandardEditActionsP", "SignInViewController"]
 - ["So30UIResponderStandardEditActionsP", ""]
-- !private ["So30UIResponderStandardEditActionsP", "frame"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
-- !private ["So30UIResponderStandardEditActionsP", "layer"]
 - !private ["So30UIResponderStandardEditActionsP", "performSegue"]
 - !private ["So30UIResponderStandardEditActionsP", "setupView"]
 - !private ["So30UIResponderStandardEditActionsP", "videoDidPlayToEnd"]
@@ -562,9 +502,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "NotificationCenter"]
 - !private ["So18UITraitEnvironmentP", "SignInViewController"]
 - ["So18UITraitEnvironmentP", ""]
-- !private ["So18UITraitEnvironmentP", "frame"]
 - !private ["So18UITraitEnvironmentP", "init"]
-- !private ["So18UITraitEnvironmentP", "layer"]
 - !private ["So18UITraitEnvironmentP", "performSegue"]
 - !private ["So18UITraitEnvironmentP", "setupView"]
 - !private ["So18UITraitEnvironmentP", "videoDidPlayToEnd"]
@@ -581,16 +519,12 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "NotificationCenter"]
 - !private ["So23UIUserActivityRestoringP", "SignInViewController"]
 - ["So23UIUserActivityRestoringP", ""]
-- !private ["So23UIUserActivityRestoringP", "frame"]
 - !private ["So23UIUserActivityRestoringP", "init"]
-- !private ["So23UIUserActivityRestoringP", "layer"]
 - !private ["So23UIUserActivityRestoringP", "performSegue"]
 - !private ["So23UIUserActivityRestoringP", "setupView"]
 - !private ["So23UIUserActivityRestoringP", "videoDidPlayToEnd"]
 - !private ["So23UIUserActivityRestoringP", "videoView"]
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
-- !private ["So6UIViewC", "frame"]
-- !private ["So6UIViewC", "layer"]
 - !private ["So16UIViewControllerC", "AVLayerVideoGravity"]
 - !private ["So16UIViewControllerC", "AVPlayer"]
 - !private ["So16UIViewControllerC", "AVPlayerItem"]
@@ -603,7 +537,6 @@ depends-member:
 - ["So16UIViewControllerC", "Notification"]
 - !private ["So16UIViewControllerC", "NotificationCenter"]
 - !private ["So16UIViewControllerC", "SignInViewController"]
-- ["So16UIViewControllerC", "UIView"]
 - !private ["So16UIViewControllerC", "URL"]
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "googleSignButtonClicked"]
@@ -612,7 +545,7 @@ depends-member:
 - ["So16UIViewControllerC", "setupView"]
 - ["So16UIViewControllerC", "testButtonClicked"]
 - ["So16UIViewControllerC", "videoDidPlayToEnd"]
-- ["So16UIViewControllerC", "videoView"]
+- !private ["So16UIViewControllerC", "videoView"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "Name"]
@@ -633,12 +566,10 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "actionAtItemEnd"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addObserver"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "addSublayer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "currentItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "path"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "performSegue"]
@@ -667,12 +598,10 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "actionAtItemEnd"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addObserver"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addSublayer"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "currentItem"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "default"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "frame"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "layer"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "path"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "performSegue"]
@@ -686,16 +615,12 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "videoGravity"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "videoView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
-- !private ["s21_ObjectiveCBridgeableP", "frame"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s21_ObjectiveCBridgeableP", "layer"]
 - !private ["s21_ObjectiveCBridgeableP", "object"]
 - !private ["s21_ObjectiveCBridgeableP", "resizeAspectFill"]
 - !private ["s21_ObjectiveCBridgeableP", "zero"]
 - !private ["s20_SwiftNewtypeWrapperP", "init"]
 - !private ["s20_SwiftNewtypeWrapperP", "resizeAspectFill"]
-- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "frame"]
-- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "layer"]
 depends-nominal:
 - !private "So19AVLayerVideoGravitya"
 - !private "So8AVPlayerC"
@@ -704,7 +629,6 @@ depends-nominal:
 - !private "So23AVPlayerActionAtItemEndV"
 - !private "So8NSBundleC"
 - !private "So7CALayerC"
-- !private "So15CALayerDelegateP"
 - !private "So13CAMediaTimingP"
 - !private "So6CMTimea"
 - "s7CVarArgP"
@@ -712,10 +636,7 @@ depends-nominal:
 - "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "Se"
-- !private "SE"
 - "SQ"
-- !private "s23ExpressibleByNilLiteralP"
 - !private "So9GIDSignInC"
 - "SH"
 - "So8NSCodingP"
@@ -731,27 +652,18 @@ depends-nominal:
 - !private "So18NSNotificationNamea"
 - !private "10Foundation12NotificationV"
 - !private "So20NSNotificationCenterC"
-- !private "Sq"
 - !private "SY"
 - !private "10Foundation20ReferenceConvertibleP"
 - "7Potluck20SignInViewControllerC"
-- !private "So29UIAccessibilityIdentificationP"
-- !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
 - "So18UIContentContainerP"
-- !private "So17UICoordinateSpaceP"
-- !private "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
-- !private "So11UIFocusItemP"
-- !private "So20UIFocusItemContainerP"
-- !private "So24UILargeContentViewerItemP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - "So16UIStateRestoringP"
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
-- !private "So6UIViewC"
 - "So16UIViewControllerC"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
@@ -759,7 +671,6 @@ depends-nominal:
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s20_SwiftNewtypeWrapperP"
-- !private "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/ObjectiveC.swiftmodule/arm64.swiftinterface"
@@ -2333,4 +2244,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "fbddb915cd49cf67018a516e7ff07bc2"
+interface-hash: "c1b0093cb58125236d2d1b9065a79575"

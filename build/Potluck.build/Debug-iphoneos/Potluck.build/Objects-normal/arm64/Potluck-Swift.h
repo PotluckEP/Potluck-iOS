@@ -402,12 +402,15 @@ SWIFT_CLASS("_TtC7Potluck22PlanningViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIView;
 
 SWIFT_CLASS("_TtC7Potluck20SignInViewController")
 @interface SignInViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified videoView;
 - (void)viewDidLoad;
 - (IBAction)testButtonClicked:(id _Nonnull)sender;
 - (IBAction)googleSignButtonClicked:(id _Nonnull)sender;
+- (void)videoDidPlayToEnd:(NSNotification * _Nonnull)notification;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
