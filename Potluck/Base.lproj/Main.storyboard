@@ -245,11 +245,11 @@
             </objects>
             <point key="canvasLocation" x="1066.6666666666667" y="127.90178571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Item Info View Controller-->
         <scene sceneID="ntv-oI-I82">
             <objects>
-                <viewController id="e4y-VX-gpi" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9p7-rT-8vM">
+                <viewController restorationIdentifier="ItemInfoViewController" storyboardIdentifier="ItemInfoViewController" id="e4y-VX-gpi" customClass="ItemInfoViewController" customModule="Potluck" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Item" id="9p7-rT-8vM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>

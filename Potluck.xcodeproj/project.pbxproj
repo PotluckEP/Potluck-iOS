@@ -28,6 +28,7 @@
 		4560AC0E235AE3AD0034219F /* PotluckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4560AC0D235AE3AD0034219F /* PotluckTests.swift */; };
 		4560AC19235AE3AD0034219F /* PotluckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4560AC18235AE3AD0034219F /* PotluckUITests.swift */; };
 		458CC89C2399D6C000E623E9 /* InfoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458CC89B2399D6C000E623E9 /* InfoListViewController.swift */; };
+		458CC89F239C19F100E623E9 /* ItemInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458CC89E239C19F100E623E9 /* ItemInfoViewController.swift */; };
 		AA8A5EF6237CE44A006D7768 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA8A5EF5237CE44A006D7768 /* GoogleService-Info.plist */; };
 		E950AA0AF5E1FB7420E605D4 /* Pods_Potluck_PotluckUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B712D5657FECEEF94022C1 /* Pods_Potluck_PotluckUITests.framework */; };
 /* End PBXBuildFile section */
@@ -76,6 +77,7 @@
 		4560AC18235AE3AD0034219F /* PotluckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotluckUITests.swift; sourceTree = "<group>"; };
 		4560AC1A235AE3AD0034219F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		458CC89B2399D6C000E623E9 /* InfoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoListViewController.swift; sourceTree = "<group>"; };
+		458CC89E239C19F100E623E9 /* ItemInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfoViewController.swift; sourceTree = "<group>"; };
 		48B712D5657FECEEF94022C1 /* Pods_Potluck_PotluckUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Potluck_PotluckUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4969B4A6A13C8C6C89778534 /* Pods-Potluck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Potluck.debug.xcconfig"; path = "Target Support Files/Pods-Potluck/Pods-Potluck.debug.xcconfig"; sourceTree = "<group>"; };
 		5355BFE86E5469A9F1635FFA /* Pods-PotluckTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotluckTests.debug.xcconfig"; path = "Target Support Files/Pods-PotluckTests/Pods-PotluckTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				458CC89D239C175B00E623E9 /* Home */,
 				081D75BB236ECF0F008A4940 /* AddItemViewController.swift */,
 				458CC89B2399D6C000E623E9 /* InfoListViewController.swift */,
+				458CC89E239C19F100E623E9 /* ItemInfoViewController.swift */,
 			);
 			path = "Planning Event";
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 				4560ABF9235AE3AB0034219F /* AppDelegate.swift in Sources */,
 				081D75BA236EB7CC008A4940 /* FirebaseService.swift in Sources */,
 				458CC89C2399D6C000E623E9 /* InfoListViewController.swift in Sources */,
+				458CC89F239C19F100E623E9 /* ItemInfoViewController.swift in Sources */,
 				08015B4A235C7824000EFEB0 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

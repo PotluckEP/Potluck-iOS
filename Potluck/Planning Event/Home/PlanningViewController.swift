@@ -33,8 +33,6 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
     func fetchPlanning(){
 
         guard self.list != nil else {
-            print("HELLO")
-            
             return
         }
         self.ref.child(list.path).observeSingleEvent(of: .value) { (snapshot) in
@@ -98,6 +96,13 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
         let item = items[indexPath.row]
         
         if item.type == "item" {
+
+//               let destinationVC = itemViewController()
+//               destinationVC.path = item.path
+//
+//               destinationVC.performSegueWithIdentifier("itemViewController", sender: self)
+            
+                
             self.performSegue(withIdentifier: "itemViewController", sender: nil)
         } else {
             list = List(id: item.id, name: item.name, charge: item.owner, details: item.details, owner: item.owner, path: item.path + "/bringing")
