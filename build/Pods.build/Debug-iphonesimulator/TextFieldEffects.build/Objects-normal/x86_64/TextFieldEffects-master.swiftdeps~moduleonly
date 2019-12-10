@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
 options: "35e019076c068d04e3707644d1d2045a"
-build_time: [1575940314, 99872000]
+build_time: [1575966243, 508596000]
 inputs:
   "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/AkiraTextField.swift": [1575940133, 776340450]
   "/Users/danielmorales/CSUMB/Potluck-iOS/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/HoshiTextField.swift": [1575940133, 776562082]

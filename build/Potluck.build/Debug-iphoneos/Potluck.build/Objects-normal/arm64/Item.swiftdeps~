@@ -24,6 +24,7 @@ depends-member:
 - !private ["s7CVarArgP", "owner"]
 - !private ["s7CVarArgP", "path"]
 - !private ["s7CVarArgP", "person"]
+- !private ["s7CVarArgP", "type"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "details"]
 - !private ["s28CustomDebugStringConvertibleP", "id"]
@@ -33,6 +34,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "owner"]
 - !private ["s28CustomDebugStringConvertibleP", "path"]
 - !private ["s28CustomDebugStringConvertibleP", "person"]
+- !private ["s28CustomDebugStringConvertibleP", "type"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "details"]
 - !private ["s23CustomStringConvertibleP", "id"]
@@ -42,6 +44,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "owner"]
 - !private ["s23CustomStringConvertibleP", "path"]
 - !private ["s23CustomStringConvertibleP", "person"]
+- !private ["s23CustomStringConvertibleP", "type"]
 - ["SQ", ""]
 - !private ["SQ", "details"]
 - !private ["SQ", "id"]
@@ -51,6 +54,7 @@ depends-member:
 - !private ["SQ", "owner"]
 - !private ["SQ", "path"]
 - !private ["SQ", "person"]
+- !private ["SQ", "type"]
 - ["SH", ""]
 - !private ["SH", "details"]
 - !private ["SH", "id"]
@@ -60,6 +64,7 @@ depends-member:
 - !private ["SH", "owner"]
 - !private ["SH", "path"]
 - !private ["SH", "person"]
+- !private ["SH", "type"]
 - ["7Potluck4ItemC", "String"]
 - ["7Potluck4ItemC", "deinit"]
 - ["7Potluck4ItemC", "details"]
@@ -70,6 +75,7 @@ depends-member:
 - ["7Potluck4ItemC", "owner"]
 - ["7Potluck4ItemC", "path"]
 - ["7Potluck4ItemC", "person"]
+- ["7Potluck4ItemC", "type"]
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", ""]
 - ["So8NSObjectC", "details"]
@@ -80,6 +86,7 @@ depends-member:
 - ["So8NSObjectC", "owner"]
 - ["So8NSObjectC", "path"]
 - ["So8NSObjectC", "person"]
+- ["So8NSObjectC", "type"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "details"]
 - !private ["So8NSObjectP", "id"]
@@ -89,6 +96,7 @@ depends-member:
 - !private ["So8NSObjectP", "owner"]
 - !private ["So8NSObjectP", "path"]
 - !private ["So8NSObjectP", "person"]
+- !private ["So8NSObjectP", "type"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "details"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "id"]
@@ -98,6 +106,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "owner"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "path"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "person"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "type"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "details"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "id"]
@@ -107,6 +116,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "owner"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "path"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "person"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "type"]
 depends-nominal:
 - "s7CVarArgP"
 - "s28CustomDebugStringConvertibleP"
@@ -1383,6 +1393,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/shims/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MessageUI.framework/Headers/MessageUI.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
@@ -1395,4 +1406,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "f79d4377b9f85f96e2cb433c599717f2"
+interface-hash: "432488abfbef0da3825768d81995f884"

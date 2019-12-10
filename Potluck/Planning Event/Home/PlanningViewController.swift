@@ -37,14 +37,14 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
         }
         self.ref.child(list.path).observeSingleEvent(of: .value) { (snapshot) in
             
+            print("lolololololololololollololo")
+            print(snapshot)
+            print("lolololololololololollololo")
+            
             var item = snapshot.value as! [String: Any]
             
             self.itemTextView.text = item["name"] as? String
             item.removeValue(forKey: "name");
-            
-            print("lolololololololololollololo")
-            print(item)
-            print("lolololololololololollololo")
             
             var charge = item["charge"] as! String
             
@@ -63,8 +63,9 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
             
             item.removeValue(forKey: "charge");
             item.removeValue(forKey: "type");
+            item.removeValue(forKey: "description");
             
-            for (itemId, bringing) in item  {
+            for (itemId, bringing) in item {
                 
                 self.ref.child(self.list.path).child(itemId).observeSingleEvent(of: .value) { (snapshot2) in
                     
@@ -112,7 +113,7 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let item = items[indexPath.row]
         
-        if item.type == "item" {
+        if item.type == "Item" {
 
 //               let destinationVC = itemViewController()
 //               destinationVC.path = item.path
@@ -122,11 +123,8 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
                 
             self.performSegue(withIdentifier: "itemViewController", sender: nil)
         } else {
-            list = List(id: item.id, name: item.name, charge: item.owner, details: item.details, owner: item.owner, path: item.path + "/bringing")
+            list = List(id: item.id, name: item.name, charge: item.owner, details: item.details, owner: item.owner, path: item.path)
             
-            print("rerererererererererererere")
-            print(list.path)
-            print("rerererererererererererere")
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             if #available(iOS 13.0, *) {
                 let vc = storyboard.instantiateViewController(identifier: "PlanningVC") as PlanningViewController
@@ -156,11 +154,18 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
             addItemViewController.path = list.path
         }
         
-        if segue.description is InfoListViewController{
+        if segue.destination is InfoListViewController{
         
             let infoListViewController = segue.destination as! InfoListViewController
             
             infoListViewController.path = list.path
+        }
+        
+        if segue.destination is ItemInfoViewController{
+        
+            let itemInfoViewController = segue.destination as! ItemInfoViewController
+            
+            itemInfoViewController.path = list.path
         }
         
     }

@@ -66,6 +66,19 @@ class InfoListViewController: UIViewController, MFMessageComposeViewControllerDe
         }
     }
     
+    // Hide the keyboard if users touches out side the keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true);
+    }
+    
+    // Hide the keyboard if users press return
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        titleTextField.resignFirstResponder()
+        chargeTextField.resignFirstResponder()
+        descriptionTextField.resignFirstResponder()
+        return true;
+    }
+    
     /*
     // MARK: - Navigation
     // In a storyboard-based application, you will often want to do a little preparation before navigation

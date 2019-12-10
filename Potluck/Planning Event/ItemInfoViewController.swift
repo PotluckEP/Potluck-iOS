@@ -7,15 +7,25 @@
 //
 
 import UIKit
+import Firebase
 
 class ItemInfoViewController: UIViewController {
 
+    var ref: DatabaseReference!
+    var path: String = "events"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        ref = Database.database().reference()
+        fetchItems()
+        
+        print(path)
     }
     
+    func fetchItems() {
+        
+    }
 
     /*
     // MARK: - Navigation

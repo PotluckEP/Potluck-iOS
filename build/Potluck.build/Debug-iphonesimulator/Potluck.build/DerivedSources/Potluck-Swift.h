@@ -249,6 +249,7 @@ SWIFT_CLASS("_TtC7Potluck21AddItemViewController")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified addItemButton;
 - (void)viewDidLoad;
 - (IBAction)AddItemButtonClicked:(id _Nonnull)sender;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -332,6 +333,7 @@ SWIFT_CLASS("_TtC7Potluck22InfoListViewController")
 - (void)viewDidLoad;
 - (void)messageComposeViewController:(MFMessageComposeViewController * _Nonnull)controller didFinishWithResult:(MessageComposeResult)result;
 - (IBAction)sendInvite:(id _Nonnull)sender;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
