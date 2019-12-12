@@ -34,7 +34,7 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate {
         let dateTxt = dateFormatter.string(from: dateTimePicker.date);
         self.view.endEditing(true)
         
-        let planning = ["charge": "f0dsfjdf0sd", "name": "Creator", "description": descriptionTextView.text] as [String : Any]
+        let planning = ["charge": "f0dsfjdf0sd","type": "List", "name": "Creator", "description": descriptionTextView.text] as [String : Any]
         let values = ["name": eventNameTextView.text,
                       "location": locationTextView.text,
                       "date": dateTxt,

@@ -311,6 +311,7 @@ SWIFT_CLASS("_TtC7Potluck13EventViewCell")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified directionsButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified planButton;
 @property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified map;
+- (IBAction)openAppleMaps:(id _Nonnull)sender;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
@@ -370,10 +371,14 @@ SWIFT_CLASS("_TtC7Potluck22ItemInfoViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITableView;
 
 SWIFT_CLASS("_TtC7Potluck22ItemListViewController")
-@interface ItemListViewController : UIViewController
+@interface ItemListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableview;
 - (void)viewDidLoad;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -415,7 +420,6 @@ SWIFT_CLASS("_TtC7Potluck20SignInViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITableView;
 
 SWIFT_CLASS("_TtC7Potluck14ViewController")
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>

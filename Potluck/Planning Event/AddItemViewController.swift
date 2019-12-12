@@ -38,6 +38,7 @@ class AddItemViewController: UIViewController {
                         "description": descriptionTextField.text
         ]
         
+        print(type)
         if(type == "Item"){
             newItem["type"] = "Item"
             newItem["bringing"] = "f0dsfjdf0sd"

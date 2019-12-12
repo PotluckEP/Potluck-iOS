@@ -123,6 +123,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0812047723A072A0003522C5 /* List Items */ = {
+			isa = PBXGroup;
+			children = (
+				08120473239F95E4003522C5 /* ItemListViewController.swift */,
+			);
+			path = "List Items";
+			sourceTree = "<group>";
+		};
 		081D75B8236EB7B8008A4940 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,9 +152,9 @@
 		0820BE85236D0E2600BE9B4C /* Planning Event */ = {
 			isa = PBXGroup;
 			children = (
+				0812047723A072A0003522C5 /* List Items */,
 				458CC89D239C175B00E623E9 /* Home */,
 				081D75BB236ECF0F008A4940 /* AddItemViewController.swift */,
-				08120473239F95E4003522C5 /* ItemListViewController.swift */,
 				458CC89B2399D6C000E623E9 /* InfoListViewController.swift */,
 				458CC89E239C19F100E623E9 /* ItemInfoViewController.swift */,
 			);

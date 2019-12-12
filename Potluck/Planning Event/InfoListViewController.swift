@@ -14,6 +14,7 @@ class InfoListViewController: UIViewController, MFMessageComposeViewControllerDe
     
     var ref: DatabaseReference!
     var path: String!
+    
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var chargeTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
@@ -34,8 +35,9 @@ class InfoListViewController: UIViewController, MFMessageComposeViewControllerDe
             print(snapshot)
             let list  = snapshot.value as! [String: Any]
             
-            self.titleTextField.text = list["name"] as! String
-            self.descriptionTextField.text = list["description"] as! String
+            
+            //self.titleTextField.text = list["name"] as! String
+            //self.descriptionTextField.text = list["description"] as! String
         }
     }
     
@@ -61,9 +63,9 @@ class InfoListViewController: UIViewController, MFMessageComposeViewControllerDe
         
         if MFMessageComposeViewController.canSendText() {
             let message = MFMessageComposeViewController()
+                        
+            message.body = "You are invited to participate on this event. Please add the event using the code: -LsTL5a0q8LnW4L4b8oV"
             
-            message.body = "daniel"
-            message.recipients = ["daniel"]
             message.messageComposeDelegate = self
             
             self.present(message, animated: true, completion: nil)

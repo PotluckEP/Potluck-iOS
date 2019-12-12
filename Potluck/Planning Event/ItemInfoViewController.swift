@@ -30,6 +30,8 @@ class ItemInfoViewController: UIViewController {
         
         ref.child(path).observeSingleEvent(of: .value) { (snapshot) in
             
+            print(snapshot)
+            
             let item = snapshot.value as! [String: String]
             
             self.itemTextField.text = item["name"]

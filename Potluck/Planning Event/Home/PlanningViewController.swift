@@ -157,12 +157,19 @@ class PlanningViewController: UIViewController, UICollectionViewDataSource, UICo
             infoListViewController.path = list.path
         }
         
-        if segue.destination is ItemInfoViewController{
+        if segue.destination is ItemListViewController{
         
-            let itemInfoViewController = segue.destination as! ItemInfoViewController
-            
+            let itemInfoViewController = segue.destination as! ItemListViewController
+    
             itemInfoViewController.path = list.path + "/" + itemSelected
         }
         
+        if segue.destination is ItemInfoViewController{
+            
+            let itemInfoViewController = segue.destination as! ItemInfoViewController
+    
+            itemInfoViewController.path = list.path + "/" + itemSelected
+        }
     }
+    
 }

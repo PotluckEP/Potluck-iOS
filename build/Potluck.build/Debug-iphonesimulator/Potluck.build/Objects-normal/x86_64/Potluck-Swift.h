@@ -311,6 +311,7 @@ SWIFT_CLASS("_TtC7Potluck13EventViewCell")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified directionsButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified planButton;
 @property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified map;
+- (IBAction)openAppleMaps:(id _Nonnull)sender;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
@@ -358,6 +359,21 @@ SWIFT_CLASS("_TtC7Potluck22ItemCollectionViewCell")
 
 SWIFT_CLASS("_TtC7Potluck22ItemInfoViewController")
 @interface ItemInfoViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified chargeTextField;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified profileImage;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified itemTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified descriptionTextField;
+- (void)viewDidLoad;
+- (IBAction)updateButtonClicked:(id _Nonnull)sender;
+- (IBAction)deleteButtonClicked:(id _Nonnull)sender;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Potluck22ItemListViewController")
+@interface ItemListViewController : UIViewController
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -387,12 +403,15 @@ SWIFT_CLASS("_TtC7Potluck22PlanningViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIView;
 
 SWIFT_CLASS("_TtC7Potluck20SignInViewController")
 @interface SignInViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified videoView;
 - (void)viewDidLoad;
 - (IBAction)testButtonClicked:(id _Nonnull)sender;
 - (IBAction)googleSignButtonClicked:(id _Nonnull)sender;
+- (void)videoDidPlayToEnd:(NSNotification * _Nonnull)notification;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
