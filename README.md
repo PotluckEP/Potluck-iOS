@@ -56,22 +56,23 @@
 
 ### Milestones
 > Insert milestones here
-> Week 1
->   Daniel: Let users to create events
->   Jessica: Menu bar to work
->   Josh: Gets the Google sign in to work  
-> Week 2
->   Daniel: Let users organize events
->   Jessica: Let users edit the event
->   Josh: Get Facebook sign in to work
-> Week 3
->   Daniel: Let users add people to the event
->   Jessica: let users edit profile
->   Josh: Make messaging feature
-> Week 4
->   Daniel: Leu users to have private events
->   Jessica: Make messaging feature
->   Josh: Make messaging feature
+> * Week 1 :
+>   Let users to create events
+>   Menu bar to work
+>   Gets the Google sign in to work 
+> * Week 2 :
+>   Let users organize events
+>   Let users edit the event
+>   Get Facebook sign in to work
+> * Week 3 :
+>   Let users add people to the event
+>   let users edit profile
+>   Make messaging feature
+> * Week 4 :
+>   Let users to have private events
+>   Make messaging feature
+>   Make messaging feature
+
 
 
 ### Wireframes 
