@@ -55,6 +55,7 @@
 
 
 ### Milestones
+> Insert milestones here
 > * Week 1 :
 >   Let users to create events
 >   Menu bar to work
