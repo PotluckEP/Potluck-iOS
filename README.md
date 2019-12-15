@@ -56,19 +56,19 @@
 
 ### Milestones
 > Insert milestones here
-> Week 1
+> * Week 1
 >   Let users to create events
 >   Menu bar to work
 >   Gets the Google sign in to work 
-> Week 2
+> * Week 2
 >   Let users organize events
 >   Let users edit the event
 >   Get Facebook sign in to work
-> Week 3
+> * Week 3
 >   Let users add people to the event
 >   let users edit profile
 >   Make messaging feature
-> Week 4
+> * Week 4
 >   Let users to have private events
 >   Make messaging feature
 >   Make messaging feature
